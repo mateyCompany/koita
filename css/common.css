@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+/* 타이틀 가이드 */
+h1.tit {font-size:14px;color:#323232;margin-bottom:9px;font-weight:bold;}
+h2.tit {font-size:36px;color:#323232;margin-bottom:30px}
+.tit2 {}
+
+/* 버튼 */
+.spriteSheet {background:url('../images/sprite/ico_sprite.png') no-repeat 0 0;display:inline-block;border:none;overflow:hidden;}
+.btnStic {width:116px;height:30px;line-height:30px;text-align:center;color:#fff;}
+.btnBlue {background-position:-5px -133px;}
+.btnDarkBlue {background-position:-131px -133px;}
+.btnGray {background-position:-257px -133px}
+.btnStic span {position:relative;font-weight:800;line-height:30px;}
+.btn {display:inline-block;color:#fff;height:30px;line-height:30px;overflow:hidden;padding-left:25px;background:none;background-position:left center;background-repeat:no-repeat;}
+.btn span {display:inline-block;float:left;text-align:center;padding-right:25px;background:none;background-position:right center;background-repeat:no-repeat;margin-top:-1px;font-weight:800}
+a.btn span {margin-top:0}
+.btn.fluidBlue {background-image:url('../images/btn/btn_front_blue.png')}
+.btn.fluidBlue span {background-image:url('../images/btn/btn_end_blue.png')}
+.btn.fluidDarkBlue {background-image:url('../images/btn/btn_front_dark_blue.png')}
+.btn.fluidDarkBlue span {background-image:url('../images/btn/btn_end_dark_blue.png')}
+.btn.fluidGray {background-image:url('../images/btn/btn_front_gray.png')}
+.btn.fluidGray span {background-image: url('../images/btn/btn_end_gray.png');}
+.btnSmall {display:inline-block;color:#fff;height:24px;line-height:24px;overflow:hidden;padding-left:14px;background:none;background-position:left center;background-repeat:no-repeat;}
+.btnSmall span {display:inline-block;float:left;text-align:center;padding-right:14px;background:none;background-position:right center;background-repeat:no-repeat;margin-top:-1px;font-weight:800;font-size:13px;min-width:42px}
+.btnSmall.fluidBlue {background-image:url('../images/btn/btn_small_front_blue.png')}
+.btnSmall.fluidBlue span {background-image:url('../images/btn/btn_small_end_blue.png')}
+.btnSmall.fluidGray {background-image:url('../images/btn/btn_small_front_gray.png')}
+.btnSmall.fluidGray span {background-image:url('../images/btn/btn_small_end_gray.png')}
+a.btnSmall.fluidGray span {margin-top:0;}
+
+/* 아이콘 */
+.icoRedWaing:before {content:'';display:inline-block;}
+
+
+/* 컬러셋 */
+.cBlue {color:#1896d8}
+.cDarkBlue {color:#2f3f60}
+.cRed {color:#e66716}
+.cDarkGray {color:#8595af}
+.cGray {color:#e1e1e3;}
+.cWhiteGray {color:#f3f5f6;}
+
+

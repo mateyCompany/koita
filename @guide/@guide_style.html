@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>코이타 스타일 가이</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../css/front.css" />
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript">
+</script>
+<script type="text/JavaScript">
+var gVar, lVar, lsVar;
+</script>
+<style>
+	h1.guide {font-weight:800;font-size:24px;margin-bottom:20px;}
+	#W-front {padding:15px;}
+	section {padding-bottom:30px;margin-bottom:30px;border-bottom:1px dotted #111}
+	.font span {display:block;margin-top:10px;}
+	.colorBox {overflow:hidden;}
+	.colorBox li span {display:inline-block;width:50px;height:50px;margin-left:10px;line-height:50px;vertical-align: middle}
+	.colorBox li {float:left;margin-right:10px;}
+</style>
+</head>
+<body>
+<div id="W-front">
+	<section style="padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #ccc">
+		<h1 style="font-size:56px">프로젝트명 : <strong>KOITA</strong></h1>
+		<h2 style="font-size:91px;font-weight:200">DESIGN STYLE GUIDE <span style="color:red;font-size:30px">기본 컬러셋 및 스타일</span></h2>
+	</section>
+	<section>
+		<h1 class="guide">Color</h1>
+		<p>기본 폰트사이즈 14px 컬러셋은 #424242</p>
+		<p class="font">폰트 굵기는 font-weight: 는 <span style="font-weight:200">울트라라이트:200</span> <span style="font-weight:300">라이트 :300</span> <span style="font-weight:400">기본 400</span> <span style="font-weight:800">굵게는 800</span></p>
+		<br/>
+		<br/>
+		<h1 class="tit">상위 1뎁스 타이틀h1.tit</h1>
+		<h2 class="tit">페이지메인 타이틀 h2.tit</h2>
+		<h3 class="tit2">서브타이틀 .tit2</h3>
+		<br/>
+		<br/>
+		<ul class="colorBox">
+			<li>색상표 타입 #323232<span style="background:#323232"></span></li>
+			<li class="cDarkBlue">색상표 타입 #2f3f60 <span style="background:#2f3f60"></span></li>
+			<li class="cBlue">색상표 타입 #1896d8 <span style="background:#1896d8"></span></li>
+			<li class="cRed">색상표 타입 #e66716 <span style="background:#e66716"></span></li>
+			<li class="cDarkGray">색상표 타입 #8595af <span style="background:#8595af"></span></li>
+			<li class="cGray">색상표 타입 #e1e1e3 <span style="background:#e1e1e3"></span></li>
+			<li>색상표 타입 #f3f5f6  class="cWhiteGray" <span style="background:#f3f5f6"></span></li>
+		</ul>
+	</section>
+	<section>
+		<h1 class="guide">Button</h1>
+		<p>기본 sprite 이미지 : images/sprite/ico_sprite.png</p>
+		<p>기본 btn 영역 : images/btn/</p>
+		<p style="margin-top:30px;">사이즈 고정버튼(특정그룹형태의 버튼에 사용)</p>
+		<button type="button" class="spriteSheet btnStic btnBlue"><span>고정형</span></button>
+		<button type="button" class="spriteSheet btnStic btnDarkBlue"><span>고정형</span></button>
+		<button type="button" class="spriteSheet btnStic btnGray"><span>고정형</span></button>
+
+		<a href="#none" class="spriteSheet btnStic btnGray">링크형</a>
+		<br/>
+		<br/>
+		<p style="margin-top:30px">사이즈 자유형태</p>
+		<button type="button" class="btn fluidBlue"><span>유동형은 span 태그 필수</span></button>
+		<button type="button" class="btn fluidDarkBlue"><span>버튼타입</span></button>
+		<button type="submit" class="btn fluidGray"><span>저장</span></button>
+		<a href="#none" class="btn fluidGray"><span>취소</span></a>
+		<br/>
+		<br/>
+		<p style="margin-top:30px">작은사이즈 자유형태(최소사이즈가 정해져있다.)</p>
+		<button type="button" class="btnSmall fluidGray"><span>이동</span></button>
+		<button type="button" class="btnSmall fluidBlue"><span>승인</span></button>
+		<a href="#none" class="btnSmall fluidGray"><span>버튼형</span></a>
+	</section>
+
+	<section>
+		<h1 class="guide">ICON</h1>
+		<p style="margin-top:30px;">아이콘은 앞쪽 형태에 아이콘이 있는경우는 가상클래스로사용이되며 뒤쪽에 붙는 형태만 따로 태그를 삽입하여 구현한다.</p>
+		<p style="margin-top:10px"><strong>아이콘이 컨텐츠 앞쪽에 있는경우</strong></p>
+		<p class="cRed">기업 외에 비영리기관, 의료법에 의한 의료법인, 은행법 등에 의한 금융기관 등은 신고대상에서 제외됨</p>
+	</section>
+
+</div>
+</body>
+</html>
+
