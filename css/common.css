@@ -30,7 +30,12 @@ a.btn span {margin-top:0}
 a.btnSmall.fluidGray span {margin-top:0;}
 
 /* 아이콘 */
-.icoRedWaing:before {content:'';display:inline-block;}
+.icoRedWaring:before {content:'';display:inline-block;width:17px;height:17px;background:url('../images/sprite/ico_sprite.png') no-repeat -350px -250px;margin-right:5px;vertical-align: middle;}
+.caution {overflow:hidden;font-size:13px;}
+.caution:before {content:'';display:inline-block;width:22px;height:22px;background:url('../images/sprite/ico_sprite.png') no-repeat -310px -160px;margin-right:10px;float:left;position:relative;top:6px;}
+.caution dt {color:#323232;font-weight:800}
+.caution dd {color:#717171;}
+.caution.plus:before {background-position:-100px -220px}
 
 
 /* 컬러셋 */
