@@ -8,9 +8,9 @@ h2.tit {font-size:36px;color:#323232;margin-bottom:30px}
 /* 버튼 */
 .spriteSheet {background:url('../images/sprite/ico_sprite.png') no-repeat 0 0;display:inline-block;border:none;overflow:hidden;}
 .btnStic {width:116px;height:30px;line-height:30px;text-align:center;color:#fff;}
-.btnBlue {background-position:-5px -133px;}
-.btnDarkBlue {background-position:-131px -133px;}
-.btnGray {background-position:-257px -133px}
+.btnBlue {background-position:0 -120px;}
+.btnDarkBlue {background-position:-120px -120px;}
+.btnGray {background-position:-240px -120px}
 .btnStic span {position:relative;font-weight:800;line-height:30px;}
 .btn {display:inline-block;color:#fff;height:30px;line-height:30px;overflow:hidden;padding-left:25px;background:none;background-position:left center;background-repeat:no-repeat;}
 .btn span {display:inline-block;float:left;text-align:center;padding-right:25px;background:none;background-position:right center;background-repeat:no-repeat;margin-top:-1px;font-weight:800}
