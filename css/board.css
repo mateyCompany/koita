@@ -1,4 +1,10 @@
 @charset 'utf-8';
 
 /* board-list */
+.floatL{float:left;}
+.floatR{float:right;}
+.tableTopBox{margin-bottom:10px;}
 
+.listEaSearch{width:130px;border:1px solid #e1e1e1;}
+.listEaSearch li{}
+.listEaSearch li a{display:block;padding:8px 0 7px 12px;}
