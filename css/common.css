@@ -1,9 +1,9 @@
 @charset 'utf-8';
 
 /* 타이틀 가이드 */
-h1.tit {font-size:14px;color:#323232;margin-bottom:9px;font-weight:bold;}
-h2.tit {font-size:36px;color:#323232;margin-bottom:30px}
-.tit2 {}
+h1.cTit {font-size:14px;color:#323232;margin-bottom:9px;font-weight:bold;}
+h2.cTit {font-size:36px;color:#323232;margin-bottom:30px}
+.cTit2 {}
 
 /* 버튼 */
 .spriteSheet {background:url('../images/sprite/ico_sprite.png') no-repeat 0 0;display:inline-block;border:none;overflow:hidden;}
@@ -36,12 +36,35 @@ a.btnSmall.fluidGray span {margin-top:0;}
 .caution dt {color:#323232;font-weight:800}
 .caution dd {color:#717171;}
 .caution.plus:before {background-position:-100px -220px}
-.icoRepley:before {content:'';display:inline-block;width:36px;height:15px;}
-.noTxt {}
+.icoRepley:before {content:'';display:inline-block;width:36px;height:15px;background:url('../images/sprite/ico_sprite.png') no-repeat -200px -270px;position:relative;top:3px;margin-right:5px;}
+.icoLock {display:inline-block;width:9px;height:13px;background-position:-360px -140px;position:relative;top:2px;}
+.noTxt {text-indent: -100%;white-space: nowrap;}
+.linkNote,.linkSample,.linkDown {text-decoration: underline;font-size:13px;}
+.linkNote:hover,.linkSample:hover,.linkDown:hover {text-decoration:underline;}
+.linkNote:before {content:'';display:inline-block;width:25px;height:25px;background:url('../images/sprite/ico_sprite.png') no-repeat -170px -250px;line-height:25px;vertical-align: middle;margin-right:5px;}
+.linkSample:before {content:'';display:inline-block;width:25px;height:25px;background:url('../images/sprite/ico_sprite.png') no-repeat 0px -160px;line-height:25px;vertical-align: middle;margin-right:5px;}
+.linkDown:before {content:'';display:inline-block;width:25px;height:25px;background: -30px -160px;line-height:25px;vertical-align: middle;margin-right:5px;}
+table .linkNote:before {width:20px;height:20px;line-height:20px;background-position:-350px -180px}
+table .linkSample:before {width:20px;height:20px;line-height:20px;background-position:-170px -160px}
+table .linkDown:before {width:20px;height:20px;line-height:20px;background-position:-200px -160px}
+.icoWrite {display:inline-block;padding:17px 61px 17px 20px;color:#fff;font-size:15px;border-bottom:1px solid #434f67;background:#616f89;position:relative;}
+.icoWrite span {display:block;position:absolute;right:0;top:0;width:47px;height:100%;background-color:#4c5a74}
+.icoWrite span:before {content:'';display:block;width:18px;height:18px;margin:13px auto;background:url('../images/sprite/ico_sprite.png') no-repeat -360px -160px;}
+.icoPhone {width:27px;height:31px;background-position:-350px -210px;margin-right:5px;position:relative;top:5px;}
 
 
+/* 박스 */
+.boxCont {border:1px solid #e1e1e1;padding:15px 20px;width:148px;font-size:12px;color:#717171;}
+.boxCont .tit {font-weight:800;font-size:18px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #e1e1e1;color:#424242;}
 
+.boxSearch {background:#f3f5f6;padding:25px 0;text-align:center;}
+.boxSearch .inner {display:inline-block;overflow:hidden;}
 
+ul.boxSelect {position:relative;border:1px solid #e1e1e1;display:inline-block;}
+ul.boxSelect li {border-top:1px solid #e1e1e1}
+ul.boxSelect li a {display:block;padding:7px 48px 7px 12px;}
+ul.boxSelect li:first-child {border-top:none;padding-right:4;}
+ul.boxSelect li:first-child a:after {content:'';display:block;position:absolute;right:36px;top:0;width:36px;border-right:1px solid #e1e1e1;height:30px;}
 
 
 /* 컬러셋 */

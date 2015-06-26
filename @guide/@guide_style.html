@@ -18,6 +18,7 @@ var gVar, lVar, lsVar;
 	h1.guide {font-weight:800;font-size:24px;margin-bottom:20px;}
 	#W-front {padding:15px;}
 	section {padding-bottom:30px;margin-bottom:30px;border-bottom:1px dotted #111}
+	dl,p {margin-bottom:15px;}
 	.font span {display:block;margin-top:10px;}
 	.colorBox {overflow:hidden;}
 	.colorBox li span {display:inline-block;width:50px;height:50px;margin-left:10px;line-height:50px;vertical-align: middle}
@@ -36,9 +37,9 @@ var gVar, lVar, lsVar;
 		<p class="font">폰트 굵기는 font-weight: 는 <span style="font-weight:200">울트라라이트:200</span> <span style="font-weight:300">라이트 :300</span> <span style="font-weight:400">기본 400</span> <span style="font-weight:800">굵게는 800</span></p>
 		<br/>
 		<br/>
-		<h1 class="tit">상위 1뎁스 타이틀h1.tit</h1>
-		<h2 class="tit">페이지메인 타이틀 h2.tit</h2>
-		<h3 class="tit2">서브타이틀 .tit2</h3>
+		<h1 class="cTit">상위 1뎁스 타이틀h1.tit</h1>
+		<h2 class="cTit">페이지메인 타이틀 h2.tit</h2>
+		<h3 class="cTit2">서브타이틀 .tit2</h3>
 		<br/>
 		<br/>
 		<ul class="colorBox">
@@ -78,8 +79,6 @@ var gVar, lVar, lsVar;
 
 	<section>
 		<h1 class="guide">ICON</h1>
-		<p style="margin-top:30px;">아이콘은 앞쪽 형태에 아이콘이 있는경우는 가상클래스로사용이되며 뒤쪽에 붙는 형태만 따로 태그를 삽입하여 구현한다.</p>
-		<p style="margin-top:10px;margin-bottom:10px"><strong>아이콘이 컨텐츠 앞쪽에 있는경우</strong></p>
 		<p class="cRed icoRedWaring">경고 아이콘</p>
 		<dl class="caution">
 			<dt>정의문서 타이틀</dt>
@@ -89,8 +88,55 @@ var gVar, lVar, lsVar;
 			<dt>정의문서 타이틀</dt>
 			<dd>설명문구 컨텐츠 내용 dl 형태로만 구현가능</dd>
 		</dl>
-		<p class="icoRepley">[답변]인정시기와 혜택에 대하여 질문들답변 글 <span class="spriteSheet noTxt icoLock">비밀글</span></p>
+		<a href="#" class="icoRepley">[답변]인정시기와 혜택에 대하여 질문들답변 글 <span class="spriteSheet noTxt icoLock">비밀글</span></a>
+
+		<p style="margin:30px 0 15px;"><strong>테이블내에 링크버튼</strong></p>
+		<table>
+			<tr>
+				<td>
+					<a href="#none" class="linkNote">서식보기</a>
+					<a href="#none" class="linkSample">샘플보기</a>
+					<a href="#none" class="linkDown">다운로드</a>
+				</td>
+			</tr>
+		</table>
+
+		<p style="margin:30px 0 15px;"><strong>컨텐츠 링크버튼</strong></p>
+		<a href="#none" class="linkNote">서식보기</a>
+		<a href="#none" class="linkSample">샘플보기</a>
+		<a href="#none" class="linkDown">다운로드</a>
+
+		<br/>
+		<br/>
+		<p class="icoWrite">변경신고 작성요령 <span></span></p>
+		<br/>
+		<br/>
+		<div class="boxCont">
+			<p class="tit"><span class="spriteSheet icoPhone"></span>원격지원서비스</p>
+			<p>프로그램오류시 전화주시면 상담원이 원격으로 접속하여 도와드립니다.</p>
+		</div>
 	</section>
+	<section>
+		<h1 class="guide">SEARCH BOX</h1>
+		<div class="boxSearch">
+			<form action="">
+				<fieldset>
+					<legend></legend>
+					<div class="boxSearch">
+						<div class="inner">
+							<p class="tit">연구 총괄현황</p>
+							<ul class="boxSelect">
+								<li><a href="#none" data-role="0">2015년</a></li>
+								<li><a href="#none" data-role="0">2016년</a></li>
+								<li><a href="#none" data-role="0">2017년</a></li>
+							</ul>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
 
 </div>
 </body>
