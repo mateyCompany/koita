@@ -23,6 +23,7 @@ var gVar, lVar, lsVar;
 	.colorBox li span {display:inline-block;width:50px;height:50px;margin-left:10px;line-height:50px;vertical-align: middle}
 	.colorBox li {float:left;margin-right:10px;}
 	.group:after{content:"";display:block;clear:both;}
+	.sMessage li{margin-bottom:5px;color:#ff5134;}
 </style>
 </head>
 <body>
@@ -41,13 +42,7 @@ var gVar, lVar, lsVar;
 			</div>
 			<div class="floatR group">
 				<div class="listEaSearch group">
-					<ul class="floatL">
-						<li><a href="#this">리스트 개수</a></li>
-						<!-- <li><a href="#this">50개</a></li>
-						<li><a href="#this">30개</a></li>
-						<li><a href="#this">10개</a></li> -->
-					</ul>
-					<a href="" class="eaBtn floatR">&nbsp;</a>
+					검색부분 들어갈 곳
 				</div>
 			</div>
 		</div>
@@ -55,47 +50,307 @@ var gVar, lVar, lsVar;
 
 		<!-- 시작: 리스트형 테이블 -->
 		<table class="listTable">
-			<caption>리스트 테이블</caption>
-			<colgroup>
-				<col width="74px" />
-				<col width="*" />
-				<col width="128px" />
-				<col width="95px" />
-				<col width="88px" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th scope="col">순번</th>
-					<th scope="col">제목</th>
-					<th scope="col">글쓴이</th>
-					<th scope="col">날짜</th>
-					<th scope="col">조회수</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="noti">
-					<td>공지</td>
-					<td class="left"><a href="#this">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
-					<td>관리자</td>
-					<td>2015.06.17</td>
-					<td>24</td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td class="left"><a href="#this">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
-					<td>관리자</td>
-					<td>2015.06.17</td>
-					<td>7</td>
-				</tr>
-			</tbody>
+		<caption>리스트 테이블</caption>
+		<colgroup>
+			<col width="74px" />
+			<col width="*" />
+			<col width="128px" />
+			<col width="95px" />
+			<col width="88px" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">순번</th>
+				<th scope="col">제목</th>
+				<th scope="col">글쓴이</th>
+				<th scope="col">날짜</th>
+				<th scope="col">조회수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="5" class="listNone">작성된 글이 없습니다.</td>
+			</tr>
+			<!-- 시작: 반복구간 -->
+			<!-- tr의 class="noti" 는 공지일 때만 사용됩니다. -->
+			<tr class="noti">
+				<td>공지</td>
+				<td class="left"><a href="#this">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
+				<td>관리자</td>
+				<td>2015.06.17</td>
+				<td>24</td>
+			</tr>
+			<!-- 끝: 반복구간 -->
+			<tr>
+				<td>10</td>
+				<td class="left"><a href="#this">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
+				<td>관리자</td>
+				<td>2015.06.17</td>
+				<td>7</td>
+			</tr>
+		</tbody>
 		</table>
 		<!-- 끝: 리스트형 테이블 -->
 	</section>
 	<section>
+		<!-- 시작: 페이지 넘버 -->
+			<div class="pageNumBox">
+				<a href="" class="icoFront" title="처음 페이지">&nbsp;</a>
+				<a href="" class="icoPrev" title="이전 페이지">&nbsp;</a>
+				<span class="numBox">
+					<a href="" class="on">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+				</span>
+				<a href="" class="icoNext" title="다음 페이지">&nbsp;</a>
+				<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
+			</div>
+		<!-- 끝: 페이지 넘버 -->
+	</section>
+
+	<section>
 		<h1 class="tit">테이블</h1>
 		<h2 class="tit">뷰 형식</h2>
+
+		<!-- 시작: 뷰형식 테이블 -->
+		<table class="viewTable">
+		<caption>뷰 테이블</caption>
+		<tbody>
+			<tr class="title">
+				<td><strong>연구소/전담부서 인정취소 공고[KOITA-15-0040]</strong></td>
+			</tr>
+			<tr class="stick">
+				<td>
+					<span>관리자</span>
+					<span>2015.06.17</span>
+					<span>조회수 170</span>
+				</td>
+			</tr>
+			<tr class="content">
+				<td>
+					내용
+				</td>
+			</tr>
+			<tr class="stick file">
+				<td>
+					<span class="floatL">첨부파일</span>
+					<div class="floatL">
+						<!-- 시작: 반복영역
+							파일이 하나 이상일때 해당부분을 반복시키면 됩니다.	
+						 -->
+						<span><a href="#this" class="icoMiniDown">기업부설연구소.hwp</a></span>
+						<!-- 끝: 반복영역 -->
+					</div>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+		<!-- 끝: 뷰형식 테이블 -->
+		<section>
+			<!-- 시작: 리스트 버튼 -->
+			<ul class="sMessage">
+				<li>1) .listBtn은 상하 간격을 주기 위한 Class</li>
+				<li>2) .alignLeft, ..Right, ..Center는 버튼의 위치 입니다.</li>
+			</ul>
+
+			<div class="listBtn alignLeft">
+				<a href="#none" class="btn fluidGray"><span>목록</span></a>
+				<button type="button" class="btn fluidBlue"><span>유동형은 span 태그 필수</span></button>
+			</div>
+
+			<div class="listBtn alignRight">
+				<button type="button" class="btn fluidBlue"><span>유동형은 span 태그 필수</span></button>
+				<a href="#none" class="btn fluidGray"><span>목록</span></a>
+			</div>
+
+			<div class="listBtn alignCenter">
+				<a href="#none" class="btn fluidGray"><span>목록</span></a>
+				<button type="button" class="btn fluidBlue"><span>유동형은 span 태그 필수</span></button>
+			</div>
+			<!-- 끝: 리스트 버튼 -->
+		</section>
+		<!-- 시작: 이전글 다음글 -->
+		<table class="prevNextTable">
+		<tdody>
+			<tr>
+				<th>&lt;<strong>이전글</strong></th>
+				<td class="title"><a href="#this">기업부설연구소와 연구개발전담부서 신고요령</a></td>
+				<td class="date">2015.06.18</td>
+			</tr>
+			<tr>
+				<th>&lt;<strong>다음글</strong></th>
+				<td class="title"><a href="#this">미래부, 기업부설연구소 설립 인정기준 크게 완화</a></td>
+				<td class="date">2015.06.28</td>
+			</tr>
+		</tdody>
+		</table>
+		<!-- 끝: 이전글 다음글 -->
+	</section>
+	<section>
+		<h1 class="tit">테이블</h1>
+		<h2 class="tit">데이터형 테이블</h2>
+		
+		<ul class="sMessage">
+			<li>기본테이블 입니다.</li>
+		</ul>
+		<table class="dataTable">
+			<caption>데이터 테이블</caption>
+			<colgroup>
+				<col width="" />
+				<col width="" />
+				<col width="" />
+				<col width="" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">구분</th>
+					<th scope="col">구분</th>
+					<th scope="col">구분</th>
+					<th scope="col">구분</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th scope="row">합계</th>
+					<td>합계</td>
+					<td>합계</td>
+					<td>합계</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<ul class="sMessage">
+			<li>.simple 추가 테이블은  th가 없는 단순 테이블에 사용합니다.</li>
+		</ul>
+		<table class="dataTable simple">
+			<caption>데이터 테이블</caption>
+			<colgroup>
+				<col width="" />
+				<col width="" />
+				<col width="" />
+				<col width="" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" colspan="3">구분</th>
+					<th scope="col">신고요건</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>합계</td>
+					<td>합계</td>
+					<td>합계</td>
+					<td>합계</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>내용</td>
+					<td rowspan="3">내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<ul class="sMessage">
+			<li>.thWhite 추가 테이블은 th의 백그라운드가 흰색인 테이블 입니다.</li>
+		</ul>
+		<table class="dataTable thWhite">
+			<caption>데이터 테이블</caption>
+			<colgroup>
+				<col width="" />
+				<col width="" />
+				<col width="" />
+				<col width="" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" colspan="3">구분</th>
+					<th scope="col">신고요건</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th scope="row">합계</th>
+					<td>합계</td>
+					<td>합계</td>
+					<td>합계</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row">내용</th>
+					<td>내용</td>
+					<td>내용</td>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<ul class="sMessage">
+			<li>복잡한 테이블 - 사실 기본테이블과 같음 ^^</li>
+		</ul>
+		<table class="dataTable">
+			<caption>데이터 테이블</caption>
+			<colgroup>
+				<col width="" />
+				<col width="" />
+				<col width="" />
+				<col width="" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" colspan="3">구분</th>
+					<th scope="col">신고요건</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th scope="row">합계</th>
+					<td>합계</td>
+					<td>합계</td>
+					<td>합계</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row" rowspan="3">내용</th>
+					<td>내용</td>
+					<td rowspan="3">내용</td>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<td>내용</td>
+					<td rowspan="2">내용</td>
+				</tr>
+				<tr>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
 	</section>
 </div>
 </body>
 </html>
-
