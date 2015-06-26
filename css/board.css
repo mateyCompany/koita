@@ -19,6 +19,6 @@
 .listTable tbody tr th,
 .listTable tbody tr td{padding:17px 0 18px 0;text-align:center;border-bottom:1px solid #e1e1e1;}
 .listTable tbody tr.noti th,
-.listTable tbody tr.noti td{font-weight:bold;}
-.listTable tbody tr th.left,
+.listTable tbody tr.noti td{font-weight:bold;} 
+.listTable tbody tr th.left, 
 .listTable tbody tr td.left{text-align:left;padding-left:20px;}
