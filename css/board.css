@@ -4,9 +4,23 @@
 .floatL{float:left;}
 .floatR{float:right;}
 
+/* 페이지 넘버링 */
+.pageNumBox{text-align:center;}
+.icoFront{background:url(../images/sprite/ico_sprite.png) -270px -160px no-repeat;}
+.icoPrev{background:url(../images/sprite/ico_sprite.png) -130px -220px no-repeat;}
+.icoNext{background:url(../images/sprite/ico_sprite.png) -60px -210px no-repeat;}
+.icoEnd{background:url(../images/sprite/ico_sprite.png) -230px -160px no-repeat;}
+.icoFront,
+.icoPrev,
+.icoNext,
+.icoEnd,
+.pageNumBox span a{border:1px solid #ebebeb;display:inline-block;width:32px;height:17px;text-align:center;padding:8px 0;background-color:#fff;}
+.pageNumBox span a.on{background-color:#f6f8f9;}
+.pageNumBox .numBox{display:inline-block;margin:0 12px;}
+
+/* 리스트 테이블 상단 */
 .tableTopBox{margin-bottom:10px;}
 .tableTopBox .total{margin:10px 0 6px 0;display:inline-block;}
-
 .listEaSearch ul,
 .listEaSearch a.eaBtn{border:1px solid #e1e1e1;}
 .listEaSearch ul{width:92px;}
@@ -14,11 +28,74 @@
 .listEaSearch a{display:block;}
 .listEaSearch a.eaBtn{width:35px;height:30px;border-left:none;}
 
+/* 리스트 형식 테이블 */
 .listTable{width:730px;border-top:2px solid #b3bcc0;margin-bottom:30px;}
 .listTable thead tr th{padding:14px 0 14px 0;font-weight:normal;background:#f3f5f6;}
 .listTable tbody tr th,
 .listTable tbody tr td{padding:17px 0 18px 0;text-align:center;border-bottom:1px solid #e1e1e1;}
+.listTable tbody tr td.listNone{text-align:center;}
 .listTable tbody tr.noti th,
 .listTable tbody tr.noti td{font-weight:bold;} 
-.listTable tbody tr th.left, 
+.listTable tbody tr th.left,
 .listTable tbody tr td.left{text-align:left;padding-left:20px;}
+
+/* 리스트 버튼 */
+.listBtn{margin:20px 0 80px 0;}
+.alignLeft{text-align:left;}
+.alignRight{text-align:right;}
+.alignCenter{text-align:center;}
+.listBtn.alignLeft button,
+.listBtn.alignLeft a{margin-right:5px;}
+.listBtn.alignRight button,
+.listBtn.alignRight a,
+.listBtn.alignCenter button,
+.listBtn.alignCenter a{margin-left:5px;}
+
+/* 뷰 형식 테이블 */
+.viewTable{width:730px;border-top:2px solid #b3bcc0;margin-bottom:20px;}
+.viewTable span,
+.viewTable strong{display:inline-block;}
+.viewTable tr td{padding:14px 0;line-height:18px;}
+.viewTable tr td{border-bottom:1px solid #e1e1e1;padding-left:20px;padding-right:20px;}
+.viewTable tr.stick td span,
+.viewTable tr.stick td strong,
+.viewTable tr.stick.file td span,
+.viewTable tr.stick.file td strong{margin-left:25px;padding-left:25px;border-left:1px solid #e5e5e5;}
+.viewTable tr.stick.file td span{display:block;}
+.viewTable tr.stick td>strong:first-child,
+.viewTable tr.stick td>span:first-child{border:none;margin-left:0;padding-left:0;}
+.viewTable tr.title td{font-size:16px;padding-top:12px;padding-bottom:13px;}
+.viewTable tr.content td{padding-top:27px;padding-bottom:117px;}
+
+.icoMiniDown:after{content:"";display:inline-block;vertical-align:middle;margin-left:10px;width:13px;height:12px;background:url(../images/sprite/ico_sprite.png) -340px -160px no-repeat}
+
+/* 이전글 다음글 */
+.prevNextTable{width:730px;border-top:2px solid #b3bcc0;}
+.prevNextTable th,
+.prevNextTable td{border-bottom:1px solid #e1e1e1;padding:14px 0;}
+.prevNextTable th,
+.prevNextTable .date{width:133px;text-align:center;}
+.prevNextTable th{background:#f3f5f6;}
+.prevNextTable .title{padding-left:20px;}
+
+/* 데이터형 테이블 */
+.dataTable{width:730px;margin-bottom:25px;}
+.dataTable thead tr th{color:#fff;background:#8595af;padding:6px 0 7px 0;}
+.dataTable tbody tr th,
+.dataTable tbody tr td,
+.dataTable tfoot tr th,
+.dataTable tfoot tr td{border-bottom:1px solid #e1e1e1;text-align:center;padding:12px 0;}
+.dataTable tbody tr th.left,
+.dataTable tbody tr td.left,
+.dataTable tfoot tr th.left,
+.dataTable tfoot tr td.left{text-align:left;padding-left:20px;}
+.dataTable tfoot tr th,
+.dataTable tbody tr th{border-right:1px solid #e1e1e1;background:#f9f9f9;}
+.dataTable tfoot tr td,
+.dataTable tbody tr td{border-left:1px solid #e1e1e1;}
+/* simple */
+.dataTable.simple tbody tr td:first-child,
+.dataTable.simple tfoot tr td:first-child{border-left:none;}
+/* thWhite */
+.dataTable.thWhite tfoot tr th,
+.dataTable.thWhite tbody tr th{background:#fff;}
