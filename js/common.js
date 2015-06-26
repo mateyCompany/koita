@@ -25,8 +25,8 @@ function selecter(tar){
 	var $reset = $tarUL.find('li:first-child a');
 
 	$activeTxt.text($reset.text());
-	$activeTxt.attr('data-role',$reset.attr('data-role'));
-	$selecter.width(tarULWidth-1);
+	$selecter.find('input:hidden').val($reset.attr('data-role'));
+	$selecter.width(tarULWidth);
 
 	$selecter.click(function(){
 		$(this).find('ul').toggleClass('on');
@@ -35,7 +35,7 @@ function selecter(tar){
 		var $active = $(this);
 		var activeData = $active.attr('data-role');
 		$activeTxt.text($active.text());
-		$activeTxt.attr('data-role',activeData);
+		$selecter.find('input:hidden').val(activeData);
 		$tarUL.removeClass('on');
 		return false;
 	});

@@ -38,7 +38,7 @@ a.btnSmall.fluidGray span {margin-top:0;}
 .caution.plus:before {background-position:-100px -220px}
 .icoRepley:before {content:'';display:inline-block;width:36px;height:15px;background:url('../images/sprite/ico_sprite.png') no-repeat -200px -270px;position:relative;top:3px;margin-right:5px;}
 .icoLock {display:inline-block;width:9px;height:13px;background-position:-360px -140px;position:relative;top:2px;}
-.noTxt {text-indent: -100%;white-space: nowrap;}
+.noTxt {text-indent: -100%;white-space: nowrap;font-size:0;}
 .linkNote,.linkSample,.linkDown {text-decoration: underline;font-size:13px;}
 .linkNote:hover,.linkSample:hover,.linkDown:hover {text-decoration:underline;}
 .linkNote:before {content:'';display:inline-block;width:25px;height:25px;background:url('../images/sprite/ico_sprite.png') no-repeat -170px -250px;line-height:25px;vertical-align: middle;margin-right:5px;}
@@ -51,6 +51,7 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 .icoWrite span {display:block;position:absolute;right:0;top:0;width:47px;height:100%;background-color:#4c5a74}
 .icoWrite span:before {content:'';display:block;width:18px;height:18px;margin:13px auto;background:url('../images/sprite/ico_sprite.png') no-repeat -360px -160px;}
 .icoPhone {width:27px;height:31px;background-position:-350px -210px;margin-right:5px;position:relative;top:5px;}
+.icoSearch {width:31px;height:31px;background-position:0 -300px}
 
 
 /* 박스 */
@@ -59,14 +60,19 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 
 .boxSearch {background:#f3f5f6;padding:25px 0;text-align:center;}
 .boxSearch .inner {display:inline-block;}
-.boxSearch .tit {font-weight:800;color:#000;display:inline-block;margin-right:5px;}
+.boxSearch .tit {font-weight:800;color:#000;margin-right:5px;display:inline-block;}
+.boxSearch .left {float:left;text-align:right;margin-right:10px;}
+.boxSearch .left p {line-height:30px;display:block;}
+.boxSearch .right {float:left;text-align:left;}
+.boxSearch .right .line {margin-bottom:15px;display:block;}
+
 
 
 .boxSelect {position:relative;border:1px solid #e1e1e1;display:inline-block;}
 .boxSelect > a {display:block;background:#fff;padding:7px 48px 7px 12px;text-align:left;}
 .boxSelect > a:before {content:'';display:block;position:absolute;right:0px;top:0;width:36px;border-left:1px solid #e1e1e1;height:30px;background:url('../images/sprite/ico_sprite.png') no-repeat -240px -300px}
 .boxSelect ul {position:absolute;left:-1px;top:30px;height:30px;background:#fff;border-bottom:1px solid #e1e1e1;border-top:1px solid #e1e1e1;display:none;}
-.boxSelect ul.on {display:block;}
+.boxSelect ul.on {display:block;z-index:10}
 .boxSelect li {border:1px solid #e1e1e1;background:#fff;text-align:left;border-top:none;padding:7px 50px 7px 12px;}
 .boxSelect li a {display:block;white-space: nowrap;width:100%;height:100%;}
 .boxSelect li:first-child {border-top:none;}

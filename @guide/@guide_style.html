@@ -122,27 +122,65 @@ var gVar, lVar, lsVar;
 			<form action="">
 				<fieldset>
 					<legend></legend>
-					<div class="boxSearch">
-						<div class="inner">
-							<p class="tit">연구 총괄현황</p>
-								<div class="boxSelect selecter1">
-									<a href="#none" data-role="0" class="activeTxt"></a>
-									<ul>
-										<li><a href="#none" data-role="0">2015년</a></li>
-										<li><a href="#none" data-role="1">2016년</a></li>
-										<li><a href="#none" data-role="2">2017년</a></li>
-									</ul>
-								</div>
-
-							<div class="boxSelect selecter2">
-								<a href="#none" data-role="0" class="activeTxt"></a>
+					<div class="inner">
+						<p class="tit">연구 총괄현황</p>
+							<div class="boxSelect selecter1">
+								<a href="#none"  class="activeTxt"></a>
 								<ul>
-									<li><a href="#none" data-role="0">으아아 시밤</a></li>
-									<li><a href="#none" data-role="0">2015ㅁㄴㅇㄹㄴㅇㄹㄴㅁㅇㄹㄴㅁㅇㄹ년</a></li>
+									<li><a href="#none" data-role="0">15년</a></li>
 									<li><a href="#none" data-role="1">2016년</a></li>
 									<li><a href="#none" data-role="2">2017년</a></li>
 								</ul>
+								<input type="hidden" name="" value="0" id="selecter1"/>
 							</div>
+
+						<div class="boxSelect selecter2">
+							<a href="#none"  class="activeTxt"></a>
+							<ul>
+								<li><a href="#none" data-role="0">으아아 시밤</a></li>
+								<li><a href="#none" data-role="1">2016년</a></li>
+								<li><a href="#none" data-role="3">2017년</a></li>
+							</ul>
+							<input type="hidden" name="" value="0" id="selecter2"/>
+						</div>
+						<button type="submit" class="spriteSheet noTxt icoSearch">검색</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="boxSearch" style="margin-top:30px;">
+			<form action="">
+				<fieldset>
+					<legend></legend>
+					<div class="inner">
+						<div class="left">
+							<p class="tit">기업유형</p>
+							<p class="tit">기업명</p>
+						</div>
+						<div class="right">
+							<div class="line">
+								<div class="boxSelect selecter3">
+									<a href="#none"  class="activeTxt"></a>
+									<ul>
+										<li><a href="#none" data-role="0">15년</a></li>
+										<li><a href="#none" data-role="1">2016년</a></li>
+										<li><a href="#none" data-role="2">2017년</a></li>
+									</ul>
+									<input type="hidden" name="" value="0" id="selecter3"/>
+								</div>
+							</div>
+
+							<div class="boxSelect selecter4">
+								<a href="#none"  class="activeTxt"></a>
+								<ul>
+									<li><a href="#none" data-role="0">으아아 시밤</a></li>
+									<li><a href="#none" data-role="1">2016년</a></li>
+									<li><a href="#none" data-role="3">2017년</a></li>
+								</ul>
+								<input type="hidden" name="" value="0" id="selecter4"/>
+							</div>
+							<button type="submit" class="spriteSheet noTxt icoSearch">검색</button>
 						</div>
 					</div>
 				</fieldset>
@@ -156,6 +194,8 @@ var gVar, lVar, lsVar;
 <script>
 	selecter('.selecter1');
 	selecter('.selecter2');
+	selecter('.selecter3');
+	selecter('.selecter4');
 
 
 </script>
