@@ -36,6 +36,12 @@ a.btnSmall.fluidGray span {margin-top:0;}
 .caution dt {color:#323232;font-weight:800}
 .caution dd {color:#717171;}
 .caution.plus:before {background-position:-100px -220px}
+.icoRepley:before {content:'';display:inline-block;width:36px;height:15px;}
+.noTxt {}
+
+
+
+
 
 
 /* 컬러셋 */
