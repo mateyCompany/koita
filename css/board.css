@@ -1,10 +1,24 @@
 @charset 'utf-8';
 
-/* board-list */
+/* 공통 */
 .floatL{float:left;}
 .floatR{float:right;}
-.tableTopBox{margin-bottom:10px;}
 
-.listEaSearch{width:130px;border:1px solid #e1e1e1;}
-.listEaSearch li{}
-.listEaSearch li a{display:block;padding:8px 0 7px 12px;}
+.tableTopBox{margin-bottom:10px;}
+.tableTopBox .total{margin:10px 0 6px 0;display:inline-block;}
+
+.listEaSearch ul,
+.listEaSearch a.eaBtn{border:1px solid #e1e1e1;}
+.listEaSearch ul{width:92px;}
+.listEaSearch li a{padding:8px 0 7px 12px;font-size:13px;color:#717171;}
+.listEaSearch a{display:block;}
+.listEaSearch a.eaBtn{width:35px;height:30px;border-left:none;}
+
+.listTable{width:730px;border-top:2px solid #b3bcc0;margin-bottom:30px;}
+.listTable thead tr th{padding:14px 0 14px 0;font-weight:normal;background:#f3f5f6;}
+.listTable tbody tr th,
+.listTable tbody tr td{padding:17px 0 18px 0;text-align:center;border-bottom:1px solid #e1e1e1;}
+.listTable tbody tr.noti th,
+.listTable tbody tr.noti td{font-weight:bold;}
+.listTable tbody tr th.left,
+.listTable tbody tr td.left{text-align:left;padding-left:20px;}

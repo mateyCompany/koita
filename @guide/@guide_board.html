@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>테이블 - 코이타 스타일 가이드</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../css/front.css" />
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript">
+</script>
+<script type="text/JavaScript">
+var gVar, lVar, lsVar;
+</script>
+<style>
+	h1.guide {font-weight:800;font-size:24px;margin-bottom:20px;}
+	#W-front {padding:15px;}
+	section {padding-bottom:30px;margin-bottom:30px;border-bottom:1px dotted #111}
+	.font span {display:block;margin-top:10px;}
+	.colorBox {overflow:hidden;}
+	.colorBox li span {display:inline-block;width:50px;height:50px;margin-left:10px;line-height:50px;vertical-align: middle}
+	.colorBox li {float:left;margin-right:10px;}
+	.group:after{content:"";display:block;clear:both;}
+</style>
+</head>
+<body>
+<div id="W-front">
+	<section style="padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #ccc">
+		<h1 style="font-size:56px">프로젝트명 : <strong>KOITA</strong></h1>
+		<h2 style="font-size:91px;font-weight:200">DESIGN STYLE GUIDE <span style="color:red;font-size:30px">기본 컬러셋 및 스타일</span></h2>
+	</section>
+	<section>
+		<h1 class="tit">테이블</h1>
+		<h2 class="tit">리스트 형식</h2>
+		<!-- 시작: 총게시물 검색 -->
+		<div class="tableTopBox group">
+			<div class="floatL">
+				<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
+			</div>
+			<div class="floatR group">
+				<div class="listEaSearch group">
+					<ul class="floatL">
+						<li><a href="#this">리스트 개수</a></li>
+						<!-- <li><a href="#this">50개</a></li>
+						<li><a href="#this">30개</a></li>
+						<li><a href="#this">10개</a></li> -->
+					</ul>
+					<a href="" class="eaBtn floatR">&nbsp;</a>
+				</div>
+			</div>
+		</div>
+		<!-- 끝: 총게시물 검색 -->
+
+		<!-- 시작: 리스트형 테이블 -->
+		<table class="listTable">
+			<caption>리스트 테이블</caption>
+			<colgroup>
+				<col width="74px" />
+				<col width="*" />
+				<col width="128px" />
+				<col width="95px" />
+				<col width="88px" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">순번</th>
+					<th scope="col">제목</th>
+					<th scope="col">글쓴이</th>
+					<th scope="col">날짜</th>
+					<th scope="col">조회수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="noti">
+					<td>공지</td>
+					<td class="left"><a href="#this">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
+					<td>관리자</td>
+					<td>2015.06.17</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td class="left"><a href="#this">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
+					<td>관리자</td>
+					<td>2015.06.17</td>
+					<td>7</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 끝: 리스트형 테이블 -->
+	</section>
+	<section>
+		<h1 class="tit">테이블</h1>
+		<h2 class="tit">뷰 형식</h2>
+	</section>
+</div>
+</body>
+</html>
+
