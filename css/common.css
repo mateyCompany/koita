@@ -56,7 +56,7 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 
 /* 박스 */
 .boxCont {border:1px solid #e1e1e1;padding:15px 20px;width:148px;font-size:12px;color:#717171;}
-.boxCont .tit {font-weight:800;font-size:18px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #e1e1e1;color:#424242;}
+.boxCont .tit {font-weight:800;font-size:17px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #e1e1e1;color:#424242;}
 
 .boxSearch {background:#f3f5f6;padding:25px 0;text-align:center;}
 .boxSearch .inner {display:inline-block;}
