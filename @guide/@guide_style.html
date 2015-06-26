@@ -125,11 +125,24 @@ var gVar, lVar, lsVar;
 					<div class="boxSearch">
 						<div class="inner">
 							<p class="tit">연구 총괄현황</p>
-							<ul class="boxSelect">
-								<li><a href="#none" data-role="0">2015년</a></li>
-								<li><a href="#none" data-role="0">2016년</a></li>
-								<li><a href="#none" data-role="0">2017년</a></li>
-							</ul>
+								<div class="boxSelect selecter1">
+									<a href="#none" data-role="0" class="activeTxt"></a>
+									<ul>
+										<li><a href="#none" data-role="0">2015년</a></li>
+										<li><a href="#none" data-role="1">2016년</a></li>
+										<li><a href="#none" data-role="2">2017년</a></li>
+									</ul>
+								</div>
+
+							<div class="boxSelect selecter2">
+								<a href="#none" data-role="0" class="activeTxt"></a>
+								<ul>
+									<li><a href="#none" data-role="0">으아아 시밤</a></li>
+									<li><a href="#none" data-role="0">2015ㅁㄴㅇㄹㄴㅇㄹㄴㅁㅇㄹㄴㅁㅇㄹ년</a></li>
+									<li><a href="#none" data-role="1">2016년</a></li>
+									<li><a href="#none" data-role="2">2017년</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</fieldset>
@@ -140,5 +153,11 @@ var gVar, lVar, lsVar;
 
 </div>
 </body>
+<script>
+	selecter('.selecter1');
+	selecter('.selecter2');
+
+
+</script>
 </html>
 

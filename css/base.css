@@ -1,10 +1,12 @@
 @charset 'utf-8';
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 /* Reset */
 body, h1, h2, h3, h4, h5, h6, div, p, span, strong, em, blockquote, pre, address,
 ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, input, select, label, textarea, img, a {margin:0; padding:0; border:0px;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal;}
 
-body {color:#424242;font-size:14px;font-family: 'Nanum Barun Gothic', '돋움', Dotum, tahoma, sans-serif;font-weight:400;}
+body {color:#424242;font-size:14px;font-family: 'Nanum Gothic', '돋움', Dotum, tahoma, sans-serif;font-weight:400;}
 ul, ol {list-style:none;}
 table {table-layout:fixed;width:100%;border-spacing:0; border:0; border-collapse:collapse;}
 img, input, select, textarea, button {border:0; vertical-align:top; color:#666;}
@@ -13,7 +15,7 @@ hr {display:none;}
  
 a {color:#666; text-decoration:none;}
 a:focus, a:hover, a:active {text-decoration:none;}
-textarea {resize:none; border:1px solid #ccc; padding:5px 10px;color:#424242;font-size:14px;font-family: 'Nanum Barun Gothic', '돋움', Dotum, tahoma, sans-serif;}
+textarea {resize:none; border:1px solid #ccc; padding:5px 10px;color:#424242;font-size:14px;font-family: 'Nanum Gothic', '돋움', Dotum, tahoma, sans-serif;}
 
 input[type="text"],
 input[type="password"] {
@@ -24,19 +26,17 @@ input[type="password"] {
 	color:#666;
 	font-size:11px;
 	/* line-height:14px; */
-	font-family:'Nanum Barun Gothic', '돋움', Dotum, tahoma, sans-serif;
+	font-family:'Nanum Gothic', '돋움', Dotum, tahoma, sans-serif;
 	
 }
 select {
-	height:21px;
-	padding:1px 2px 2px;
-	border:1px solid #ccc;
-	color:#666;
-	font-size:11px;
+	height:35px;
+	padding:0 2px 0 5px;
+	border:1px solid #e1e1e1;
 	line-height:30px;
 	*line-height:35px;
 	font-size:12px;
-	font-family:'Nanum Barun Gothic', '돋움', Dotum, tahoma, sans-serif
+	font-family:'Nanum Gothic', '돋움', Dotum, tahoma, sans-serif
 }
 /* Base */
 input.button, input.submit , input.image, button {cursor:pointer;}

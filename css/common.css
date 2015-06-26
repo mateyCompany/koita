@@ -58,13 +58,19 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 .boxCont .tit {font-weight:800;font-size:18px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #e1e1e1;color:#424242;}
 
 .boxSearch {background:#f3f5f6;padding:25px 0;text-align:center;}
-.boxSearch .inner {display:inline-block;overflow:hidden;}
+.boxSearch .inner {display:inline-block;}
+.boxSearch .tit {font-weight:800;color:#000;display:inline-block;margin-right:5px;}
 
-ul.boxSelect {position:relative;border:1px solid #e1e1e1;display:inline-block;}
-ul.boxSelect li {border-top:1px solid #e1e1e1}
-ul.boxSelect li a {display:block;padding:7px 48px 7px 12px;}
-ul.boxSelect li:first-child {border-top:none;padding-right:4;}
-ul.boxSelect li:first-child a:after {content:'';display:block;position:absolute;right:36px;top:0;width:36px;border-right:1px solid #e1e1e1;height:30px;}
+
+.boxSelect {position:relative;border:1px solid #e1e1e1;display:inline-block;}
+.boxSelect > a {display:block;background:#fff;padding:7px 48px 7px 12px;text-align:left;}
+.boxSelect > a:before {content:'';display:block;position:absolute;right:0px;top:0;width:36px;border-left:1px solid #e1e1e1;height:30px;background:url('../images/sprite/ico_sprite.png') no-repeat -240px -300px}
+.boxSelect ul {position:absolute;left:-1px;top:30px;height:30px;background:#fff;border-bottom:1px solid #e1e1e1;border-top:1px solid #e1e1e1;display:none;}
+.boxSelect ul.on {display:block;}
+.boxSelect li {border:1px solid #e1e1e1;background:#fff;text-align:left;border-top:none;padding:7px 50px 7px 12px;}
+.boxSelect li a {display:block;white-space: nowrap;width:100%;height:100%;}
+.boxSelect li:first-child {border-top:none;}
+
 
 
 /* 컬러셋 */
