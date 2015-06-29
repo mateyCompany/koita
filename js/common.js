@@ -20,7 +20,6 @@ function selecter(tar){
 	var $tarUL = $selecter.find('ul');
 	var $activeTar = $tarUL.find('a');
 	var $activeTxt = $selecter.find('.activeTxt');
-	var tarWidth = $selecter.width();
 	var tarULWidth = $tarUL.width();
 	var $reset = $tarUL.find('li:first-child a');
 
@@ -44,6 +43,15 @@ function selecter(tar){
 		if($tarUL.hasClass('on')){
 			$tarUL.removeClass('on');
 		}
+	});
+
+};
+
+function tabSize(target){
+	var $tar = $(target).find('li');
+	var tarSize = 100/$tar.length;
+	$tar.each(function(idx){
+		$(this).css('width',tarSize+'%');
 	});
 
 };
