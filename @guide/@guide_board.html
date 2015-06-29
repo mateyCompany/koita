@@ -20,7 +20,7 @@ var gVar, lVar, lsVar;
 	section {padding-bottom:30px;margin-bottom:30px;border-bottom:1px dotted #111}
 	.font span {display:block;margin-top:10px;}
 	.colorBox {overflow:hidden;}
-	.colorBox li span {display:inline-block;width:50px;height:50px;margin-left:10px;line-height:50px;vertical-align: middle}
+	.colorBox li span {display:inline-block;width:50px;height:50px;margin-left:10px;line-height:50px;vertical-align:middle;}
 	.colorBox li {float:left;margin-right:10px;}
 	.group:after{content:"";display:block;clear:both;}
 	.sMessage li{margin-bottom:5px;color:#ff5134;}
@@ -33,16 +33,21 @@ var gVar, lVar, lsVar;
 		<h2 style="font-size:91px;font-weight:200">DESIGN STYLE GUIDE <span style="color:red;font-size:30px">테이블 관련</span></h2>
 	</section>
 	<section>
-		<h1 class="tit">테이블</h1>
-		<h2 class="tit">리스트 형식</h2>
+		<h1 class="guide">리스트 테이블</h1>
 		<!-- 시작: 총게시물 검색 -->
 		<div class="tableTopBox group">
 			<div class="floatL">
 				<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
 			</div>
 			<div class="floatR group">
-				<div class="listEaSearch group">
-					검색부분 들어갈 곳
+				<div class="boxSelect selecter3" style="width: 138px;">
+					<a href="#none" class="activeTxt">리스트 개수</a>
+					<ul>
+						<li><a href="#none" data-role="0">10개</a></li>
+						<li><a href="#none" data-role="1">30개</a></li>
+						<li><a href="#none" data-role="2">50개</a></li>
+					</ul>
+					<input type="hidden" name="" value="0" id="selecter3">
 				</div>
 			</div>
 		</div>
@@ -83,7 +88,9 @@ var gVar, lVar, lsVar;
 			<!-- 끝: 반복구간 -->
 			<tr>
 				<td>10</td>
-				<td class="left"><a href="#this">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
+				<td class="left">
+					<a href="#" class="icoRepley">[답변]인정시기와 혜택에 대하여 질문들답변 글 <span class="spriteSheet noTxt icoLock">비밀글</span></a>
+				</td>
 				<td>관리자</td>
 				<td>2015.06.17</td>
 				<td>7</td>
@@ -111,8 +118,7 @@ var gVar, lVar, lsVar;
 	</section>
 
 	<section>
-		<h1 class="tit">테이블</h1>
-		<h2 class="tit">뷰 형식</h2>
+		<h1 class="guide">뷰 테이블</h1>
 
 		<!-- 시작: 뷰형식 테이블 -->
 		<table class="viewTable">
@@ -189,8 +195,7 @@ var gVar, lVar, lsVar;
 		<!-- 끝: 이전글 다음글 -->
 	</section>
 	<section>
-		<h1 class="tit">테이블</h1>
-		<h2 class="tit">데이터형 테이블</h2>
+		<h1 class="guide">데이터 테이블</h1>
 		
 		<ul class="sMessage">
 			<li>기본테이블 입니다.</li>
@@ -230,7 +235,7 @@ var gVar, lVar, lsVar;
 		</table>
 
 		<ul class="sMessage">
-			<li>.simple 추가 테이블은  th가 없는 단순 테이블에 사용합니다.</li>
+			<li>th가 없는 테이블에 .simple 을 추가해 줍니다.</li>
 		</ul>
 		<table class="dataTable simple">
 			<caption>데이터 테이블</caption>
@@ -275,7 +280,7 @@ var gVar, lVar, lsVar;
 		</table>
 		
 		<ul class="sMessage">
-			<li>.thWhite 추가 테이블은 th의 백그라운드가 흰색인 테이블 입니다.</li>
+			<li>th의 백그라운드가 흰색이어야 할때 .thWhite 를 추가해 줍니다.</li>
 		</ul>
 		<table class="dataTable thWhite">
 			<caption>데이터 테이블</caption>
@@ -310,7 +315,7 @@ var gVar, lVar, lsVar;
 		</table>
 
 		<ul class="sMessage">
-			<li>복잡한 테이블 - 사실 기본테이블과 같음 ^^</li>
+			<li>복잡한 테이블은 그냥 기본형과 같습니다. 특정 상황에서 틀어지는 경우 말씀해 주세요(태완)</li>
 		</ul>
 		<table class="dataTable">
 			<caption>데이터 테이블</caption>
@@ -353,11 +358,10 @@ var gVar, lVar, lsVar;
 	</section>
 
 	<section>
-		<h1 class="tit">테이블</h1>
-		<h2 class="tit">질문 답변형 dl>dt+dd 형식 코딩</h2>
+		<h1 class="guide">FAQ 테이블</h1>
 
 		<dl class="faqList">
-			<!-- 리스트 반복영역 -->
+			<!-- 시작: 반복영역 -->
 			<dt>
 				<span class="num">10</span>
 				<span class="division">Q</span>
@@ -373,7 +377,8 @@ var gVar, lVar, lsVar;
 					내용
 				</span>
 			</dd>
-			<!-- //리스트 반복영역 -->
+			<!-- 끝: 반복영역 -->
+
 			<dt>
 				<span class="num">10</span>
 				<span class="division">Q</span>
@@ -417,6 +422,12 @@ var gVar, lVar, lsVar;
 		</script>
 	</section>
 	<section>
+	<h1 class="guide">작성 테이블</h1>
+
+	<ul class="sMessage">
+		<li>- th부분이 흰색이어야 할 때 .white 를 추가합니다.</li>
+		<li>- th가 부분적으로 색이 다를때는 .thBg 를 추가합니다.</li>
+	</ul>
 	<table class="writeTable white">
 		<caption>쓰기 테이블</caption>
 		<colgroup>
@@ -429,57 +440,57 @@ var gVar, lVar, lsVar;
 			<tr>
 				<th scope="row" rowspan="14" class="thBg"><strong>기업<br />홍보<br />제품</strong></th>
 				<th scope="row" colspan="2">제품옵션</th>
-				<td class="radio">
-					<div class="boxSelect selecter1">
-						<a href="#none"  class="activeTxt"></a>
+				<td class="radios">
+					<div class="boxSelect selecter3" style="width: 168px;">
+						<a href="#none" class="activeTxt">선택해주세요</a>
 						<ul>
-							<li><a href="#none" data-role="0">15년</a></li>
-							<li><a href="#none" data-role="1">2016년</a></li>
-							<li><a href="#none" data-role="2">2017년</a></li>
+							<li><a href="#none" data-role="0">옵션1</a></li>
+							<li><a href="#none" data-role="1">옵션2</a></li>
+							<li><a href="#none" data-role="2">옵션3</a></li>
 						</ul>
-						<input type="hidden" name="" value="0" id="selecter1"/>
+						<input type="hidden" name="" value="0" id="selecter3">
 					</div>
-					<input type="radio" name="ra02" id="ra02_1" checked="checked" />
-					<label for="ra02_1">공개</label>
-					<input type="radio" name="ra02" id="ra02_2" />
-					<label for="ra02_2">비공개</label>
+					<input type="radio" name="ra01" id="ra01_1" checked="checked" />
+					<label for="ra01_1">공개</label>
+					<input type="radio" name="ra01" id="ra01_2" />
+					<label for="ra01_2">비공개</label>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row" colspan="2">시상 및 인증(장영실상,NET)</th>
 				<td>
-					<input type="text" name="" id="" class="size400_1" />
+					<input type="text" name="" id="" class="size300_1" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row" rowspan="12">제품정보</th>
 				<th scope="row">제품명</th>
 				<td>
-					<input type="text" name="" id="" class="size400_1" />
+					<input type="text" name="" id="" class="size300_1" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">홈페이지주소</th>
 				<td>
-					<input type="text" name="" id="" class="size400_1" />
+					<input type="text" name="" id="" class="size300_1" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">개요</th>
 				<td>
-					<textarea name="" id="" cols="30" rows="10" class="size400_2"></textarea>
+					<textarea name="" id="" cols="30" rows="10" class="size300_1"></textarea>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">용도 및 기능</th>
 				<td>
-					<textarea name="" id="" cols="30" rows="10" class="size400_2"></textarea>
+					<textarea name="" id="" cols="30" rows="10" class="size300_1"></textarea>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">특징 및 성능</th>
 				<td>
-					<textarea name="" id="" cols="30" rows="10" class="size400_2"></textarea>
+					<textarea name="" id="" cols="30" rows="10" class="size300_1"></textarea>
 				</td>
 			</tr>
 			<tr>
@@ -505,35 +516,41 @@ var gVar, lVar, lsVar;
 			<tr>
 				<th scope="row">담당자</th>
 				<td>
-					<input type="text" name="" id="" class="size400_1" />
+					<input type="text" name="" id="" class="size300_1" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">담당자 이메일</th>
 				<td>
-					<input type="text" name="" id="" class="size400_1" />
+					<input type="text" name="" id="" class="size300_1" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">담당자 연락처</th>
 				<td>
-					<input type="text" name="" id="" class="size400_1" />
+					<input type="text" name="" id="" class="size300_1" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">업종</th>
 				<td>
-					<input type="text" name="" id="" class="size300_1" />
+					<input type="text" name="" id="" class="size300_2" />
+					<a href="#none" class="btnSmall fluidGray"><span>업종선택</span></a>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">세부설명자료</th>
 				<td>
 					<input type="file" name="" id="" class="size300_1" />
+					<p class="cGray">※ 브로셔, 설명서, hwp, pdf, word 등</p>
 				</td>
 			</tr>
 		</tbody>
 	</table>
+	<div class="listBtn alignRight">
+		<button type="button" class="btn fluidDarkBlue"><span>저장하기</span></button>
+		<a href="#none" class="btn fluidDarkBlue"><span>저장하기</span></a>
+	</div>
 	</section>
 </div>
 </body>

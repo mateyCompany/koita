@@ -132,11 +132,13 @@
 .writeTable th{border-right:1px solid #e1e1e1;font-weight:normal;background:#f3f5f6;}
 .writeTable th.thBg{background:#f3f5f6;}
 .writeTable td{border-left:1px solid #e1e1e1;padding:10px 20px;}
-.writeTable input[type="text"]{border:1px solid #dcdcdc;border-top:1px solid #b2b2b2;padding:5px;}
+.writeTable input[type="text"]{border:1px solid #dcdcdc;border-top:1px solid #b2b2b2;padding:5px 10px;}
 .writeTable input[type="radio"]{display:inline-block;vertical-align:middle;margin-right:8px;}
 .writeTable .radios label{margin-right:20px;}
-.writeTable .cRed{color:#dc3f0f;margin-top:10px;}
+.writeTable .radios .boxSelect{margin-right:20px;}
+.writeTable .btnSmall{margin-top:3px;}
 .writeTable textarea{overflow-y:scroll;height:80px;}
-.writeTable .size400_1{width:415px;}
-.writeTable .size400_2{width:405px;}
-.writeTable .size300_1{width:335px;}
+.writeTable .size300_1{width:395px;}
+.writeTable .size300_2{width:315px;}
+.writeTable .cRed{color:#dc3f0f;margin-top:10px;}
+.writeTable .cGray{color:#717171;margin-top:10px;}
