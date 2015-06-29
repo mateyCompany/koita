@@ -30,7 +30,7 @@ var gVar, lVar, lsVar;
 <div id="W-front">
 	<section style="padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #ccc">
 		<h1 style="font-size:56px">프로젝트명 : <strong>KOITA</strong></h1>
-		<h2 style="font-size:91px;font-weight:200">DESIGN STYLE GUIDE <span style="color:red;font-size:30px">기본 컬러셋 및 스타일</span></h2>
+		<h2 style="font-size:91px;font-weight:200">DESIGN STYLE GUIDE <span style="color:red;font-size:30px">테이블 관련</span></h2>
 	</section>
 	<section>
 		<h1 class="tit">테이블</h1>
@@ -350,6 +350,190 @@ var gVar, lVar, lsVar;
 				</tr>
 			</tbody>
 		</table>
+	</section>
+
+	<section>
+		<h1 class="tit">테이블</h1>
+		<h2 class="tit">질문 답변형 dl>dt+dd 형식 코딩</h2>
+
+		<dl class="faqList">
+			<!-- 리스트 반복영역 -->
+			<dt>
+				<span class="num">10</span>
+				<span class="division">Q</span>
+				<span class="title"><a href="#this">연구소</a></span>
+				<span class="condition">
+					<a href="#this" class="minus">-</a>
+					<a href="#this" class="plus">+</a>
+				</span>
+			</dt>
+			<dd>
+				<span class="division">A</span>
+				<span class="cont">
+					내용
+				</span>
+			</dd>
+			<!-- //리스트 반복영역 -->
+			<dt>
+				<span class="num">10</span>
+				<span class="division">Q</span>
+				<span class="title"><a href="#this">연구소</a></span>
+				<span class="condition">
+					<a href="#this" class="minus">-</a>
+					<a href="#this" class="plus">+</a>
+				</span>
+			</dt>
+			<dd>
+				<span class="division">A</span>
+				<span class="cont">
+					내용
+				</span>
+			</dd>
+		</dl>
+		<script>
+			(function(global, $){
+				'use strict';
+				var $name = 'selected';
+				var faqListToggle = $('.faqList dt a');
+				var $firstDd = $('.faqList dd').eq(0);
+				$firstDd.show();
+
+				$(faqListToggle).on('click', function(){
+					var $thisDt = $(this).parent().parent();
+					var $siblings = $thisDt.siblings();
+
+					console.log($thisDt.children('.minus'));
+					$thisDt.addClass($name);
+					$thisDt.next('dd').slideDown();
+					$siblings.removeClass($name);
+					$siblings.next('dd').slideUp();
+					$('.minus').hide();
+					$('.plus').show();
+					$('.selected .minus').show();
+					$('.selected .plus').hide();
+				});
+				
+			}(window, window.jQuery));
+		</script>
+	</section>
+	<section>
+	<table class="writeTable white">
+		<caption>쓰기 테이블</caption>
+		<colgroup>
+			<col width="70px" />
+			<col width="100px" />
+			<col width="100px" />
+			<col width="460px" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="14" class="thBg"><strong>기업<br />홍보<br />제품</strong></th>
+				<th scope="row" colspan="2">제품옵션</th>
+				<td class="radio">
+					<div class="boxSelect selecter1">
+						<a href="#none"  class="activeTxt"></a>
+						<ul>
+							<li><a href="#none" data-role="0">15년</a></li>
+							<li><a href="#none" data-role="1">2016년</a></li>
+							<li><a href="#none" data-role="2">2017년</a></li>
+						</ul>
+						<input type="hidden" name="" value="0" id="selecter1"/>
+					</div>
+					<input type="radio" name="ra02" id="ra02_1" checked="checked" />
+					<label for="ra02_1">공개</label>
+					<input type="radio" name="ra02" id="ra02_2" />
+					<label for="ra02_2">비공개</label>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" colspan="2">시상 및 인증(장영실상,NET)</th>
+				<td>
+					<input type="text" name="" id="" class="size400_1" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" rowspan="12">제품정보</th>
+				<th scope="row">제품명</th>
+				<td>
+					<input type="text" name="" id="" class="size400_1" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">홈페이지주소</th>
+				<td>
+					<input type="text" name="" id="" class="size400_1" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">개요</th>
+				<td>
+					<textarea name="" id="" cols="30" rows="10" class="size400_2"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">용도 및 기능</th>
+				<td>
+					<textarea name="" id="" cols="30" rows="10" class="size400_2"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">특징 및 성능</th>
+				<td>
+					<textarea name="" id="" cols="30" rows="10" class="size400_2"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">담당자 정보<br />공개여부</th>
+				<td class="radios">
+					<input type="radio" name="ra02" id="ra02_1" checked="checked" />
+					<label for="ra02_1">공개</label>
+					<input type="radio" name="ra02" id="ra02_2" />
+					<label for="ra02_2">비공개</label>
+					<p class="cRed">비공개선택시 이메일과 연락처는 공개되지 않습니다.</p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">담당자 정보<br />활용 여부</th>
+				<td class="radios">
+					<input type="radio" name="ra03" id="ra03_1" checked="checked" />
+					<label for="ra03_1">공개</label>
+					<input type="radio" name="ra03" id="ra03_2" />
+					<label for="ra03_2">비공개</label>
+					<p class="cRed">산기협에서 기업간에 매칭 서비스를 위해 활용 하기 위함 입니다.</p>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">담당자</th>
+				<td>
+					<input type="text" name="" id="" class="size400_1" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">담당자 이메일</th>
+				<td>
+					<input type="text" name="" id="" class="size400_1" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">담당자 연락처</th>
+				<td>
+					<input type="text" name="" id="" class="size400_1" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">업종</th>
+				<td>
+					<input type="text" name="" id="" class="size300_1" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">세부설명자료</th>
+				<td>
+					<input type="file" name="" id="" class="size300_1" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
 	</section>
 </div>
 </body>

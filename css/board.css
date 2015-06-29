@@ -99,3 +99,44 @@
 /* thWhite */
 .dataTable.thWhite tfoot tr th,
 .dataTable.thWhite tbody tr th{background:#fff;}
+
+/* FAQ 형 테이블 */
+.faqList{width:730px;border-top:2px solid #b3bcc0;color:#585858;text-align:center;margin-top:45px;}
+.faqList dt,
+.faqList dd{border-bottom:1px solid #e4e4e4;}
+.faqList dd{background:#fafafa;}
+.faqList dt span,
+.faqList dd span{display:table-cell;}
+.faqList dt span{vertical-align:middle;}
+.faqList dt .num{width:67px;}
+.faqList dt .division,
+.faqList dd .division{width:69px;font-size:24px;}
+.faqList dt .division{color:#1896d8;}
+.faqList dt .title,
+.faqList dd .cont{width:514px;text-align:left;}
+.faqList dt .title a{display:block;padding:18px 0;font-weight:bold;}
+.faqList dt .condition{width:80px;}
+.faqList dt .condition a{display:block;color:#7e7e7e;font-weight:bold;}
+.faqList dt .condition .minus{font-size:43px;padding:1px 0;display:none;}
+.faqList dt .condition .plus{font-size:24px;padding:12px 0;}
+.faqList dt:first-child .condition .minus{display:block;}
+.faqList dt:first-child .condition .plus{display:none;}
+.faqList dd{padding:17px 80px 35px 67px;display:none;}
+.faqList dt .title{color:#272727;}
+
+/* 입력형 테이블 */
+.writeTable{width:730px;border-top:2px solid #b3bcc0;}
+.writeTable.white th{background:#fff;}
+.writeTable th,
+.writeTable td{border-bottom:1px solid #e1e1e1;}
+.writeTable th{border-right:1px solid #e1e1e1;font-weight:normal;background:#f3f5f6;}
+.writeTable th.thBg{background:#f3f5f6;}
+.writeTable td{border-left:1px solid #e1e1e1;padding:10px 20px;}
+.writeTable input[type="text"]{border:1px solid #dcdcdc;border-top:1px solid #b2b2b2;padding:5px;}
+.writeTable input[type="radio"]{display:inline-block;vertical-align:middle;margin-right:8px;}
+.writeTable .radios label{margin-right:20px;}
+.writeTable .cRed{color:#dc3f0f;margin-top:10px;}
+.writeTable textarea{overflow-y:scroll;height:80px;}
+.writeTable .size400_1{width:415px;}
+.writeTable .size400_2{width:405px;}
+.writeTable .size300_1{width:335px;}
