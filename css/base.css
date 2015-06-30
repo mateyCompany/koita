@@ -40,3 +40,4 @@ select {
 }
 /* Base */
 input.button, input.submit , input.image, button {cursor:pointer;}
+address {font-style: normal}
