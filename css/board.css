@@ -140,5 +140,5 @@
 .writeTable textarea{overflow-y:scroll;height:80px;}
 .writeTable .size300_1{width:395px;}
 .writeTable .size300_2{width:315px;}
-.writeTable .cRed{color:#dc3f0f;margin-top:10px;}
-.writeTable .cGray{color:#717171;margin-top:10px;}
+.writeTable .cRed,
+.writeTable .cDarkGray{margin-top:10px;}
