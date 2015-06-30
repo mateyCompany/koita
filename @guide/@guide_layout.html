@@ -12,7 +12,7 @@
 <script type="text/javascript">
 </script>
 <script type="text/JavaScript">
-var gVar, lVar, lsVar;
+var gVar=0, lVar, lsVar;
 </script>
 <style>
 
@@ -27,7 +27,7 @@ var gVar, lVar, lsVar;
 				<li><a href="#none">HOME</a></li>
 				<li><a href="#none">로그인</a></li>
 				<!--<li><a href="#none">로그아웃</a></li>-->
-				<!--<li><a href="#none">마이페이지</a></li>-->
+				<!--<li><a href="#none">업무선택하기</a></li>-->
 				<li><a href="#none" class="spriteSheet noTxt icoTopSearch">검색</a></li>
 			</ul>
 			<h1 class="logo"><a href="/" class="spriteSheet noTxt topLogo">연구소/전담부서 신고관리시스템</a></h1>
@@ -62,9 +62,9 @@ var gVar, lVar, lsVar;
 				<ul>
 					<li><a href="#none" class="spriteSheet noTxt icoHome">home</a></li>
 					<li>
-						<a href="#none" class="selected">depth 1</a>
-						<ul>
-							<li><a href="#none" class="on">신규설립안내</a></li>
+						<a href="#none" class="selected1">depth 1</a>
+						<ul class="depth1">
+							<li><a href="#none">신규설립안내</a></li>
 							<li><a href="#none">변경신고안내</a></li>
 							<li><a href="#none">정보서비스</a></li>
 							<li><a href="#none">문의하기</a></li>
@@ -73,8 +73,8 @@ var gVar, lVar, lsVar;
 							<li><a href="#none">공인인증서</a></li>
 						</ul>
 					</li>
-					<li>
-						<a href="#none" class="selected">depth 2</a>
+					<li class="depth2">
+						<a href="#none" class="selected2">depth 2</a>
 						<ul class="sub01">
 							<li><a href="#none" class="on">제도안내</a></li>
 							<li><a href="#none">처리절차</a></li>

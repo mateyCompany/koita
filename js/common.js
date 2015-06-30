@@ -1,7 +1,5 @@
 $(document).ready(function(){
-	/* Gnb-Lnb */
-	$('#Gnb ul li').eq(gVar).addClass('on');
-	$('#Lnb .lnb-menu > li').eq(lVar).addClass('on').find('ul li').eq(lsVar).addClass('on');
+	Lnb();
 
 
 	
@@ -55,4 +53,13 @@ function tabSize(target){
 	});
 
 };
+
+function Lnb(){
+	var $dep1 = $('.depth1 li');
+	var text = $dep1.eq(gVar).find('a').text();
+	$dep1.eq(gVar).remove();
+	$('.selected1').text(text);
+
+};
+
 
