@@ -5,7 +5,7 @@
 .floatR{float:right;}
 
 /* 페이지 넘버링 */
-.pageNumBox{text-align:center;}
+.pageNumBox{text-align:center;margin:30px 0 60px 0;}
 .icoFront{background:url(../images/sprite/ico_sprite.png) -270px -160px no-repeat;}
 .icoPrev{background:url(../images/sprite/ico_sprite.png) -130px -220px no-repeat;}
 .icoNext{background:url(../images/sprite/ico_sprite.png) -60px -210px no-repeat;}
@@ -21,13 +21,7 @@
 /* 리스트 테이블 상단 */
 .tableTopBox{margin-bottom:10px;}
 .tableTopBox .total{margin:10px 0 6px 0;display:inline-block;}
-.listEaSearch ul,
-.listEaSearch a.eaBtn{border:1px solid #e1e1e1;}
-.listEaSearch ul{width:92px;}
-.listEaSearch li a{padding:8px 0 7px 12px;font-size:13px;color:#717171;}
-.listEaSearch a{display:block;}
-.listEaSearch a.eaBtn{width:35px;height:30px;border-left:none;}
-
+.tableTopBox .btnBox{margin-left:20px;}
 /* 리스트 형식 테이블 */
 .listTable{width:730px;border-top:2px solid #b3bcc0;margin-bottom:30px;}
 .listTable thead tr th{padding:14px 0 14px 0;font-weight:normal;background:#f3f5f6;}
@@ -99,6 +93,8 @@
 /* thWhite */
 .dataTable.thWhite tfoot tr th,
 .dataTable.thWhite tbody tr th{background:#fff;}
+/* nthBg */
+.dataTable.nthBg tr:nth-child(2n) td{background:#fafafa;}
 
 /* FAQ 형 테이블 */
 .faqList{width:730px;border-top:2px solid #b3bcc0;color:#585858;text-align:center;margin-top:45px;}
@@ -126,7 +122,11 @@
 
 /* 입력형 테이블 */
 .writeTable{width:730px;border-top:2px solid #b3bcc0;}
-.writeTable.white th{background:#fff;}
+.writeTable.thWhite th{background:#fff;}
+.writeTable.borderNone th,
+.writeTable.borderNone td{padding:17px 0 17px 0;}
+.writeTable.borderNone th{border-right:none;}
+.writeTable.borderNone td{border-left:none;padding-left:20px;padding-right:10px;}
 .writeTable th,
 .writeTable td{border-bottom:1px solid #e1e1e1;}
 .writeTable th{border-right:1px solid #e1e1e1;font-weight:normal;background:#f3f5f6;}

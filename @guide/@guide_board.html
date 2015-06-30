@@ -53,6 +53,29 @@ var gVar, lVar, lsVar;
 		</div>
 		<!-- 끝: 총게시물 검색 -->
 
+		<!-- 시작: 총게시물 검색 -->
+		<div class="tableTopBox group">
+			<div class="floatL group">
+				<h3 class="floatL"><strong>기업연구소</strong></h3>
+				<div class="btnBox floatL">
+					<a href="#none" class="btnSmall fluidBlue"><span>연구소서</span></a>
+					<a href="#none" class="btnSmall fluidGray"><span>전담부서</span></a>
+				</div>
+			</div>
+			<div class="floatR group">
+				<div class="boxSelect selecter3" style="width: 138px;">
+					<a href="#none" class="activeTxt">리스트 개수</a>
+					<ul>
+						<li><a href="#none" data-role="0">10개</a></li>
+						<li><a href="#none" data-role="1">30개</a></li>
+						<li><a href="#none" data-role="2">50개</a></li>
+					</ul>
+					<input type="hidden" name="" value="0" id="selecter3">
+				</div>
+			</div>
+		</div>
+		<!-- 끝: 총게시물 검색 -->
+
 		<!-- 시작: 리스트형 테이블 -->
 		<table class="listTable">
 		<caption>리스트 테이블</caption>
@@ -355,11 +378,82 @@ var gVar, lVar, lsVar;
 				</tr>
 			</tbody>
 		</table>
+
+		<ul class="sMessage">
+			<li>짝수번째 TD에 백그라운드 들어가는 표</li>
+		</ul>
+		<table class="dataTable thWhite nthBg">
+			<caption>데이터 테이블</caption>
+			<colgroup>
+				<col width="" />
+				<col width="" />
+				<col width="" />
+				<col width="" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">구분</th>
+					<th scope="col">변경신고사항</th>
+					<th scope="col" colspan="2">신고서류</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row" rowspan="3">내용</th>
+					<td>내용</td>
+					<td rowspan="3">내용</td>
+					<td>내용</td>
+				</tr>
+				<tr>
+					<td>내용</td>
+					<td rowspan="2">내용</td>
+				</tr>
+				<tr>
+					<td>내용</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<h1 class="guide">데이터 테이블 02 테이블</h1>
+
+		<ul class="sMessage">
+			<li>- thead가 없는 데이터형 테이블에 사용합니다.</li> 
+		</ul>
+		
+		<table class="writeTable borderNone">
+		<caption>데이터형 표</caption>
+		<colgroup>
+			<col width="163px" />
+			<col width="202px" />
+			<col width="163px" />
+			<col width="202px" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">연구소/전담부서명</th>
+				<td>(주)메이티 모바일</td>
+				<th scope="row">인정년월일</th>
+				<td>2011.05.04</td>
+			</tr>
+			<tr>
+				<th scope="row">연구소/전담부서명</th>
+				<td>(주)메이티 모바일</td>
+				<th scope="row">인정년월일</th>
+				<td>2011.05.04</td>
+			</tr>
+			<tr>
+				<th scope="row">연구소/전담부서명</th>
+				<td colspan="3">(주)메이티 모바일</td>
+			</tr>
+		</tbody>
+		</table>
 	</section>
 
 	<section>
 		<h1 class="guide">FAQ 테이블</h1>
-
+		<!-- 시작: FAQ 테이블 -->
 		<dl class="faqList">
 			<!-- 시작: 반복영역 -->
 			<dt>
@@ -395,6 +489,7 @@ var gVar, lVar, lsVar;
 				</span>
 			</dd>
 		</dl>
+		<!-- 끝: FAQ 테이블 -->
 		<script>
 			(function(global, $){
 				'use strict';
@@ -428,7 +523,8 @@ var gVar, lVar, lsVar;
 		<li>- th부분이 흰색이어야 할 때 .white 를 추가합니다.</li>
 		<li>- th가 부분적으로 색이 다를때는 .thBg 를 추가합니다.</li>
 	</ul>
-	<table class="writeTable white">
+	<!-- 시작: 쓰기테이블 -->
+	<table class="writeTable thWhite">
 		<caption>쓰기 테이블</caption>
 		<colgroup>
 			<col width="70px" />
@@ -547,11 +643,14 @@ var gVar, lVar, lsVar;
 			</tr>
 		</tbody>
 	</table>
+	<!-- 끝: 쓰기테이블 -->
 	<div class="listBtn alignRight">
 		<button type="button" class="btn fluidDarkBlue"><span>저장하기</span></button>
 		<a href="#none" class="btn fluidDarkBlue"><span>저장하기</span></a>
 	</div>
 	</section>
+
+	
 </div>
 </body>
 </html>
