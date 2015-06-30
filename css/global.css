@@ -12,3 +12,36 @@ body {
 #W-front {
 	
 }
+
+#header {width:100%;padding-top:20px;}
+#header .inner {width:1000px;margin:0 auto 20px auto;overflow:hidden;}
+#header .topLogo {width:174px;height:40px;display:block;background-position:-170px -200px;float:left;clear:both;}
+#gnb {float:left;margin-left:74px;line-height:40px;overflow:hidden;}
+#gnb li {float:left;margin-left:40px;}
+#gnb li:first-child {margin-left:0;}
+#gnb a {font-size:16px;color:#323232;font-weight:700}
+#quickLink {overflow:hidden;line-height:15px;float:right;margin-bottom:5px;}
+#quickLink li {float:left;margin-left:10px;}
+#quickLink li a {font-size:12px;}
+#header .subBanner {width:100%;height:118px;background:#1896d8;}
+#header .subBanner .inner {width:1000px;margin:0 auto;overflow:hidden;}
+#header .subBanner .inner:before {content:'';display:inline-block;width:375px;height:118px;background:url('../images/sprite/ico_sprite.png') no-repeat 0 0;float:left;}
+#header .subBanner .inner ul {overflow:hidden;float:left;margin-top:20px;}
+#header .subBanner .inner li {float:left;margin-left:65px;}
+#header .subBanner .inner li:first-child {margin-left:10px;}
+#header .subBanner .inner a {color:#fff;text-align:center;font-weight:700;font-size:15px;}
+#header .subBanner .inner span {display:block;text-decoration:underline;font-size:13px;font-weight:300;margin:0 auto 5px auto;}
+#header .subBanner .inner span.spriteSheet {width:35px;height:35px;}
+#lnb {width:100%;background:#fbfbfc;height:37px;line-height:37px;border-bottom:1px solid #e4e4e4;}
+#lnb .inner {width:1000px;margin:0 auto;background:url('../images/sprite/bgNav.png') no-repeat right center;}
+#lnb .inner > ul > li {display:inline-block;position:relative;background:url('../images/sprite/bgLnb.png') no-repeat left center;padding:0 10px 0 30px;}
+#lnb .inner > ul > li:hover ul {display:block;}
+#lnb .inner > ul > li > a:after {content:'';display:inline-block;width:8px;height:5px;background:url('../images/sprite/ico_sprite.png') no-repeat -370px -140px;margin-left:5px;}
+#lnb .inner > ul > li:first-child {background:none;padding:0 10px 0 0}
+#lnb ul ul {position:absolute;left:0;top:37px;display:none;}
+#lnb ul ul li {border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;width:100%;background:#fff;padding-right:10px;}
+#lnb ul ul li:first-child {border-top:1px solid #e4e4e4}
+#lnb ul ul li:hover {background:#2f3f60;}
+#lnb ul ul li:hover a {color:#fff;}
+#lnb ul ul li a {display:block;width:100%;padding:0 10px 0 30px;font-size:13px;font-weight:700}
+#container > .inner {width:1000px;margin:0 auto;}
