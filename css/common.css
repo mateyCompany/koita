@@ -38,7 +38,7 @@ a.btnSmall.fluidGray span {margin-top:0;}
 .caution.plus:before {background-position:-100px -220px}
 .icoRepley:before {content:'';display:inline-block;width:36px;height:15px;background:url('../images/sprite/ico_sprite.png') no-repeat -200px -270px;position:relative;top:3px;margin-right:5px;}
 .icoLock {display:inline-block;width:9px;height:13px;background-position:-360px -140px;position:relative;top:2px;}
-.noTxt {text-indent: -100%;white-space: nowrap;font-size:0;}
+.noTxt {text-indent: -999px;white-space: nowrap;font-size:0;}
 .linkNote,.linkSample,.linkDown {text-decoration: underline;font-size:13px;}
 .linkNote:hover,.linkSample:hover,.linkDown:hover {text-decoration:underline;}
 .linkNote:before {content:'';display:inline-block;width:25px;height:25px;background:url('../images/sprite/ico_sprite.png') no-repeat -170px -250px;line-height:25px;vertical-align: middle;margin-right:5px;}
@@ -52,8 +52,18 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 .icoWrite span:before {content:'';display:block;width:18px;height:18px;margin:13px auto;background:url('../images/sprite/ico_sprite.png') no-repeat -360px -160px;}
 .icoPhone {width:27px;height:31px;background-position:-350px -210px;margin-right:5px;position:relative;top:5px;}
 .icoSearch {width:31px;height:31px;background-position:0 -300px}
-
-
+.icoTopSearch {width:17px;height:15px;background-position:-270px -270px}
+.icoSubQuick01 {background-position:-290px -270px}
+.icoSubQuick02 {background-position:-330px -270px}
+.icoSubQuick03 {background-position:-160px -280px}
+.icoSubQuick04 {background-position:-200px -290px}
+.icoHome {width:13px;height:12px;line-height:13px;vertical-align:middle;background-position:-360px -120px}
+.icoQuick1 {width:20px;height:16px;background-position:-200px -250px}
+.icoQuick2 {width:20px;height:16px;background-position:-230px -250px}
+.icoQuick3 {width:20px;height:16px;background-position:-260px -250px}
+.icoQuick4 {width:20px;height:16px;background-position:-290px -250px;}
+.icoQuick5 {width:20px;height:16px;background-position:-320px -250px}
+.icoFooterLogo {width:158px;height:31px;background-position:0 -260px}
 /* 박스 */
 .boxCont {border:1px solid #e1e1e1;padding:15px 20px;width:148px;font-size:12px;color:#717171;}
 .boxCont .tit {font-weight:800;font-size:17px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #e1e1e1;color:#424242;}
