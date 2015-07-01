@@ -111,6 +111,9 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 .tab.sub li.on a {color:#424242;}
 .tab.sub li.on a:after {content:'';display:inline-block;margin-left:10px;width:7px;height:13px;background:url('../images/sprite/ico_sprite.png') no-repeat -340px -180px;line-height:14px;}
 
+/*list */
+ul.list li {text-indent:-10px;padding-left:10px;}
+ul.list li:before {content:'';display:inline-block;width:3px;height:3px;background:#ccc;position:relative;top:-4px;margin-right:5px;}
 
 /* 컬러셋 */
 .cBlue {color:#1896d8}
