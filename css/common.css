@@ -3,7 +3,7 @@
 /* 타이틀 가이드 */
 h1.cTit {font-size:14px;color:#323232;margin-bottom:9px;font-weight:bold;}
 h2.cTit {font-size:36px;color:#323232;margin-bottom:30px}
-.cTit2 {}
+.cTit2{font-size:18px;font-weight:bold;margin-top:45px;margin-bottom:10px;}
 
 /* 버튼 */
 .spriteSheet {background:url('../images/sprite/ico_sprite.png') no-repeat 0 0;display:inline-block;border:none;overflow:hidden;}
