@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<title>신규설립 설립신고하기 | 코이타</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="../css/front.css" />
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript">
+</script>
+<script type="text/JavaScript">
+var gVar=0, lVar=5, lsVar;
+</script>
+<style>
+
+</style>
+</head>
+<body>
+<div id="W-front">
+	<!--header start-->
+	<div id="header">
+		<div class="inner">
+			<ul id="quickLink">
+				<li><a href="#none">HOME</a></li>
+				<li><a href="#none">로그인</a></li>
+				<!--<li><a href="#none">로그아웃</a></li>-->
+				<!--<li><a href="#none">업무선택하기</a></li>-->
+				<li><a href="#none" class="spriteSheet noTxt icoTopSearch">검색</a></li>
+			</ul>
+			<h1 class="logo"><a href="/" class="spriteSheet noTxt topLogo">연구소/전담부서 신고관리시스템</a></h1>
+			<ul id="gnb">
+				<li><a href="#none">신규설립안내</a></li>
+				<li><a href="#none">변경신고안내</a></li>
+				<li><a href="#none">정보서비스</a></li>
+				<li><a href="#none">문의하기</a></li>
+				<li><a href="#none">자료실</a></li>
+				<li><a href="#none">사후관리</a></li>
+				<li><a href="#none">공인인증센터</a></li>
+			</ul>
+		</div>
+		<div class="subBanner">
+			<div class="inner">
+				<ul>
+					<li><a href="#none"><span class="spriteSheet icoSubQuick01"></span>온라인신규설립신고<span>바로가기</span></a></li>
+					<li><a href="#none"><span class="spriteSheet icoSubQuick02"></span>온라인 변경신고<span>바로가기</span></a></li>
+					<li><a href="#none"><span class="spriteSheet icoSubQuick03"></span>신고내역확인<span>바로가기</span></a></li>
+					<li><a href="#none"><span class="spriteSheet icoSubQuick04"></span>공인인증서<span>바로가기</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--header end-->
+
+	<!--container start-->
+	<div id="container">
+		<!--LNB start-->
+		<div id="lnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#none" class="spriteSheet noTxt icoHome">home</a></li>
+					<li>
+						<a href="#none" class="selected1">depth 1</a>
+						<ul class="depth1">
+							<li><a href="#none">신규설립안내</a></li>
+							<li><a href="#none">변경신고안내</a></li>
+							<li><a href="#none">정보서비스</a></li>
+							<li><a href="#none">문의하기</a></li>
+							<li><a href="#none">자료실</a></li>
+							<li><a href="#none">사후관리</a></li>
+							<li><a href="#none">공인인증서</a></li>
+						</ul>
+					</li>
+					<li class="depth2">
+						<a href="#none" class="selected2">depth 2</a>
+						<ul class="sub01">
+							<li><a href="#none" class="on">제도안내</a></li>
+							<li><a href="#none">처리절차</a></li>
+							<li><a href="#none">신고대상</a></li>
+							<li><a href="#none">신고요건</a></li>
+							<li><a href="#none">신고서류</a></li>
+							<li><a href="#none">설립신고하기</a></li>
+						</ul>
+						<ul class="sub02">
+							<li><a href="#none">변경신고절차</a></li>
+							<li><a href="#none">변경신고대상</a></li>
+							<li><a href="#none">양수도신고</a></li>
+							<li><a href="#none">변경신고하기</a></li>
+						</ul>
+						<ul class="sub03">
+							<li><a href="#none">R&amp;D 통계</a></li>
+							<li><a href="#none">기업연구소통계현황</a></li>
+							<li><a href="#none">기업연구소 검색</a></li>
+							<li><a href="#none">기업연구소 상세검색</a></li>
+							<li><a href="#none">홍보 제품검색</a></li>
+							<li><a href="#none">홍보 제품등록</a></li>
+						</ul>
+						<ul class="sub04">
+							<li><a href="#none">공지사항</a></li>
+							<li><a href="#none">FAQ</a></li>
+							<li><a href="#none">Q&amp;A</a></li>
+							<li><a href="#none">전화상담 예약</a></li>
+							<li><a href="#none">정기상담회 신청하기</a></li>
+							<li><a href="#none">부실연구소 신고센터</a></li>
+							<li><a href="#none">프로그램 문제해결</a></li>
+						</ul>
+						<ul class="sub05">
+							<li><a href="#none">R&amp;지원제도</a></li>
+							<li><a href="#none">문서자료실</a></li>
+						</ul>
+						<ul class="sub06">
+							<li><a href="#none">연구개발 활동조솨</a></li>
+							<li><a href="#none">현지확인</a></li>
+							<li><a href="#none"인정취소></a></li>
+							<li><a href="#none">인정서재발급</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--LNB end-->
+
+		<!--PAGE start-->
+		<div class="inner">
+			<div id="contents">
+				<h1 class="cTit">신규설립안내</h1>
+				<h2 class="cTit">신규설립 설립신고하기</h2>
+
+				<ul class="tab tab2">
+					<li style="width: 25%;"><a href="#none">신규설립신고</a></li>
+					<li style="width: 25%;" class="on"><a href="#none">변경신고(신고내역보기)</a></li>
+					<li style="width: 25%;"><a href="#none">양수도 신청</a></li>
+					<li style="width: 25%;"><a href="#none">보유연구소현황</a></li>
+				</ul>
+
+				<h3 class="cTit2">연구소/전담부서 현황</h3>
+				<table class="writeTable borderNone">
+				<caption>데이터형 표</caption>
+				<colgroup>
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">연구소/전담부서명</th>
+						<td>(주)메이티 모바일</td>
+						<th scope="row">인정년월일</th>
+						<td>2011.05.04</td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호</th>
+						<td>02-2627-5099</td>
+						<th scope="row">팩스번호</th>
+						<td>02-2627-5099</td>
+					</tr>
+					<tr>
+						<th scope="row">주소</th>
+						<td colspan="3">(153-711) 서울특별시 금천구 가산디지털1로 70713호 (가산동, 호서벤처타워)</td>
+					</tr>
+				</tbody>
+				</table>
+
+				<h3 class="cTit2">연구소/전담부서 현황</h3>
+				<table class="writeTable borderNone">
+				<caption>데이터형 표</caption>
+				<colgroup>
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">기업명</th>
+						<td>메이티</td>
+						<th scope="row">대표자명</th>
+						<td>김택규</td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호</th>
+						<td>02-2627-5099</td>
+						<th scope="row">팩스번호</th>
+						<td>02-2627-5099</td>
+					</tr>
+					<tr>
+						<th scope="row">주소</th>
+						<td colspan="3">(153-711) 서울특별시 금천구 가산디지털1로 70713호 (가산동, 호서벤처타워)</td>
+					</tr>
+				</tbody>
+				</table>
+
+				<h3 class="cTit2">처리상태</h3>
+				<table class="writeTable borderNone mb10">
+				<caption>데이터형 표</caption>
+				<colgroup>
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">상태</th>
+						<td>
+							임시저장(수리)
+							<a href="#none" class="btnSmall fluidGray"><span>삭제</span></a></td>
+						<th scope="row">최종처리일자</th>
+						<td>2014.06.17</td>
+					</tr>
+				</tbody>
+				</table>
+				<p>※ <strong>보안요청시</strong> 처리상태의 <strong>'보완요청'</strong>을 클릭하면 보완공문을 확인하실 수 있습니다.</p>
+
+				<h3 class="cTit2">처리현황</h3>
+				<table class="writeTable borderNone">
+				<caption>데이터형 표</caption>
+				<colgroup>
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">처리상태</th>
+						<td>-</td>
+						<th scope="row">처리일자</th>
+						<td>-</td>
+					</tr>
+				</tbody>
+				</table>
+
+				<div class="listBtn alignRight">
+					<a href="#none" class="btn fluidDarkBlue" onclick="window.open('pop_postlnstitute.html', '_blank', 'width=830, height=447,left=200, top=200, scrollbars=no, resizeable=no, toolbar=no ');"><span>변경신고</span></a>
+					<a href="#none" class="btn fluidBlue"><span>신고내역보기</span></a>
+					<a href="#none" class="btn fluidGray"><span>담당자변경</span></a>
+				</div>
+
+			</div>
+			<div id="aside">
+				<div class="quickContent">
+					<h1>자주묻는 질문과 답변</h1>
+					<ul class="quickUl list">
+						<li><strong>처리기간은 어떻게 되나요?</strong></li>
+						<li class="blitNone">
+							신규설립/변경신고 접수 후 7일<br /> 이내에 처리됩니다.
+						</li>
+						<li><strong>보완사항 발생시 보완기간이 처리기간에 포함되나요?</strong></li>
+						<li class="blitNone">보완사항 발생시 보완처리일은 처리기간에 포함되지 않습니다. 신규설립은 7일, 변경신고는 7일이내에 보완하지 않을 경우 "자동반려"됩니다.</li>
+						<li><strong>신규설립/변경신고 완료 후 연구소인정서 발급은 어떻게 받나요?</strong></li>
+						<li class="blitNone">처리가 완료되면 담당자의 SMS, 이메일, 팩스로 안내되며 연구소 인정서는 온라인에서 출력하실 수 있습니다.</li>
+					</ul>
+				</div>
+				<div class="quickMenu">
+					<h1>바로가기 서비스</h1>
+					<ul>
+						<li><a href="#none"><span class="spriteSheet noTxt icoQuick1"></span>증명서 온라인 원본확인</a></li>
+						<li><a href="#none"><span class="spriteSheet noTxt icoQuick2"></span>처리현황조회</a></li>
+						<li><a href="#none"><span class="spriteSheet noTxt icoQuick3"></span>연구소/전담부서 정기상담회</a></li>
+						<li><a href="#none"><span class="spriteSheet noTxt icoQuick4"></span>인증서 출력하기</a></li>
+						<li><a href="#none"><span class="spriteSheet noTxt icoQuick5"></span>부실연구소 신고센터</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--PAGE end-->
+	</div>
+	<!--containter end-->
+	<!-- footer start-->
+	<div id="footer">
+		<span class="spriteSheet noTxt icoFooterLogo">한국산업기술진흥협회</span>
+		<div class="content">
+			<img src="../images/layout/footer.png" alt="우)137-888 서울특별시 서초구 바우뫼로37길 37(양재동 20-17) 산기협회관   |   대표전화 080-555-9114   |   대표팩스 02-3460-9019"/>
+		</div>
+	</div>
+	<!--footer end-->
+</div>
+</body>
+<script>
+
+</script>
+</html>
+
