@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 /* 공통 */
+.mb10{margin-bottom:10px !important;}
 .floatL{float:left;}
 .floatR{float:right;}
 .group:after{content:"";display:block;clear:both;}
@@ -18,6 +19,13 @@
 .pageNumBox span a{border:1px solid #ebebeb;display:inline-block;width:32px;height:17px;text-align:center;padding:8px 0;background-color:#fff;}
 .pageNumBox span a.on{background-color:#f6f8f9;}
 .pageNumBox .numBox{display:inline-block;margin:0 12px;}
+
+/* 리스트 검색 */
+.listSearch{}
+.listSearch .boxSelect > a{padding:12px 48px 12px 12px;}
+.listSearch .boxSelect > a:before{width:42px;height:40px;background-position:-236px -294px;}
+.listSearch .boxInputText{border:1px solid #e1e1e1;padding:11px 48px 10px 12px;}
+.listSearch .boxInputText input[type="text"]{border:none;}
 
 /* 리스트 테이블 상단 */
 .tableTopBox{margin-bottom:10px;}
@@ -122,12 +130,18 @@
 .faqList dt .title{color:#272727;}
 
 /* 입력형 테이블 */
-.writeTable{width:730px;border-top:2px solid #b3bcc0;}
+.writeTable{width:730px;border-top:2px solid #b3bcc0;margin-bottom:20px;}
+.writeTable a{vertical-align:middle;}
 .writeTable.thWhite th{background:#fff;}
+.writeTable.borderNone th{text-align:left;padding-left:20px;}
 .writeTable.borderNone th,
-.writeTable.borderNone td{padding:17px 0 17px 0;}
+.writeTable.borderNone td,
+.writeTable.borderNone .noInput th,
+.writeTable.borderNone .noInput td{padding-top:17px;padding-bottom:17px;}
 .writeTable.borderNone th{border-right:none;}
 .writeTable.borderNone td{border-left:none;padding-left:20px;padding-right:10px;}
+.writeTable.heightS th,
+.writeTable.heightS td{padding-top:10px;padding-bottom:10px;}
 .writeTable th,
 .writeTable td{border-bottom:1px solid #e1e1e1;}
 .writeTable th{border-right:1px solid #e1e1e1;font-weight:normal;background:#f3f5f6;}
@@ -141,5 +155,17 @@
 .writeTable textarea{overflow-y:scroll;height:80px;}
 .writeTable .size300_1{width:395px;}
 .writeTable .size300_2{width:315px;}
+.writeTable .size400_1{width:465px;}
 .writeTable .cRed,
 .writeTable .cDarkGray{margin-top:10px;}
+
+/*퀵 UL*/
+.quickContent .quickUl li{font-size:13px;border-bottom:1px solid #e2e2e2;padding-top:10px;padding-bottom:10px;}
+.quickContent .list li.blitNone:before{content:none;margin-left:8px;}
+.quickContent .list li.blitNone{text-indent:0;}
+
+/* 팝업 */
+#popup .popTitle{padding:15px 37px;background:#3871c6;}
+#popup .popTitle h1{font-size:18px;color:#fff;}
+#popup .popContetn{padding:30px 50px 45px;}
+#popup .popContetn .writeTable{margin-top:15px;}

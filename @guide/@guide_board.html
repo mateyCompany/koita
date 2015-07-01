@@ -138,6 +138,28 @@ var gVar, lVar, lsVar;
 			<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
 		</div>
 		<!-- 끝: 페이지 넘버 -->
+
+		<!-- 시작: 리스트 검색 -->
+		<div class="listSearch group">
+			<div class="floatL">
+				<div class="boxSelect selecter3" style="width: 118px;">
+					<a href="#none" class="activeTxt">15년</a>
+					<ul>
+						<li><a href="#none" data-role="0">15년</a></li>
+						<li><a href="#none" data-role="1">2016년</a></li>
+						<li><a href="#none" data-role="2">2017년</a></li>
+					</ul>
+					<input type="hidden" name="" value="0" id="selecter3">
+				</div>
+			</div>
+			<div class="floatL">
+				<div class="boxInputText selecter3" style="width: 287px;">
+					<input type="text" name="" id="" />
+					<input type="hidden" name="" value="0" id="selecter3">
+				</div>
+			</div>
+		</div>
+		<!-- 끝: 리스트 검색 -->
 	</section>
 
 	<section>
@@ -448,6 +470,36 @@ var gVar, lVar, lsVar;
 				<td colspan="3">(주)메이티 모바일</td>
 			</tr>
 		</tbody>
+		</table>
+
+		<ul class="sMessage">
+			<li>- input과 텍스트가 같이 있는 표에 사용합니다.</li>
+			<li>- text만 있는 tr에 .noInput을 추가합니다.</li>
+		</ul>
+		<table class="writeTable borderNone heightS">
+			<caption>쓰기 테이블</caption>
+			<colgroup>
+				<col width="163px" />
+				<col width="507px" />
+			</colgroup>
+			<tbody>
+				<tr class="noInput">
+					<th scope="row">연구소/전담부서명</th>
+					<td>연구소 A</td>
+				</tr>
+				<tr>
+					<th scope="row">신청자 명</th>
+					<td>
+						<input type="text" name="" id="" class="size400_1" />
+					</td>
+				</tr>
+				<tr> 
+					<th scope="row">취소 사유</th>
+					<td>
+						<input type="text" name="" id="" class="size400_1" />
+					</td>
+				</tr>
+			</tbody>
 		</table>
 	</section>
 
