@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xml:lang="ko">
 <head>
-<title>공지사항 리스트 | 코이타</title>
+<title>Q&amp;A 글쓰기 | 코이타</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -10,7 +10,7 @@
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/JavaScript">
-var gVar=3, lVar=0, lsVar;
+var gVar=3, lVar=2, lsVar;
 </script>
 </head>
 <body>
@@ -121,127 +121,96 @@ var gVar=3, lVar=0, lsVar;
 		<div class="inner">
 			<div id="contents">
 				<h1 class="cTit">문의하기</h1>
-				<h2 class="cTit">공지사항</h2>
+				<h2 class="cTit">Q&amp;A</h2>
 
-				<div class="tableTopBox group">
-					<div class="floatL">
-						<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
-					</div>
-					<div class="floatR group">
-						<div class="boxSelect selecter3" style="width: 138px;">
-							<a href="#none" class="activeTxt">리스트 개수</a>
-							<ul>
-								<li><a href="#none" data-role="0">10개</a></li>
-								<li><a href="#none" data-role="1">20개</a></li>
-								<li><a href="#none" data-role="2">30개</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-				</div>
+				<p class="lh22">연구소/전담부서 관련하여 궁금하신 사항을 질문하시면 신속하고 성실하게 답변해 드리겠습니다. 저속한 표현이나 광고, 특정한 행위를 요구하는 경우 등은 관리자 판단에 의해 회신하지 않고 삭제될 수 있습니다.<br />
+				질의 하실 때 <strong class="cRed">이메일이나 휴대폰 번호를 입력하시면 답변을 받아보실 수 있습니다.</strong></p>
 				
-				<!-- 시작: 리스트형 테이블 -->
-				<table class="listTable">
-				<caption>리스트 테이블</caption>
-				<colgroup>
-					<col width="74px" />
-					<col width="*" />
-					<col width="128px" />
-					<col width="95px" />
-					<col width="88px" />
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">순번</th>
-						<th scope="col">제목</th>
-						<th scope="col">글쓴이</th>
-						<th scope="col">날짜</th>
-						<th scope="col">조회수</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td colspan="5" class="listNone">작성된 글이 없습니다.</td>
-					</tr>
-					<!-- 시작: 반복구간 -->
-					<!-- 공지사항 글은 tr에 noti를 넣으시면 됩니다. -->
-					<tr class="noti">
-						<td>공지</td>
-						<td class="left"><a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>24</td>
-					</tr>
-					<!-- 끝: 반복구간 -->
-					<tr>
-						<td>10</td>
-						<td class="left">
-							<a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a>
-						</td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>7</td>
-					</tr>
-				</tbody>
+				<!-- 시작: 쓰기테이블 -->
+				<table class="writeTable borderNone heightS">
+					<caption>쓰기 테이블</caption>
+					<colgroup>
+						<col width="164px" />
+						<col width="*" />
+					</colgroup>
+					<tbody>
+						<tr class="noInput">
+							<th scope="row">공개유무</th>
+							<td class="radios">
+								<input type="radio" name="ra01" id="ra01_1" checked="checked" />
+								<label for="ra01_1">공개</label>
+								<input type="radio" name="ra01" id="ra01_2" />
+								<label for="ra01_2">비공개</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">작성자(실명)</th>
+							<td>
+								<input type="text" name="" id="" class="sizeSmall" />
+								<span class="cDarkGray message">Q&amp;A는 실명을 직접 입력해주세요.</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td>
+								<input type="text" name="" id="" class="sizeMiddle" />
+								<span class="cDarkGray message">수정, 삭제 등에 사용합니다.</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">핸드폰번호</th>
+							<td>
+								<input type="text" name="" id="" class="sizeSSmall" /> <span class="vAlignM">-</span>
+								<input type="text" name="" id="" class="sizeSSmall" /> <span class="vAlignM">-</span>
+								<input type="text" name="" id="" class="sizeSSmall" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호</th>
+							<td>
+								<input type="text" name="" id="" class="sizeSmall" />
+								<span class="cDarkGray message">수정, 삭제 등에 사용합니다.</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td>
+								<input type="text" name="" id="" class="sizeFFull" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td>
+								<textarea name="" id="" cols="30" rows="10" class="sizeFFull"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">인증번호</th>
+							<td>
+								<input type="text" name="" id="" class="sizeSmall" />
+								<a href="#none" class="btnSmall fluidGray"><span>핸드폰 인증받기</span></a>
+							</td>
+						</tr>
+					</tbody>
 				</table>
-				<!-- 끝: 리스트형 테이블 -->
-				<!-- 시작: 페이지 넘버 -->
-				<div class="pageNumBox">
-					<a href="" class="icoFront" title="처음 페이지">&nbsp;</a>
-					<a href="" class="icoPrev" title="이전 페이지">&nbsp;</a>
-					<span class="numBox">
-						<a href="" class="on">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">4</a>
-						<a href="">5</a>
-					</span>
-					<a href="" class="icoNext" title="다음 페이지">&nbsp;</a>
-					<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
+				<!-- 끝: 쓰기테이블 -->
+
+				<div class="listBtn alignRight">
+					<button type="button" class="btn fluidDarkBlue"><span>저장</span></button>
+					<a href="qna_list.html" class="btn fluidGray"><span>목록</span></a>
 				</div>
-				<!-- 끝: 페이지 넘버 -->
-
-				<!-- 시작: 리스트 검색 -->
-				<div class="listSearch group">
-					<div class="floatL">
-						<div class="boxSelect selecter3" style="width: 118px;">
-							<a href="#none" class="activeTxt">제목</a>
-							<ul>
-								<li><a href="#none" data-role="0">제목</a></li>
-								<li><a href="#none" data-role="1">작성자</a></li>
-								<li><a href="#none" data-role="2">내용</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-					<div class="floatL">
-						<div class="boxInputText selecter3" style="">
-							<input type="text" name="" id="" style="width:232px" placeholder="검색어를 입력하세요" />
-							<button class="icoSearch2"><span></span></button>
-						</div>
-					</div>
-				</div>
-				<!-- 끝: 리스트 검색 -->
-
-
 			</div>
+
 			<div id="aside">
 				<div class="quickContent">
 					<h1>기업부설연구소 신고제도 변경안내</h1>
 					<ul class="quickUl list">
 						<li><strong>
-							소기업 부설연구소 연구전담요원<br />
-							인정기준 완화<br />
-							- 창업일로부터 3년까지는<br />
-							연구전담요원 2명이상<br />
-							가능(2014.1.1부터)
-							</strong></li>
-						<li><strong>
-							중견기업 부설연구소 인정요건<br />
-							완화<br />
-							- 연구전담요원 7명이상<br />
-							가능(2014.1.1부터)
-						</strong></li>
+							중소기업 부설연구소 인정기준<br />
+							완화
+						</strong></li>	
+						<li class="blitNone">소기업의 경우, 연구전담요원<br />
+						5인이상에서 3인이상으로 항구적으로 완화함(2012.9.28부터)</li>
 					</ul>
 				</div>
 				<div class="quickMenu">

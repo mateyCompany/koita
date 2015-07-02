@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xml:lang="ko">
 <head>
-<title>공지사항 리스트 | 코이타</title>
+<title>FAQ 리스트 | 코이타</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -9,8 +9,9 @@
 <link rel="stylesheet" type="text/css" href="../css/front.css" />
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/action.js"></script>
 <script type="text/JavaScript">
-var gVar=3, lVar=0, lsVar;
+var gVar=3, lVar=1, lsVar;
 </script>
 </head>
 <body>
@@ -121,108 +122,55 @@ var gVar=3, lVar=0, lsVar;
 		<div class="inner">
 			<div id="contents">
 				<h1 class="cTit">문의하기</h1>
-				<h2 class="cTit">공지사항</h2>
-
-				<div class="tableTopBox group">
-					<div class="floatL">
-						<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
-					</div>
-					<div class="floatR group">
-						<div class="boxSelect selecter3" style="width: 138px;">
-							<a href="#none" class="activeTxt">리스트 개수</a>
-							<ul>
-								<li><a href="#none" data-role="0">10개</a></li>
-								<li><a href="#none" data-role="1">20개</a></li>
-								<li><a href="#none" data-role="2">30개</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-				</div>
+				<h2 class="cTit">FAQ</h2>
 				
-				<!-- 시작: 리스트형 테이블 -->
-				<table class="listTable">
-				<caption>리스트 테이블</caption>
-				<colgroup>
-					<col width="74px" />
-					<col width="*" />
-					<col width="128px" />
-					<col width="95px" />
-					<col width="88px" />
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">순번</th>
-						<th scope="col">제목</th>
-						<th scope="col">글쓴이</th>
-						<th scope="col">날짜</th>
-						<th scope="col">조회수</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td colspan="5" class="listNone">작성된 글이 없습니다.</td>
-					</tr>
-					<!-- 시작: 반복구간 -->
-					<!-- 공지사항 글은 tr에 noti를 넣으시면 됩니다. -->
-					<tr class="noti">
-						<td>공지</td>
-						<td class="left"><a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>24</td>
-					</tr>
-					<!-- 끝: 반복구간 -->
-					<tr>
-						<td>10</td>
-						<td class="left">
-							<a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a>
-						</td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>7</td>
-					</tr>
-				</tbody>
-				</table>
-				<!-- 끝: 리스트형 테이블 -->
-				<!-- 시작: 페이지 넘버 -->
-				<div class="pageNumBox">
-					<a href="" class="icoFront" title="처음 페이지">&nbsp;</a>
-					<a href="" class="icoPrev" title="이전 페이지">&nbsp;</a>
-					<span class="numBox">
-						<a href="" class="on">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">4</a>
-						<a href="">5</a>
-					</span>
-					<a href="" class="icoNext" title="다음 페이지">&nbsp;</a>
-					<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
-				</div>
-				<!-- 끝: 페이지 넘버 -->
+				<ul class="tab tab2">
+					<li class="on"><a href="#none">일반기준</a></li>
+					<li><a href="#none">인적요건</a></li>
+					<li><a href="#none">물적요건</a></li>
+					<li><a href="#none">신고서류</a></li>
+					<li><a href="#none">신고및처리</a></li>
+					<li><a href="#none">변경및보고</a></li>
+					<li><a href="#none">사후관리</a></li>
+					<li><a href="#none">전산시스템</a></li>
+				</ul>
 
-				<!-- 시작: 리스트 검색 -->
-				<div class="listSearch group">
-					<div class="floatL">
-						<div class="boxSelect selecter3" style="width: 118px;">
-							<a href="#none" class="activeTxt">제목</a>
-							<ul>
-								<li><a href="#none" data-role="0">제목</a></li>
-								<li><a href="#none" data-role="1">작성자</a></li>
-								<li><a href="#none" data-role="2">내용</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-					<div class="floatL">
-						<div class="boxInputText selecter3" style="">
-							<input type="text" name="" id="" style="width:232px" placeholder="검색어를 입력하세요" />
-							<button class="icoSearch2"><span></span></button>
-						</div>
-					</div>
-				</div>
-				<!-- 끝: 리스트 검색 -->
-
+				<!-- 시작: FAQ 테이블 -->
+				<dl class="faqList">
+					<!-- 시작: 반복영역 -->
+					<dt>
+						<span class="num">10</span>
+						<span class="division">Q</span>
+						<span class="title"><a href="#this">연구소</a></span>
+						<span class="condition">
+							<a href="#this" class="minus">-</a>
+							<a href="#this" class="plus">+</a>
+						</span>
+					</dt>
+					<dd>
+						<span class="division">A</span>
+						<span class="cont">
+							내용
+						</span>
+					</dd>
+					<!-- 끝: 반복영역 -->
+					<dt>
+						<span class="num">10</span>
+						<span class="division">Q</span>
+						<span class="title"><a href="#this">연구소</a></span>
+						<span class="condition">
+							<a href="#this" class="minus">-</a>
+							<a href="#this" class="plus">+</a>
+						</span>
+					</dt>
+					<dd>
+						<span class="division">A</span>
+						<span class="cont">
+							내용
+						</span>
+					</dd>
+				</dl>
+				<!-- 끝: FAQ 테이블 -->
 
 			</div>
 			<div id="aside">
@@ -270,7 +218,13 @@ var gVar=3, lVar=0, lsVar;
 </div>
 </body>
 <script>
-
+	selecter('.selecter1');
+	selecter('.selecter2');
+	selecter('.selecter3');
+	selecter('.selecter4');
+	tabSize('.tab1');
+	tabSize('.tab2');
+	tabSize('.tab3')
 </script>
 </html>
 
