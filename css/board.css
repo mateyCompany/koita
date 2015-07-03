@@ -29,8 +29,6 @@
 .icoSearch2{width:40px;height:40px;border-left:1px solid #e1e1e1;background:#fff;}
 .icoSearch2 span{display:inline-block;width:20px;height:20px;background:url(../images/sprite/ico_sprite.png) no-repeat -240px -270px;}
 
-
-
 /* 리스트 테이블 상단 */
 .tableTopBox{margin-bottom:10px;}
 .tableTopBox .total{margin:10px 0 6px 0;display:inline-block;}
@@ -153,7 +151,7 @@
 .writeTable th.thBg{background:#f3f5f6;}
 .writeTable td{border-left:1px solid #e1e1e1;padding:10px 20px;}
 .writeTable input[type="text"]{border:1px solid #dcdcdc;border-top:1px solid #b2b2b2;padding:5px 10px;}
-.writeTable input[type="radio"]{display:inline-block;vertical-align:middle;margin-right:8px;}
+.writeTable input[type="radio"]{display:inline-block;vertical-align:middle;margin-right:5px;}
 .writeTable .radios label{margin-right:20px;}
 .writeTable .radios .boxSelect{margin-right:20px;}
 .writeTable .btnSmall{margin-top:3px;}
