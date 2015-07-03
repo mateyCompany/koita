@@ -1,10 +1,7 @@
 $(document).ready(function(){
 	lnb();
 
-	
-	
-	
-	
+
 
 }); //end document ready
 
