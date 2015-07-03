@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	Lnb();
-
+	lnb();
 
 	
 	
@@ -54,23 +53,27 @@ function tabSize(target){
 
 };
 
-function Lnb(){
-	var $dep1 = $('.depth1 li');
-	var $dep2 = $('.depth2');
-	var text = $dep1.eq(gVar).find('a').text();
-	$dep1.eq(gVar).remove();
-	$('.selected1').text(text);
-	if(lVar >= 0 ){
-		$dep2.find('ul').removeClass('on');
-		$dep2.find('ul').eq(gVar).addClass('on');
-		$dep2.find('ul').eq(gVar).find('li').eq(lVar).addClass('on');
-		$dep2.find('.selected2').text($dep2.find('ul').eq(gVar).find('li').eq(lVar).find('a').text());
-		$dep2.find('ul').eq(gVar).find('li').eq(lVar).remove();
-
-	}else{
-		$dep2.hide();
-	}
-
-};
+function lnb(){
+	var $dap1 = $('h1.cTit').text();
+	var $dap2 = $('h2.cTit').text();
+	$('.depth1 li').each(function(idx){
+		var $this = $(this);
+		var txt = $this.find('a').text();
+		if(txt == $dap1){
+			$('.selected1').text($dap1);
+			$('.depth2').find('ul').eq(idx).addClass('on');
+			$('.depth2 ul.on li').each(function(idx){
+				var $this = $(this);
+				var txt = $this.find('a').text();
+				if(txt == $dap2){
+					$('.selected2').text($dap2);
+					$this.remove();
+					return false;
+				}
+			});
+			return false;
+		}
+	});
+}
 
 
