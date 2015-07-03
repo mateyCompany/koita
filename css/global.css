@@ -19,7 +19,30 @@ body {
 #gnb {float:left;margin-left:74px;line-height:40px;overflow:hidden;}
 #gnb li {float:left;margin-left:40px;}
 #gnb li:first-child {margin-left:0;}
-#gnb a {font-size:16px;color:#323232;font-weight:700}
+#gnb a {font-size:16px;color:#323232;font-weight:700;}
+
+.gnbBox,
+.mainSearchBox{background:#f9f9fa;border-top:1px solid #f0f0f4;}
+.gnbBox .innerBox{width:1000px;height:100%;margin:0 auto;padding:30px 0 40px 0;}
+.gnbBox .innerBox div{float:left;}
+.gnbBox .innerBox .child p{margin-bottom:15px;}
+.gnbBox .innerBox .child p strong a{font-size:18px;color:#0090cc;}
+.gnbBox .innerBox .child ul li{font-size:13px;margin-bottom:8px;}
+.gnbBox .innerBox .child ul li a{color:#323232;}
+.gnbBox .innerBox .num01{width:170px;}
+.gnbBox .innerBox .num02{width:169px;}
+.gnbBox .innerBox .num03{width:153px;}
+.gnbBox .innerBox .num04{width:136px;}
+.gnbBox .innerBox .num05{width:121px;}
+.gnbBox .innerBox .num06{width:127px;}
+.gnbBox .innerBox .num07{width:124px;}
+.gnbBox .innerBox .num07 p strong.icoGnbKey:before{content:'';display:inline-block;width:14px;height:17px;margin:0 4px 4px 0;background:url(../images/sprite/ico_sprite.png) -210px -330px no-repeat;vertical-align:middle;}
+
+.mainSearchBox{}
+.mainSearchBox .innerBox{width:1000px;height:100%;margin:0 auto;padding:}
+
+
+
 #quickLink {overflow:hidden;line-height:15px;float:right;margin-bottom:5px;}
 #quickLink li {float:left;margin-left:10px;}
 #quickLink li a {font-size:12px;}
@@ -54,5 +77,3 @@ body {
 #footer {border-top:1px solid #e2e2e2;width:1000px;margin:140px auto 0 auto;font-size:10px;color:#8c8c8c;padding-top:30px;overflow:hidden;}
 #footer .icoFooterLogo {float:left;margin-right:30px;}
 #footer .content {float:left;font-weight:700;}
-
-
