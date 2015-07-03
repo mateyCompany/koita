@@ -44,24 +44,16 @@ function selecter(tar){
 
 };
 
+/* 텝 사이즈 값 조절하기 */
 function tabSize(target){
 	var $tar = $(target).find('li');
 	var tarSize = 100/$tar.length;
 	$tar.each(function(idx){
 		$(this).css('width',tarSize+'%');
 	});
-
 };
 
-<<<<<<< HEAD
-function Lnb(){
-	var $dep1 = $('.depth1 li');
-	var text = $dep1.eq(gVar).find('a').text();
-	$dep1.eq(gVar).remove();
-	$('.selected1').text(text);
-
-};
-=======
+//서브메뉴
 function lnb(){
 	var $dap1 = $('h1.cTit').text();
 	var $dap2 = $('h2.cTit').text();
@@ -84,6 +76,5 @@ function lnb(){
 		}
 	});
 }
->>>>>>> 324647f82567a37f0ef521ec4a82fc9d0dca3504
 
 
