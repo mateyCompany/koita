@@ -56,9 +56,20 @@ function tabSize(target){
 
 function Lnb(){
 	var $dep1 = $('.depth1 li');
+	var $dep2 = $('.depth2');
 	var text = $dep1.eq(gVar).find('a').text();
 	$dep1.eq(gVar).remove();
 	$('.selected1').text(text);
+	if(lVar >= 0 ){
+		$dep2.find('ul').removeClass('on');
+		$dep2.find('ul').eq(gVar).addClass('on');
+		$dep2.find('ul').eq(gVar).find('li').eq(lVar).addClass('on');
+		$dep2.find('.selected2').text($dep2.find('ul').eq(gVar).find('li').eq(lVar).find('a').text());
+		$dep2.find('ul').eq(gVar).find('li').eq(lVar).remove();
+
+	}else{
+		$dep2.hide();
+	}
 
 };
 
