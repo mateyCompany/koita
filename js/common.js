@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	Lnb();
-
+	lnb();
 
 	
 	
@@ -54,6 +53,7 @@ function tabSize(target){
 
 };
 
+<<<<<<< HEAD
 function Lnb(){
 	var $dep1 = $('.depth1 li');
 	var text = $dep1.eq(gVar).find('a').text();
@@ -61,5 +61,29 @@ function Lnb(){
 	$('.selected1').text(text);
 
 };
+=======
+function lnb(){
+	var $dap1 = $('h1.cTit').text();
+	var $dap2 = $('h2.cTit').text();
+	$('.depth1 li').each(function(idx){
+		var $this = $(this);
+		var txt = $this.find('a').text();
+		if(txt == $dap1){
+			$('.selected1').text($dap1);
+			$('.depth2').find('ul').eq(idx).addClass('on');
+			$('.depth2 ul.on li').each(function(idx){
+				var $this = $(this);
+				var txt = $this.find('a').text();
+				if(txt == $dap2){
+					$('.selected2').text($dap2);
+					$this.remove();
+					return false;
+				}
+			});
+			return false;
+		}
+	});
+}
+>>>>>>> 324647f82567a37f0ef521ec4a82fc9d0dca3504
 
 
