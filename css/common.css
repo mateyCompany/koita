@@ -1,9 +1,10 @@
 @charset 'utf-8';
 
 /* 공통 */
-.lh22{line-height:22px;}
-.lh24{line-height:24px;}
-.mb45{margin-bottom:45px;}
+.lh22{line-height:22px !important;}
+.lh24{line-height:24px !important;}
+.mt40{margin-top:40px !important;}
+.mb45{margin-bottom:45px !important;}
 
 /* input size */
 .sizeSSmall{width:64px !important;}
@@ -102,7 +103,7 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 .boxSelect li:first-child {border-top:none;}
 
 /* top box */
-.topBox {background:#f7f9fa;padding:32px 0;text-align:center;border:1px solid #e1e4e6}
+.topBox {background:#f7f9fa;padding:32px 0;text-align:center;border:1px solid #e1e4e6;margin:45px 0 25px 0;}
 .topBox .inner {display:inline-block;overflow:hidden;}
 .topBox dl {text-align:left;display:inline-block;float:left;margin-top:5px;}
 .topBox dt {font-size:18px;font-weight:700;margin-bottom:5px;}
