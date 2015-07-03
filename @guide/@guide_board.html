@@ -138,6 +138,32 @@ var gVar, lVar, lsVar;
 			<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
 		</div>
 		<!-- 끝: 페이지 넘버 -->
+
+		<div class="listBtn alignRight numRight">
+			<a href="#none" class="btn fluidGray"><span>목록</span></a>
+		</div>
+
+		<!-- 시작: 리스트 검색 -->
+		<div class="listSearch group">
+			<div class="floatL">
+				<div class="boxSelect selecter3" style="width: 118px;">
+					<a href="#none" class="activeTxt">제목</a>
+					<ul>
+						<li><a href="#none" data-role="0">제목</a></li>
+						<li><a href="#none" data-role="1">작성자</a></li>
+						<li><a href="#none" data-role="2">내용</a></li>
+					</ul>
+					<input type="hidden" name="" value="0" id="selecter3">
+				</div>
+			</div>
+			<div class="floatL">
+				<div class="boxInputText selecter3" style="">
+					<input type="text" name="" id="" style="width:232px" placeholder="검색어를 입력하세요" />
+					<button class="icoSearch2"><span></span></button>
+				</div>
+			</div>
+		</div>
+		<!-- 끝: 리스트 검색 -->
 	</section>
 
 	<section>
@@ -449,6 +475,36 @@ var gVar, lVar, lsVar;
 			</tr>
 		</tbody>
 		</table>
+
+		<ul class="sMessage">
+			<li>- input과 텍스트가 같이 있는 표에 사용합니다.</li>
+			<li>- text만 있거나 input radio만있을 때 tr에 .noInput을 추가합니다.</li>
+		</ul>
+		<table class="writeTable borderNone heightS">
+			<caption>쓰기 테이블</caption>
+			<colgroup>
+				<col width="163px" />
+				<col width="507px" />
+			</colgroup>
+			<tbody>
+				<tr class="noInput">
+					<th scope="row">연구소/전담부서명</th>
+					<td>연구소 A</td>
+				</tr>
+				<tr>
+					<th scope="row">신청자 명</th>
+					<td>
+						<input type="text" name="" id="" class="sizeFull" />
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">취소 사유</th>
+					<td>
+						<input type="text" name="" id="" class="sizeFull" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</section>
 
 	<section>
@@ -523,6 +579,15 @@ var gVar, lVar, lsVar;
 		<li>- th부분이 흰색이어야 할 때 .white 를 추가합니다.</li>
 		<li>- th가 부분적으로 색이 다를때는 .thBg 를 추가합니다.</li>
 	</ul>
+	<ul class="sMessage">
+		<li>.sizeSSmall{width:64px !important;}</li>
+		<li>.sizeSmall{width:172px !important;}</li>
+		<li>.sizeMiddle{width:315px !important;}</li>
+		<li>.sizeMMiddle{width:344px !important;}</li>
+		<li>.sizeMMMiddle{width:395px !important;}</li>
+		<li>.sizeFull{width:465px !important;}</li>
+		<li>.sizeFFull{width:496px !important;}</li>
+	</ul>
 	<!-- 시작: 쓰기테이블 -->
 	<table class="writeTable thWhite">
 		<caption>쓰기 테이블</caption>
@@ -555,38 +620,40 @@ var gVar, lVar, lsVar;
 			<tr>
 				<th scope="row" colspan="2">시상 및 인증(장영실상,NET)</th>
 				<td>
-					<input type="text" name="" id="" class="size300_1" />
+					<input type="text" name="" id="" class="sizeMMMiddle" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row" rowspan="12">제품정보</th>
 				<th scope="row">제품명</th>
 				<td>
-					<input type="text" name="" id="" class="size300_1" />
+					<input type="text" name="" id="" class="sizeMMMiddle" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">홈페이지주소</th>
 				<td>
-					<input type="text" name="" id="" class="size300_1" />
+					<input type="text" name="" id="" class="sizeMMMiddle" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">개요</th>
 				<td>
-					<textarea name="" id="" cols="30" rows="10" class="size300_1"></textarea>
+					<input type="text" name="" id="" class="sizeSSmall" /> <span class="vAlignM">-</span>
+					<input type="text" name="" id="" class="sizeSSmall" /> <span class="vAlignM">-</span>
+					<input type="text" name="" id="" class="sizeSSmall" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">용도 및 기능</th>
 				<td>
-					<textarea name="" id="" cols="30" rows="10" class="size300_1"></textarea>
+					<textarea name="" id="" cols="30" rows="10" class="sizeMMMiddle"></textarea>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">특징 및 성능</th>
 				<td>
-					<textarea name="" id="" cols="30" rows="10" class="size300_1"></textarea>
+					<textarea name="" id="" cols="30" rows="10" class="sizeMMMiddle"></textarea>
 				</td>
 			</tr>
 			<tr>
@@ -612,32 +679,32 @@ var gVar, lVar, lsVar;
 			<tr>
 				<th scope="row">담당자</th>
 				<td>
-					<input type="text" name="" id="" class="size300_1" />
+					<input type="text" name="" id="" class="sizeMMMiddle" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">담당자 이메일</th>
 				<td>
-					<input type="text" name="" id="" class="size300_1" />
+					<input type="text" name="" id="" class="sizeMMMiddle" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">담당자 연락처</th>
 				<td>
-					<input type="text" name="" id="" class="size300_1" />
+					<input type="text" name="" id="" class="sizeMMMiddle" />
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">업종</th>
 				<td>
-					<input type="text" name="" id="" class="size300_2" />
+					<input type="text" name="" id="" class="sizeMiddle" />
 					<a href="#none" class="btnSmall fluidGray"><span>업종선택</span></a>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">세부설명자료</th>
 				<td>
-					<input type="file" name="" id="" class="size300_1" />
+					<input type="file" name="" id="" class="sizeMMMiddle" />
 					<p class="cDarkGray">※ 브로셔, 설명서, hwp, pdf, word 등</p>
 				</td>
 			</tr>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xml:lang="ko">
 <head>
-<title>공지사항 리스트 | 코이타</title>
+<title>신규설립 설립신고하기 | 코이타</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -9,9 +9,14 @@
 <link rel="stylesheet" type="text/css" href="../css/front.css" />
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script type="text/JavaScript">
-var gVar=3, lVar=0, lsVar;
+<script type="text/javascript">
 </script>
+<script type="text/JavaScript">
+var gVar=0, lVar=5, lsVar;
+</script>
+<style>
+
+</style>
 </head>
 <body>
 <div id="W-front">
@@ -22,7 +27,7 @@ var gVar=3, lVar=0, lsVar;
 				<li><a href="#none">HOME</a></li>
 				<li><a href="#none">로그인</a></li>
 				<!--<li><a href="#none">로그아웃</a></li>-->
-				<!--<li><a href="#none">마이페이지</a></li>-->
+				<!--<li><a href="#none">업무선택하기</a></li>-->
 				<li><a href="#none" class="spriteSheet noTxt icoTopSearch">검색</a></li>
 			</ul>
 			<h1 class="logo"><a href="/" class="spriteSheet noTxt topLogo">연구소/전담부서 신고관리시스템</a></h1>
@@ -57,9 +62,9 @@ var gVar=3, lVar=0, lsVar;
 				<ul>
 					<li><a href="#none" class="spriteSheet noTxt icoHome">home</a></li>
 					<li>
-						<a href="#none" class="selected">depth 1</a>
-						<ul>
-							<li><a href="#none" class="on">신규설립안내</a></li>
+						<a href="#none" class="selected1">depth 1</a>
+						<ul class="depth1">
+							<li><a href="#none">신규설립안내</a></li>
 							<li><a href="#none">변경신고안내</a></li>
 							<li><a href="#none">정보서비스</a></li>
 							<li><a href="#none">문의하기</a></li>
@@ -68,8 +73,8 @@ var gVar=3, lVar=0, lsVar;
 							<li><a href="#none">공인인증서</a></li>
 						</ul>
 					</li>
-					<li>
-						<a href="#none" class="selected">depth 2</a>
+					<li class="depth2">
+						<a href="#none" class="selected2">depth 2</a>
 						<ul class="sub01">
 							<li><a href="#none" class="on">제도안내</a></li>
 							<li><a href="#none">처리절차</a></li>
@@ -120,128 +125,134 @@ var gVar=3, lVar=0, lsVar;
 		<!--PAGE start-->
 		<div class="inner">
 			<div id="contents">
-				<h1 class="cTit">문의하기</h1>
-				<h2 class="cTit">공지사항</h2>
+				<h1 class="cTit">신규설립안내</h1>
+				<h2 class="cTit">신규설립 설립신고하기</h2>
 
-				<div class="tableTopBox group">
-					<div class="floatL">
-						<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
-					</div>
-					<div class="floatR group">
-						<div class="boxSelect selecter3" style="width: 138px;">
-							<a href="#none" class="activeTxt">리스트 개수</a>
-							<ul>
-								<li><a href="#none" data-role="0">10개</a></li>
-								<li><a href="#none" data-role="1">20개</a></li>
-								<li><a href="#none" data-role="2">30개</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-				</div>
-				
-				<!-- 시작: 리스트형 테이블 -->
-				<table class="listTable">
-				<caption>리스트 테이블</caption>
+				<ul class="tab tab2">
+					<li><a href="#none">신규설립신고</a></li>
+					<li class="on"><a href="#none">변경신고(신고내역보기)</a></li>
+					<li><a href="#none">양수도 신청</a></li>
+					<li><a href="#none">보유연구소현황</a></li>
+				</ul>
+
+				<h3 class="cTit2">연구소/전담부서 현황</h3>
+				<table class="writeTable borderNone">
+				<caption>데이터형 표</caption>
 				<colgroup>
-					<col width="74px" />
-					<col width="*" />
-					<col width="128px" />
-					<col width="95px" />
-					<col width="88px" />
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
 				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">순번</th>
-						<th scope="col">제목</th>
-						<th scope="col">글쓴이</th>
-						<th scope="col">날짜</th>
-						<th scope="col">조회수</th>
-					</tr>
-				</thead>
 				<tbody>
 					<tr>
-						<td colspan="5" class="listNone">작성된 글이 없습니다.</td>
+						<th scope="row">연구소/전담부서명</th>
+						<td>(주)메이티 모바일</td>
+						<th scope="row">인정년월일</th>
+						<td>2011.05.04</td>
 					</tr>
-					<!-- 시작: 반복구간 -->
-					<!-- 공지사항 글은 tr에 noti를 넣으시면 됩니다. -->
-					<tr class="noti">
-						<td>공지</td>
-						<td class="left"><a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>24</td>
-					</tr>
-					<!-- 끝: 반복구간 -->
 					<tr>
-						<td>10</td>
-						<td class="left">
-							<a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a>
-						</td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>7</td>
+						<th scope="row">전화번호</th>
+						<td>02-2627-5099</td>
+						<th scope="row">팩스번호</th>
+						<td>02-2627-5099</td>
+					</tr>
+					<tr>
+						<th scope="row">주소</th>
+						<td colspan="3">(153-711) 서울특별시 금천구 가산디지털1로 70713호 (가산동, 호서벤처타워)</td>
 					</tr>
 				</tbody>
 				</table>
-				<!-- 끝: 리스트형 테이블 -->
-				<!-- 시작: 페이지 넘버 -->
-				<div class="pageNumBox">
-					<a href="" class="icoFront" title="처음 페이지">&nbsp;</a>
-					<a href="" class="icoPrev" title="이전 페이지">&nbsp;</a>
-					<span class="numBox">
-						<a href="" class="on">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">4</a>
-						<a href="">5</a>
-					</span>
-					<a href="" class="icoNext" title="다음 페이지">&nbsp;</a>
-					<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
-				</div>
-				<!-- 끝: 페이지 넘버 -->
 
-				<!-- 시작: 리스트 검색 -->
-				<div class="listSearch group">
-					<div class="floatL">
-						<div class="boxSelect selecter3" style="width: 118px;">
-							<a href="#none" class="activeTxt">제목</a>
-							<ul>
-								<li><a href="#none" data-role="0">제목</a></li>
-								<li><a href="#none" data-role="1">작성자</a></li>
-								<li><a href="#none" data-role="2">내용</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-					<div class="floatL">
-						<div class="boxInputText selecter3" style="">
-							<input type="text" name="" id="" style="width:232px" placeholder="검색어를 입력하세요" />
-							<button class="icoSearch2"><span></span></button>
-						</div>
-					</div>
-				</div>
-				<!-- 끝: 리스트 검색 -->
+				<h3 class="cTit2">연구소/전담부서 현황</h3>
+				<table class="writeTable borderNone">
+				<caption>데이터형 표</caption>
+				<colgroup>
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">기업명</th>
+						<td>메이티</td>
+						<th scope="row">대표자명</th>
+						<td>김택규</td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호</th>
+						<td>02-2627-5099</td>
+						<th scope="row">팩스번호</th>
+						<td>02-2627-5099</td>
+					</tr>
+					<tr>
+						<th scope="row">주소</th>
+						<td colspan="3">(153-711) 서울특별시 금천구 가산디지털1로 70713호 (가산동, 호서벤처타워)</td>
+					</tr>
+				</tbody>
+				</table>
 
+				<h3 class="cTit2">처리상태</h3>
+				<table class="writeTable borderNone mb10">
+				<caption>데이터형 표</caption>
+				<colgroup>
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">상태</th>
+						<td>
+							임시저장(수리)
+							<a href="#none" class="btnSmall fluidGray"><span>삭제</span></a></td>
+						<th scope="row">최종처리일자</th>
+						<td>2014.06.17</td>
+					</tr>
+				</tbody>
+				</table>
+				<p>※ <strong>보안요청시</strong> 처리상태의 <strong>'보완요청'</strong>을 클릭하면 보완공문을 확인하실 수 있습니다.</p>
+
+				<h3 class="cTit2">처리현황</h3>
+				<table class="writeTable borderNone">
+				<caption>데이터형 표</caption>
+				<colgroup>
+					<col width="163px">
+					<col width="202px">
+					<col width="163px">
+					<col width="202px">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">처리상태</th>
+						<td>-</td>
+						<th scope="row">처리일자</th>
+						<td>-</td>
+					</tr>
+				</tbody>
+				</table>
+
+				<div class="listBtn alignRight">
+					<a href="#none" class="btn fluidDarkBlue" onclick="window.open('pop_postlnstitute.html', '_blank', 'width=830, height=447,left=200, top=200, scrollbars=no, resizeable=no, toolbar=no ');"><span>변경신고</span></a>
+					<a href="#none" class="btn fluidBlue"><span>신고내역보기</span></a>
+					<a href="#none" class="btn fluidGray"><span>담당자변경</span></a>
+				</div>
 
 			</div>
 			<div id="aside">
 				<div class="quickContent">
-					<h1>기업부설연구소 신고제도 변경안내</h1>
+					<h1>자주묻는 질문과 답변</h1>
 					<ul class="quickUl list">
-						<li><strong>
-							소기업 부설연구소 연구전담요원<br />
-							인정기준 완화<br />
-							- 창업일로부터 3년까지는<br />
-							연구전담요원 2명이상<br />
-							가능(2014.1.1부터)
-							</strong></li>
-						<li><strong>
-							중견기업 부설연구소 인정요건<br />
-							완화<br />
-							- 연구전담요원 7명이상<br />
-							가능(2014.1.1부터)
-						</strong></li>
+						<li><strong>처리기간은 어떻게 되나요?</strong></li>
+						<li class="blitNone">
+							신규설립/변경신고 접수 후 7일<br /> 이내에 처리됩니다.
+						</li>
+						<li><strong>보완사항 발생시 보완기간이 처리기간에 포함되나요?</strong></li>
+						<li class="blitNone">보완사항 발생시 보완처리일은 처리기간에 포함되지 않습니다. 신규설립은 7일, 변경신고는 7일이내에 보완하지 않을 경우 "자동반려"됩니다.</li>
+						<li><strong>신규설립/변경신고 완료 후 연구소인정서 발급은 어떻게 받나요?</strong></li>
+						<li class="blitNone">처리가 완료되면 담당자의 SMS, 이메일, 팩스로 안내되며 연구소 인정서는 온라인에서 출력하실 수 있습니다.</li>
 					</ul>
 				</div>
 				<div class="quickMenu">
@@ -270,7 +281,13 @@ var gVar=3, lVar=0, lsVar;
 </div>
 </body>
 <script>
-
+	selecter('.selecter1');
+	selecter('.selecter2');
+	selecter('.selecter3');
+	selecter('.selecter4');
+	tabSize('.tab1');
+	tabSize('.tab2');
+	tabSize('.tab3')
 </script>
 </html>
 

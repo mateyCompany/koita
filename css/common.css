@@ -1,9 +1,23 @@
 @charset 'utf-8';
 
+/* 공통 */
+.lh22{line-height:22px;}
+.lh24{line-height:24px;}
+.mb45{margin-bottom:45px;}
+
+/* input size */
+.sizeSSmall{width:64px !important;}
+.sizeSmall{width:172px !important;}
+.sizeMiddle{width:315px !important;}
+.sizeMMiddle{width:344px !important;}
+.sizeMMMiddle{width:395px !important;}
+.sizeFull{width:465px !important;}
+.sizeFFull{width:496px !important;}
+
 /* 타이틀 가이드 */
 h1.cTit {font-size:14px;color:#323232;margin-bottom:9px;font-weight:bold;}
 h2.cTit {font-size:36px;color:#323232;margin-bottom:30px}
-.cTit2 {}
+.cTit2{font-size:18px;font-weight:bold;margin-top:45px;margin-bottom:10px;}
 
 /* 버튼 */
 .spriteSheet {background:url('../images/sprite/ico_sprite.png') no-repeat 0 0;display:inline-block;border:none;overflow:hidden;}

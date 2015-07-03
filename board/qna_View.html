@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xml:lang="ko">
 <head>
-<title>공지사항 리스트 | 코이타</title>
+<title>Q&amp;A 상세 | 코이타</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -10,7 +10,7 @@
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/JavaScript">
-var gVar=3, lVar=0, lsVar;
+var gVar=3, lVar=2, lsVar;
 </script>
 </head>
 <body>
@@ -121,127 +121,69 @@ var gVar=3, lVar=0, lsVar;
 		<div class="inner">
 			<div id="contents">
 				<h1 class="cTit">문의하기</h1>
-				<h2 class="cTit">공지사항</h2>
-
-				<div class="tableTopBox group">
-					<div class="floatL">
-						<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
-					</div>
-					<div class="floatR group">
-						<div class="boxSelect selecter3" style="width: 138px;">
-							<a href="#none" class="activeTxt">리스트 개수</a>
-							<ul>
-								<li><a href="#none" data-role="0">10개</a></li>
-								<li><a href="#none" data-role="1">20개</a></li>
-								<li><a href="#none" data-role="2">30개</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-				</div>
+				<h2 class="cTit">Q&amp;A</h2>
 				
-				<!-- 시작: 리스트형 테이블 -->
-				<table class="listTable">
-				<caption>리스트 테이블</caption>
-				<colgroup>
-					<col width="74px" />
-					<col width="*" />
-					<col width="128px" />
-					<col width="95px" />
-					<col width="88px" />
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">순번</th>
-						<th scope="col">제목</th>
-						<th scope="col">글쓴이</th>
-						<th scope="col">날짜</th>
-						<th scope="col">조회수</th>
-					</tr>
-				</thead>
+				<!-- 시작: 뷰형식 테이블 -->
+				<table class="viewTable">
+				<caption>뷰 테이블</caption>
 				<tbody>
-					<tr>
-						<td colspan="5" class="listNone">작성된 글이 없습니다.</td>
+					<tr class="title">
+						<td><strong>연구소 전담요원에 대해서</strong></td>
 					</tr>
-					<!-- 시작: 반복구간 -->
-					<!-- 공지사항 글은 tr에 noti를 넣으시면 됩니다. -->
-					<tr class="noti">
-						<td>공지</td>
-						<td class="left"><a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>24</td>
-					</tr>
-					<!-- 끝: 반복구간 -->
-					<tr>
-						<td>10</td>
-						<td class="left">
-							<a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a>
+					<tr class="stick">
+						<td>
+							<span>김은영</span>
+							<span>2015.06.17</span>
+							<span>조회수 170</span>
 						</td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>7</td>
+					</tr>
+					<tr class="content">
+						<td>
+							내용
+						</td>
 					</tr>
 				</tbody>
 				</table>
-				<!-- 끝: 리스트형 테이블 -->
-				<!-- 시작: 페이지 넘버 -->
-				<div class="pageNumBox">
-					<a href="" class="icoFront" title="처음 페이지">&nbsp;</a>
-					<a href="" class="icoPrev" title="이전 페이지">&nbsp;</a>
-					<span class="numBox">
-						<a href="" class="on">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">4</a>
-						<a href="">5</a>
-					</span>
-					<a href="" class="icoNext" title="다음 페이지">&nbsp;</a>
-					<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
+				<!-- 끝: 뷰형식 테이블 -->
+
+				<div class="listBtn alignRight">
+					<a href="qna_write.html" class="btn fluidDarkBlue"><span>수정</span></a>
+					<a href="#this" class="btn fluidBlue"><span>삭제</span></a>
+					<a href="qna_list.html" class="btn fluidGray"><span>목록</span></a>
 				</div>
-				<!-- 끝: 페이지 넘버 -->
 
-				<!-- 시작: 리스트 검색 -->
-				<div class="listSearch group">
-					<div class="floatL">
-						<div class="boxSelect selecter3" style="width: 118px;">
-							<a href="#none" class="activeTxt">제목</a>
-							<ul>
-								<li><a href="#none" data-role="0">제목</a></li>
-								<li><a href="#none" data-role="1">작성자</a></li>
-								<li><a href="#none" data-role="2">내용</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-					<div class="floatL">
-						<div class="boxInputText selecter3" style="">
-							<input type="text" name="" id="" style="width:232px" placeholder="검색어를 입력하세요" />
-							<button class="icoSearch2"><span></span></button>
-						</div>
-					</div>
-				</div>
-				<!-- 끝: 리스트 검색 -->
-
-
+				<!-- 시작: 이전글 다음글 -->
+				<table class="prevNextTable">
+				<tdody>
+					<tr>
+						<th>&lt; <strong>이전글</strong></th>
+						<td class="title"><a href="#this">기업부설연구소와 연구개발전담부서 신고요령</a></td>
+						<td class="date">2015.06.18</td>
+					</tr>
+					<tr>
+						<th>&lt; <strong>다음글</strong></th>
+						<td class="title"><a href="#this" class="icoRepley">[답변]인정시기와 혜택에 질문들답변 글 <span class="spriteSheet noTxt icoLock">비밀글</span></a></td>
+						<td class="date">2015.06.28</td>
+					</tr>
+				</tdody>
+				</table>
+				<!-- 끝: 이전글 다음글 -->
 			</div>
+
 			<div id="aside">
 				<div class="quickContent">
 					<h1>기업부설연구소 신고제도 변경안내</h1>
 					<ul class="quickUl list">
 						<li><strong>
-							소기업 부설연구소 연구전담요원<br />
-							인정기준 완화<br />
-							- 창업일로부터 3년까지는<br />
-							연구전담요원 2명이상<br />
-							가능(2014.1.1부터)
-							</strong></li>
-						<li><strong>
-							중견기업 부설연구소 인정요건<br />
-							완화<br />
-							- 연구전담요원 7명이상<br />
-							가능(2014.1.1부터)
-						</strong></li>
+							중소기업 부설연구소 인정기준<br />
+							완화
+						</strong></li>	
+						<li class="blitNone">
+							<p>- 연구전담요원 5인이상에서<br />
+								<strong>3인이상</strong>으로 완화</p>
+							<p>- 2009.1 ~ 2011.6.30 까지<br />
+								2년간 한시 적용</p>
+						</li>
 					</ul>
 				</div>
 				<div class="quickMenu">

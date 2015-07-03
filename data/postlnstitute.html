@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xml:lang="ko">
 <head>
-<title>공지사항 리스트 | 코이타</title>
+<title>연구소/전담부서 | 코이타</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -9,9 +9,14 @@
 <link rel="stylesheet" type="text/css" href="../css/front.css" />
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script type="text/JavaScript">
-var gVar=3, lVar=0, lsVar;
+<script type="text/javascript">
 </script>
+<script type="text/JavaScript">
+var gVar=4, lVar=0, lsVar;
+</script>
+<style>
+
+</style>
 </head>
 <body>
 <div id="W-front">
@@ -22,7 +27,7 @@ var gVar=3, lVar=0, lsVar;
 				<li><a href="#none">HOME</a></li>
 				<li><a href="#none">로그인</a></li>
 				<!--<li><a href="#none">로그아웃</a></li>-->
-				<!--<li><a href="#none">마이페이지</a></li>-->
+				<!--<li><a href="#none">업무선택하기</a></li>-->
 				<li><a href="#none" class="spriteSheet noTxt icoTopSearch">검색</a></li>
 			</ul>
 			<h1 class="logo"><a href="/" class="spriteSheet noTxt topLogo">연구소/전담부서 신고관리시스템</a></h1>
@@ -57,9 +62,9 @@ var gVar=3, lVar=0, lsVar;
 				<ul>
 					<li><a href="#none" class="spriteSheet noTxt icoHome">home</a></li>
 					<li>
-						<a href="#none" class="selected">depth 1</a>
-						<ul>
-							<li><a href="#none" class="on">신규설립안내</a></li>
+						<a href="#none" class="selected1">depth 1</a>
+						<ul class="depth1">
+							<li><a href="#none">신규설립안내</a></li>
 							<li><a href="#none">변경신고안내</a></li>
 							<li><a href="#none">정보서비스</a></li>
 							<li><a href="#none">문의하기</a></li>
@@ -68,8 +73,8 @@ var gVar=3, lVar=0, lsVar;
 							<li><a href="#none">공인인증서</a></li>
 						</ul>
 					</li>
-					<li>
-						<a href="#none" class="selected">depth 2</a>
+					<li class="depth2">
+						<a href="#none" class="selected2">depth 2</a>
 						<ul class="sub01">
 							<li><a href="#none" class="on">제도안내</a></li>
 							<li><a href="#none">처리절차</a></li>
@@ -120,128 +125,79 @@ var gVar=3, lVar=0, lsVar;
 		<!--PAGE start-->
 		<div class="inner">
 			<div id="contents">
-				<h1 class="cTit">문의하기</h1>
-				<h2 class="cTit">공지사항</h2>
+				<h1 class="cTit">자료실</h1>
+				<h2 class="cTit">연구소/전담부서</h2>
 
-				<div class="tableTopBox group">
-					<div class="floatL">
-						<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
-					</div>
-					<div class="floatR group">
-						<div class="boxSelect selecter3" style="width: 138px;">
-							<a href="#none" class="activeTxt">리스트 개수</a>
-							<ul>
-								<li><a href="#none" data-role="0">10개</a></li>
-								<li><a href="#none" data-role="1">20개</a></li>
-								<li><a href="#none" data-role="2">30개</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-				</div>
-				
-				<!-- 시작: 리스트형 테이블 -->
-				<table class="listTable">
-				<caption>리스트 테이블</caption>
-				<colgroup>
-					<col width="74px" />
-					<col width="*" />
-					<col width="128px" />
-					<col width="95px" />
-					<col width="88px" />
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">순번</th>
-						<th scope="col">제목</th>
-						<th scope="col">글쓴이</th>
-						<th scope="col">날짜</th>
-						<th scope="col">조회수</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td colspan="5" class="listNone">작성된 글이 없습니다.</td>
-					</tr>
-					<!-- 시작: 반복구간 -->
-					<!-- 공지사항 글은 tr에 noti를 넣으시면 됩니다. -->
-					<tr class="noti">
-						<td>공지</td>
-						<td class="left"><a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a></td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>24</td>
-					</tr>
-					<!-- 끝: 반복구간 -->
-					<tr>
-						<td>10</td>
-						<td class="left">
-							<a href="notice_view.html">연구소/전담부서 인정취소 공고[KOITA-15-0040]</a>
-						</td>
-						<td>관리자</td>
-						<td>2015.06.17</td>
-						<td>7</td>
-					</tr>
-				</tbody>
+				<table class="dataTable thWhite">
+					<caption>데이터 테이블</caption>
+					<colgroup> 
+						<col width="120px" />
+						<col width="364px" />
+						<col width="122px" />
+						<col width="121px" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">신고요건</th>
+							<th scope="col">기업부설연구소</th>
+							<th scope="col">연구개발전담부서</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th scope="row" colspan="2">범례</th>
+							<td colspan="2">○가능,△일부가능,X불가능</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="3">조세</th>
+							<td>연구 및 인력개발비 세액공제</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>연구 및 인력개발을 위한 설비투자에 대한 세액공제</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<td>기업부설연구소용 부동산에 대한 지방세 감면</td>
+							<td>○</td>
+							<td>X</td>
+						</tr>
+						<tr>
+							<th scope="row">관세</th>
+							<td>학술연구용품에 대한 관세감면</td>
+							<td>○</td>
+							<td>○</td>
+						</tr>
+						<tr>
+							<th scope="row">자금</th>
+							<td>국가연구개발사업</td>
+							<td>○</td>
+							<td>△</td>
+						</tr>
+						<tr>
+							<th scope="row">병역특례</th>
+							<td>전문연구요원제도</td>
+							<td>○</td>
+							<td>X</td>
+						</tr>
+					</tbody>
 				</table>
-				<!-- 끝: 리스트형 테이블 -->
-				<!-- 시작: 페이지 넘버 -->
-				<div class="pageNumBox">
-					<a href="" class="icoFront" title="처음 페이지">&nbsp;</a>
-					<a href="" class="icoPrev" title="이전 페이지">&nbsp;</a>
-					<span class="numBox">
-						<a href="" class="on">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">4</a>
-						<a href="">5</a>
-					</span>
-					<a href="" class="icoNext" title="다음 페이지">&nbsp;</a>
-					<a href="" class="icoEnd" title="마지막 페이지">&nbsp;</a>
-				</div>
-				<!-- 끝: 페이지 넘버 -->
-
-				<!-- 시작: 리스트 검색 -->
-				<div class="listSearch group">
-					<div class="floatL">
-						<div class="boxSelect selecter3" style="width: 118px;">
-							<a href="#none" class="activeTxt">제목</a>
-							<ul>
-								<li><a href="#none" data-role="0">제목</a></li>
-								<li><a href="#none" data-role="1">작성자</a></li>
-								<li><a href="#none" data-role="2">내용</a></li>
-							</ul>
-							<input type="hidden" name="" value="0" id="selecter3">
-						</div>
-					</div>
-					<div class="floatL">
-						<div class="boxInputText selecter3" style="">
-							<input type="text" name="" id="" style="width:232px" placeholder="검색어를 입력하세요" />
-							<button class="icoSearch2"><span></span></button>
-						</div>
-					</div>
-				</div>
-				<!-- 끝: 리스트 검색 -->
-
-
 			</div>
 			<div id="aside">
 				<div class="quickContent">
-					<h1>기업부설연구소 신고제도 변경안내</h1>
+					<h1>자주묻는 질문과 답변</h1>
 					<ul class="quickUl list">
-						<li><strong>
-							소기업 부설연구소 연구전담요원<br />
-							인정기준 완화<br />
-							- 창업일로부터 3년까지는<br />
-							연구전담요원 2명이상<br />
-							가능(2014.1.1부터)
-							</strong></li>
-						<li><strong>
-							중견기업 부설연구소 인정요건<br />
-							완화<br />
-							- 연구전담요원 7명이상<br />
-							가능(2014.1.1부터)
-						</strong></li>
+						<li>연구소 신고업무를 주관 하는<br />부서는?</li>
+						<li class="blitNone">
+							<p><span>한국산업기술진흥협회</span></p>
+							<p><span>- 연구소인정단(서울본사)</span></p>
+							<p><strong>대표전화 : 080-555-9114</strong></p>
+						</li>
 					</ul>
 				</div>
 				<div class="quickMenu">

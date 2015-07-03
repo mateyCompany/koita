@@ -45,10 +45,10 @@ body {
 #lnb ul ul li:hover a {color:#fff;}
 #lnb ul ul li a {display:block;width:100%;padding:0 10px 0 30px;font-size:13px;font-weight:700}
 #container > .inner {width:1000px;margin:0 auto;overflow:hidden;padding-top:40px;}
-#contents {float:left;max-width:730px}
+#contents {float:left;width:730px}
 #aside {float:right;width:190px;}
 #aside .quickContent {margin-bottom:40px;}
-#aside h1 {font-size:18px;color:#323232;font-weight:700;padding-bottom:5px;border-bottom:1px solid #e2e2e2}
+#aside h1 {font-size:18px;color:#323232;font-weight:700;padding-bottom:5px;border-bottom:1px solid #e2e2e2;letter-spacing:-0.4px;}
 #aside .quickMenu li a {display:block;padding:6px 3px;font-size:13px;border-bottom:1px solid #e2e2e2;color:#000;letter-spacing:-1px}
 #aside .quickMenu span {display:inline-block;line-height:13px;vertical-align: middle;margin-right:5px;}
 #footer {border-top:1px solid #e2e2e2;width:1000px;margin:140px auto 0 auto;font-size:10px;color:#8c8c8c;padding-top:30px;overflow:hidden;}
