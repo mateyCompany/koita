@@ -16,7 +16,7 @@
 	<div id="header">
 		<div class="inner">
 			<ul id="quickLink">
-				<li><a href="#none">HOME</a></li>
+				<li><a href="../">HOME</a></li>
 				<li><a href="#none">로그인</a></li>
 				<!--<li><a href="#none">로그아웃</a></li>-->
 				<!--<li><a href="#none">업무선택하기</a></li>-->
@@ -24,7 +24,7 @@
 			</ul>
 			<h1 class="logo"><a href="/" class="spriteSheet noTxt topLogo">연구소/전담부서 신고관리시스템</a></h1>
 			<ul id="gnb">
-				<li><a href="#none">신규설립안내</a></li>
+				<li><a href="../newly/system_view.jsp">신규설립안내</a></li>
 				<li><a href="#none">변경신고안내</a></li>
 				<li><a href="#none">정보서비스</a></li>
 				<li><a href="#none">문의하기</a></li>
@@ -33,6 +33,26 @@
 				<li><a href="#none">공인인증센터</a></li>
 			</ul>
 		</div>
+		<!--상단 검색창 start -->
+		<div class="mainSearchBox">
+			<div class="innerBox">
+				<form action="">
+					<fieldset>
+						<legend>검색창</legend>
+						<div class="searchChk">
+							<input type="radio" name="searchSelect" id="searchChk1" checked="checked"/><label for="searchChk1">연구소검색</label>
+							<input type="radio" name="searchSelect" id="searchChk2"/><label for="searchChk2">통합검색</label>
+						</div>
+						<div class="searchBox">
+							<input type="text" name="" id=""/>
+							<button type="submit"class="spriteSheet noTxt btnSearch">검색</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!--상단 검색창 end -->
+		<!--GNB 숨김메뉴 start -->
 		<div class="gnbBox">
 			<div class="innerBox group">
 				<div class="child num01">
@@ -98,11 +118,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="mainSearchBox">
-			<div class="innerBox">
-				mainSearchBox
-			</div>
-		</div>
+		<!--GNB 숨김메뉴 end -->
 		<div class="subBanner">
 			<div class="inner">
 				<ul>

@@ -1,5 +1,7 @@
 $(document).ready(function(){
+	gnb();
 	lnb();
+	searchBtn();
 
 
 
@@ -75,3 +77,22 @@ function lnb(){
 }
 
 
+//gnb
+function gnb(){
+	var $hiddenGnb = $('.gnbBox');
+	$('#gnb').hover(function(){
+		$hiddenGnb.slideDown();
+	});
+	$('#header').hover(function(){},function(){
+		$hiddenGnb.stop().slideUp();
+	});
+
+};
+
+//topSearchBox
+function searchBtn(){
+	$('.icoTopSearch').click(function(){
+		$('.mainSearchBox').slideToggle();
+		return false;
+	});
+}

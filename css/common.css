@@ -44,6 +44,7 @@ a.btn span {margin-top:0}
 .btnSmall.fluidGray {background-image:url('../images/btn/btn_small_front_gray.png')}
 .btnSmall.fluidGray span {background-image:url('../images/btn/btn_small_end_gray.png')}
 a.btnSmall.fluidGray span {margin-top:0;}
+.btnSearch {display:inline-block;width:20px;height:20px;background-position:-130px -300px}
 
 /* 아이콘 */
 .icoRedWaring:before {content:'';display:inline-block;width:17px;height:17px;background:url('../images/sprite/ico_sprite.png') no-repeat -350px -250px;margin-right:5px;vertical-align: middle;}
