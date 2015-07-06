@@ -38,7 +38,7 @@ a.btn span {margin-top:0}
 .btn.fluidGray {background-image:url('../images/btn/btn_front_gray.png')}
 .btn.fluidGray span {background-image: url('../images/btn/btn_end_gray.png');}
 .btnSmall {display:inline-block;color:#fff;height:24px;line-height:24px;overflow:hidden;padding-left:14px;background:none;background-position:left center;background-repeat:no-repeat;}
-.btnSmall span {display:inline-block;float:left;text-align:center;padding-right:14px;background:none;background-position:right center;background-repeat:no-repeat;margin-top:-1px;font-weight:800;font-size:13px;min-width:42px}
+.btnSmall span {display:inline-block;float:left;text-align:center;padding:0 14px 0 12px;background:none;background-position:right center;background-repeat:no-repeat;margin-top:-1px;font-weight:800;font-size:13px;min-width:42px}
 .btnSmall.fluidBlue {background-image:url('../images/btn/btn_small_front_blue.png')}
 .btnSmall.fluidBlue span {background-image:url('../images/btn/btn_small_end_blue.png')}
 .btnSmall.fluidGray {background-image:url('../images/btn/btn_small_front_gray.png')}

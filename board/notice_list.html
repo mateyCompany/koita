@@ -9,9 +9,6 @@
 <link rel="stylesheet" type="text/css" href="../css/front.css" />
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script type="text/JavaScript">
-var gVar=3, lVar=0, lsVar;
-</script>
 </head>
 <body>
 <div id="W-front">
@@ -128,12 +125,13 @@ var gVar=3, lVar=0, lsVar;
 						<span class="total">총 게시물 <strong class="cRed">1,221</strong>건</span>
 					</div>
 					<div class="floatR group">
-						<div class="boxSelect selecter3" style="width: 138px;">
+						<div class="boxSelect listBox" style="width: 138px;">
 							<a href="#none" class="activeTxt">리스트 개수</a>
 							<ul>
-								<li><a href="#none" data-role="0">10개</a></li>
-								<li><a href="#none" data-role="1">20개</a></li>
-								<li><a href="#none" data-role="2">30개</a></li>
+								<li><a href="#none" data-role="0">리스트 개수</a></li>
+								<li><a href="#none" data-role="1">10개</a></li>
+								<li><a href="#none" data-role="2">20개</a></li>
+								<li><a href="#none" data-role="3">30개</a></li>
 							</ul>
 							<input type="hidden" name="" value="0" id="selecter3">
 						</div>
@@ -204,7 +202,7 @@ var gVar=3, lVar=0, lsVar;
 				<!-- 시작: 리스트 검색 -->
 				<div class="listSearch group">
 					<div class="floatL">
-						<div class="boxSelect selecter3" style="width: 118px;">
+						<div class="boxSelect searchList" style="width: 118px;">
 							<a href="#none" class="activeTxt">제목</a>
 							<ul>
 								<li><a href="#none" data-role="0">제목</a></li>
@@ -270,7 +268,8 @@ var gVar=3, lVar=0, lsVar;
 </div>
 </body>
 <script>
-
+	selecter('.listBox');
+	selecter('.searchList');
 </script>
 </html>
 
