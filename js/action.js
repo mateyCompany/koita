@@ -10,7 +10,7 @@ $(document).ready(function(){
 		var $thisDt = $(this).parent().parent();
 		var $siblings = $thisDt.siblings();
 
-		console.log($thisDt.children('.minus'));
+		//console.log($thisDt.children('.minus'));
 		$thisDt.addClass($name);
 		$thisDt.next('dd').slideDown();
 		$siblings.removeClass($name);

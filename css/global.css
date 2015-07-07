@@ -67,7 +67,8 @@ body {
 #lnb {width:100%;background:#fbfbfc;height:37px;line-height:37px;border-bottom:1px solid #e4e4e4;}
 #lnb .inner {width:1000px;margin:0 auto;background:url('../images/sprite/bgNav.png') no-repeat right center;}
 #lnb .inner > ul > li {display:inline-block;position:relative;background:url('../images/sprite/bgLnb.png') no-repeat left center;padding:0 10px 0 30px;}
-#lnb .inner > ul > li:hover ul {display:block;}
+#lnb .inner > ul > li:hover ul.depth1 {display:block;}
+#lnb .inner > ul > li:hover ul.on {display:block;}
 #lnb .inner > ul > li > a:after {content:'';display:inline-block;width:8px;height:5px;background:url('../images/sprite/ico_sprite.png') no-repeat -370px -140px;margin-left:5px;}
 #lnb .inner > ul > li:first-child {background:none;padding:0 10px 0 0}
 #lnb ul ul {position:absolute;left:0;top:37px;display:none;}
@@ -76,7 +77,8 @@ body {
 #lnb ul ul li:hover {background:#2f3f60;}
 #lnb ul ul li:hover a {color:#fff;}
 #lnb ul ul li a {display:block;width:100%;padding:0 10px 0 30px;font-size:13px;font-weight:700}
-#container > .inner {width:1000px;margin:0 auto;adding-top:40px;}
+#lnb .inner > ul > li:hover ul.on {display:block;}
+#container > .inner {width:1000px;margin:0 auto;padding-top:40px;}
 #container > .inner:after {content:""; display:block; clear:both;height:0;width:0;visibility:hidden;font-size:0;}
 #contents {float:left;width:730px}
 #aside {float:right;width:190px;}

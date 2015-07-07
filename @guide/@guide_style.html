@@ -211,7 +211,7 @@ var gVar, lVar, lsVar;
 
 	<section>
 		<h1 class="guide">TAB</h1>
-		<p class="cRed icoRedWaring">탭갯수에 따라 자동으로 %로 분할하여 위드값이 조절이 됨 사용법은 tabSize('설렉터');</p>
+		<p class="cRed icoRedWaring">탭갯수에 따라 넓이가 자동으로 맞춰야 하기때문에 스크립트 사용 <br/>자동으로 %로 분할하여 위드값이 조절이 됨 사용법은 tabSize('설렉터');</p>
 		<h2>기본탭</h2>
 		<ul class="tab tab1">
 			<li class="on"><a href="#none">활성화</a></li>
@@ -245,10 +245,13 @@ var gVar, lVar, lsVar;
 </div>
 </body>
 <script>
+	//설렉트 박스
 	selecter('.selecter1');
 	selecter('.selecter2');
 	selecter('.selecter3');
 	selecter('.selecter4');
+
+	//텝크기 자동조절
 	tabSize('.tab1');
 	tabSize('.tab2');
 	tabSize('.tab3')

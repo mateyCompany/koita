@@ -131,6 +131,7 @@
 .faqList dt:first-child .condition .plus{display:none;}
 .faqList dd{padding:17px 80px 35px 67px;display:none;}
 .faqList dt .title{color:#272727;}
+.faqList dt.selected a {cursor:default;}
 
 /* 입력형 테이블 */
 .writeTable{width:730px;border-top:2px solid #b3bcc0;margin-bottom:20px;margin-top:25px;}

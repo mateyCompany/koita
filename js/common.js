@@ -62,6 +62,7 @@ function lnb(){
 		if(txt == $dap1){
 			$('.selected1').text($dap1);
 			$('.depth2').find('ul').eq(idx).addClass('on');
+			$this.remove();
 			$('.depth2 ul.on li').each(function(idx){
 				var $this = $(this);
 				var txt = $this.find('a').text();

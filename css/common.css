@@ -100,9 +100,11 @@ table .linkDown:before {width:20px;height:20px;line-height:20px;background-posit
 .boxSelect > a {display:block;background:#fff;padding:7px 48px 7px 12px;text-align:left;}
 .boxSelect > a:before {content:'';display:block;position:absolute;right:0px;top:0;width:36px;border-left:1px solid #e1e1e1;height:30px;background:url('../images/sprite/ico_sprite.png') no-repeat -240px -300px}
 .boxSelect ul {position:absolute;left:-1px;top:30px;height:30px;background:#fff;border-bottom:1px solid #e1e1e1;border-top:1px solid #e1e1e1;display:none;}
-.boxSelect ul.on {display:block;z-index:10}
-.boxSelect li {border:1px solid #e1e1e1;background:#fff;text-align:left;border-top:none;padding:7px 50px 7px 12px;}
-.boxSelect li a {display:block;white-space: nowrap;width:100%;height:100%;}
+.boxSelect.searchList ul {top:40px;}
+.boxSelect ul.on {display:block;z-index:10;width:101%}
+.boxSelect li {border:1px solid #e1e1e1;background:#fff;text-align:left;border-top:none;}
+.boxSelect li a {display:block;white-space: nowrap;padding:7px 50px 7px 12px;}
+.boxSelect li a:hover {background:#e2e2e2}
 .boxSelect li:first-child {border-top:none;}
 
 /* top box */
