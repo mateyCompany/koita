@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+	<title>코이타 스타일 가이드</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="../css/front.css" />
+	<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<div id="W-front">
+	<!--header start-->
+	<div id="header">
+		<div class="inner">
+			<ul id="quickLink">
+				<li><a href="../">HOME</a></li>
+				<li><a href="../../login/login.jsp">로그인</a></li>
+				<!--<li><a href="../../">로그아웃</a></li>-->
+				<!--<li><a href="../../">업무선택하기</a></li>-->
+				<li><a href="#none" class="spriteSheet noTxt icoTopSearch">검색</a></li>
+			</ul>
+			<h1 class="logo"><a href="/" class="spriteSheet noTxt topLogo">연구소/전담부서 신고관리시스템</a></h1>
+			<ul id="gnb">
+				<li><a href="../../newly/system_view.jsp">신규설립안내</a></li>
+				<li><a href="../../change/change_view.jsp">변경신고안내</a></li>
+				<li><a href="../../infoservice/stats_yngurnd.jsp">정보서비스</a></li>
+				<li><a href="../../board/notice_list.jsp">문의하기</a></li>
+				<li><a href="../../data/postlnstitute.jsp">자료실</a></li>
+				<li><a href="../../management/research_inquiry.jsp">사후관리</a></li>
+				<li><a href="https://www.tradesign.net/koita/" target="_blank">공인인증센터</a></li>
+			</ul>
+		</div>
+		<!--상단 검색창 start -->
+		<div class="mainSearchBox">
+			<div class="innerBox">
+				<form action="">
+					<fieldset>
+						<legend>검색창</legend>
+						<div class="searchChk">
+							<input type="radio" name="searchSelect" id="searchChk1" checked="checked"/><label for="searchChk1">연구소검색</label>
+							<input type="radio" name="searchSelect" id="searchChk2"/><label for="searchChk2">통합검색</label>
+						</div>
+						<div class="searchBox">
+							<input type="text" name="" id=""/>
+							<button type="submit"class="spriteSheet noTxt btnSearch">검색</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!--상단 검색창 end -->
+		<!--GNB 숨김메뉴 start -->
+		<div class="gnbBox">
+			<div class="innerBox group">
+				<div class="child num01">
+					<p><strong><a href="../../newly/system_view.jsp">신규설립안내</a></strong></p>
+					<ul>
+						<li><a href="../../newly/system_view.jsp">신규설립 제도안내</a></li>
+						<li><a href="../../newly/procedure.jsp">신규설립 처리절차</a></li>
+						<li><a href="../../newly/erection_principal.jsp">신규설립 신고대상</a></li>
+						<li><a href="../../newly/requirements_human01.jsp?#human01">신규설립 신고요건</a></li>
+						<li><a href="../../newly/documents_corporate01.jsp">신규설립 신고서류</a></li>
+						<li><a href="../../login/login_main.jsp">설립신고하기</a></li>
+					</ul>
+				</div>
+				<div class="child num02">
+					<p><strong><a href="../../change/change_view.jsp">변경신고안내</a></strong></p>
+					<ul>
+						<li><a href="../../change/change_view.jsp">변경신고절차</a></li>
+						<li><a href="../../change/change_target.jsp">변경신고대상</a></li>
+						<li><a href="../../change/yangsudo_type.jsp">양수도신고</a></li>
+						<li><a href="../../login/login_newly.jsp">변경신고하기</a></li>
+					</ul>
+				</div>
+				<div class="child num03">
+					<p><strong><a href="../../infoservice/stats_yngurnd.jsp">정보서비스</a></strong></p>
+					<ul>
+						<li><a href="../../infoservice/stats_yngurnd.jsp">기업연구소 통계현황</a></li>
+						<li><a href="../../infoservice/stats_1.jsp">기업연구소 검색</a></li>
+						<li><a href="../..//infoservice/infoservice2_view.jsp">기업연구소 상세검색</a></li>
+						<li><a href="../../infoservice/infoservice3_view.jsp">홍보제품 검색</a></li>
+						<li><a href="../../infoservice/infoservice6_view.jsp">홍보제품 등록</a></li>
+					</ul>
+				</div>
+				<div class="child num04">
+					<p><strong><a href="../../board/notice_list.jsp">문의하기</a></strong></p>
+					<ul>
+						<li><a href="../../board/notice_list.jsp">공지사항</a></li>
+						<li><a href="../../board/faq_list.jsp">FAQ</a></li>
+						<li><a href="../../board/qna01_list.jsp ">Q&amp;A</a></li>
+						<li><a href="../../customer/phone_consult_write.jsp">전화상담 예약</a></li>
+						<li><a href="../../customer/call_service.jsp">정기상담회 신청하기</a></li>
+						<li><a href="../../customer/report_lab_write.jsp">부실연구소 신고센터</a></li>
+						<li><a href="../../change/resolve_status.jsp">프로그램 문제해결</a></li>
+					</ul>
+				</div>
+				<div class="child num05">
+					<p><strong><a href="../../data/postlnstitute.jsp">자료실</a></strong></p>
+					<ul>
+						<li><a href="https://www.koita.or.kr/certificate/rndsupport.aspx" target="_blank">R&amp;D지원제도</a></li>
+						<li><a href="../../board/document_list.jsp">문서자료실</a></li>
+					</ul>
+				</div>
+				<div class="child num06">
+					<p><strong><a href="../../management/research_inquiry.jsp">사후관리</a></strong></p>
+					<ul>
+						<li><a href="../../management/research_inquiry.jsp">연구개발활동조사</a></li>
+						<li><a href="../../management/research_confirmation.jsp">현지확인</a></li>
+						<li><a href="../../management/research_cancel.jsp">인정취소</a></li>
+						<li><a href="../../change/reissuance.jsp">인증서재발급</a></li>
+					</ul>
+				</div>
+				<div class="child num07">
+					<p><strong class="icoGnbKey"><a href="https://www.tradesign.net/koita/" target="_blank">공인인증센터</a></strong></p>
+				</div>
+			</div>
+		</div>
+		<!--GNB 숨김메뉴 end -->
+		<div class="subBanner">
+			<div class="inner">
+				<ul>
+					<li><a href="../../login/login_newly.jsp"><span class="spriteSheet icoSubQuick01"></span>온라인신규설립신고<span>바로가기</span></a></li>
+					<li><a href="../../login/login_change.jsp"><span class="spriteSheet icoSubQuick02"></span>온라인 변경신고<span>바로가기</span></a></li>
+					<li><a href="../../"><span class="spriteSheet icoSubQuick03"></span>신고내역확인<span>바로가기</span></a></li>
+					<li><a href="https://www.tradesign.net/koita/" target="_blank"><span class="spriteSheet icoSubQuick04"></span>공인인증서<span>바로가기</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--header end-->
+
+	<!--container start-->
+	<div id="container">
+		<!--LNB start-->
+		<div id="lnb">
+			<div class="inner">
+				<ul>
+					<li><a href="../../" class="spriteSheet noTxt icoHome">home</a></li>
+					<li>
+						<a href="../../" class="selected1">depth 1</a>
+						<ul class="depth1">
+							<li><a href="../../newly/system_view.jsp">신규설립안내</a></li>
+							<li><a href="../../change/change_view.jsp">변경신고안내</a></li>
+							<li><a href="../../infoservice/stats_yngurnd.jsp">정보서비스</a></li>
+							<li><a href="../../board/notice_list.jsp">문의하기</a></li>
+							<li><a href="../../data/postlnstitute.jsp">자료실</a></li>
+							<li><a href="../../management/research_inquiry.jsp">사후관리</a></li>
+							<li><a href="https://www.tradesign.net/koita/" target="_blank">공인인증서</a></li>
+						</ul>
+					</li>
+					<li class="depth2">
+						<a href="../../" class="selected2">depth 2</a>
+						<ul class="sub01">
+							<li><a href="../../newly/system_view.jsp">신규설립 제도안내</a></li>
+							<li><a href="../../newly/procedure.jsp">신규설립 처리절차</a></li>
+							<li><a href="../../newly/erection_principal.jsp">신규설립 신고대상</a></li>
+							<li><a href="../../newly/requirements_human01.jsp?#human01">신규설립 신고요건</a></li>
+							<li><a href="../../newly/documents_corporate01.jsp">신규설립 신고서류</a></li>
+							<li><a href="../../login/login_main.jsp">설립신고하기</a></li>
+						</ul>
+						<ul class="sub02">
+							<li><a href="../../change/change_view.jsp">변경신고절차</a></li>
+							<li><a href="../../change/change_target.jsp">변경신고대상</a></li>
+							<li><a href="../../change/yangsudo_type.jsp">양수도신고</a></li>
+							<li><a href="../../login/login_newly.jsp">변경신고하기</a></li>
+						</ul>
+						<ul class="sub03">
+							<li><a href="../../infoservice/stats_yngurnd.jsp">R&amp;D 통계</a></li>
+							<li><a href="../../infoservice/stats_1.jsp">기업연구소통계현황</a></li>
+							<li><a href="../../infoservice/infoservice2_view.jsp">기업연구소 검색</a></li>
+							<li><a href="../../infoservice/infoservice2_5_view.jsp">기업연구소 상세검색</a></li>
+							<li><a href="../../infoservice/infoservice3_view.jsp">홍보 제품검색</a></li>
+							<li><a href="../../infoservice/infoservice6_view.jsp">홍보 제품등록</a></li>
+						</ul>
+						<ul class="sub04">
+							<li><a href="../../board/notice_list.jsp">공지사항</a></li>
+							<li><a href="../../board/faq_list.jsp">FAQ</a></li>
+							<li><a href="../../board/qna01_list.jsp ">Q&amp;A</a></li>
+							<li><a href="../../customer/phone_consult_write.jsp">전화상담 예약</a></li>
+							<li><a href="../../customer/call_service.jsp">정기상담회 신청하기</a></li>
+							<li><a href="../../customer/report_lab_write.jsp">부실연구소 신고센터</a></li>
+							<li><a href="../../change/resolve_status.jsp">프로그램 문제해결</a></li>
+						</ul>
+						<ul class="sub05">
+							<li><a href="https://www.koita.or.kr/certificate/rndsupport.aspx" target="_blank">R&amp;지원제도</a></li>
+							<li><a href="../../board/document_list.jsp">문서자료실</a></li>
+						</ul>
+						<ul class="sub06">
+							<li><a href="../../management/research_inquiry.jsp">연구개발 활동조솨</a></li>
+							<li><a href="../../management/research_confirmation.jsp">현지확인</a></li>
+							<li><a href="../../management/research_cancel.jsp"인정취소></a></li>
+							<li><a href="../../change/reissuance.jsp">인정서재발급</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--LNB end-->
+
+		<!--PAGE start-->
+		<div class="inner">
+			<div id="contents">
+				<!--컨텐츠 시작-->
+
+
+				<h1 class="cTit">신규설립안내</h1>
+				<h2 class="cTit">신규설립 제도안내</h2>
+				<ul class="tab topTab">
+					<li><a href="../../newly/system_view.jsp">개요</a></li>
+					<li class="on"><a href="../../newly/law_skill.jsp">관련법규</a></li>
+					<li><a href="../../newly/system_notices.jsp" >미래부 고시</a></li>
+				</ul>
+
+				<div class="lineH180per">
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 제14조(특정연구개발사업의 추진)</h3>
+					<ol class="list">
+						<li>미래창조과학부장관은 기초연구의 성과 등을 바탕으로 하여 국가 미래 유망기술과 융합기술을 중점적으로 개발하기 위한 연구개발사업(이하 "특정연구개발사업"이라 한다)에 대하여 계획을 수립하고, 연도별로 연구과제를 선정하여 이를 다음 각 호의 기관 또는 단체와 협약을 맺어 연구하게 할 수 있다. 이 경우 제2호의 기관 중 대표권이 없는 기관에 대하여는 그 기관이 속한 법인의 대표자와 협약할 수 있다.
+							<ul class="list round mt20">
+								<li>제6조제1항 각 호에 해당하는 기관</li>
+								<li>연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 기업부설연구소 및 기업의 연구개발전담부서</li>
+								<li>「산업기술연구조합 육성법」에 따른 산업기술연구조합</li>
+								<li>「나노기술개발 촉진법」 제7조에 따른 나노기술연구협의회</li>
+								<li>「민법」 또는 다른 법률에 따라 설립된 과학기술분야 비영리법인 중 연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 비영리법인</li>
+								<li>「의료법」에 따라 설립된 의료법인 중 연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 의료법인</li>
+								<li>그 밖에 연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 국내외 연구 기관 또는 단체 및 영리를 목적으로 하는 법인</li>
+								<li>제1항에 따른 연구에 필요한 비용은 정부 또는 정부 외의 자의 출연금, 그 밖에 기업의 연구개발비로 충당한다.</li>
+								<li>제1항에 따른 협약의 체결방법, 제2항에 따른 출연금의 지급·사용 및 관리에 관하여 필요한 사항은 대통령령으로 정한다.</li>
+							</ul>
+						</li>
+						<li>제1항에 따른 연구에 필요한 비용은 정부 또는 정부 외의 자의 출연금, 그 밖에 기업의 연구개발비로 충당한다.</li>
+						<li>제1항에 따른 협약의 체결방법, 제2항에 따른 출연금의 지급·사용 및 관리에 관하여 필요한 사항은 대통령령으로 정한다.</li>
+					</ol>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 제14조(특정연구개발사업의 추진)</h3>
+					<p>관계 중앙행정기관의 장은 이 법에 따른 권한의 일부를 대통령령으로 정하는 바에 따라 다른 관계 중앙행정기관의 장, 기초연구진흥 및 기술개발지원 관련 업무를 수행하는 기관이나 단체의 장에게 위탁할 수 있다.</p>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행령 제16조(특정연구개발사업 참여기관 등의 기준)</h3>
+					<ol class="list">
+						<li>법 제14조제1항제2호에서 "연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 기업부설연구소"란 다음 각 호의 구분에 따라 해당 연구소에서 근무하는 연구전담요원을 늘 확보하고 미래창조과학부령으로 정하는 세부기준에 적합한 연구시설을 갖춘 기업부설 연구기관으로서, 미래창조과학부령으로 정하는 사항을 신고하여 미래창조과학부장관의 인정을 받은 기관을 말한다. 이 경우 미래창조과학부장관은 연구과제의 특수성 또는 기업의 규모를 고려하여 필요하다고 인정할 때에는 연구전담요원의 수를 조정할 수 있다.
+							<ul class="list round mt20">
+								<li>「중소기업기본법」 제2조에 따른 중소기업자가 설립한 기업부설연구소: 5명 이상. 다만, 「중소기업기본법 시행령」 제8조에 따른 소기업자가 설립한 기업부설연구소는 3명 이상으로 하되, 해당기업의 창업일로부터 3년까지는 2명이상으로 한다.</li>
+								<li>국외에 있는 기업부설연구소: 5명 이상</li>
+								<li>제1호에도 불구하고 미래창조과학부령으로 정하는 과학기술 분야연구기관의 연구원 및 대학의 교원이 창업한 연구개발형 중소기업 또는 「벤처기업육성에 관한 특별조치법」 제2조에 따른 벤처기업이 설립한 기업부설연구소: 2명 이상</li>
+								<li>「산업발전법」제10조의2에 따른 중견기업으로서 직전 3개 사업연도의 평균매출액(사업연도가 1개인 경우에는 해당 사업연도의 매출액으로, 2개인 경우에는 2개 사업연도의 평균 매출액으로 하며 사업기간이 1년 미만인 사업연도의 매출액은 1년으로 환산하여 계산한다)이 5천억원 미만인 중견기업이 설립한 기업부설연구소 : 7명 이상</li>
+								<li>그 밖의 기업부설연구소: 10명 이상</li>
+							</ul>
+						</li>
+						<li>법 제14조제1항제2호에서 "연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 기업의 연구개발전담부서"란 해당 부서에서 근무하는 연구전담요원을 1명 이상 늘 확보하고 미래창조과학부령으로 정하는 세부기준에 적합한 연구시설을 갖춘 연구개발부서로서, 미래창조과학부령으로 정하는 사항을 신고하여 미래창조과학부장관의 인정을 받은 연구개발전담부서(이하 "전담부서"라 한다)를 말한다.</li>
+						<li>법 제14조제1항제5호에서 "연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 비영리법인"이란 자연계 분야 학사 이상의 학위를 소지한 사람으로서 3년 이상의 연구경력을 가진 연구전담요원 3명 이상을 늘 확보하고 연구시설을 갖춘 비영리법인을 말한다.</li>
+						<li>법 제14조제1항제6호에서 "연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 의료법인"이란 보건의료기술 분야에서 3년 이상의 연구경력을 가진 의료인 2명 이상과 보건의료기술 분야에서 3년 이상의 연구경력을 가진 연구전담요원 3명 이상을 늘 확보하고 연구시설을 갖춘 의료법인을 말한다.</li>
+						<li>법 제14조제1항제7호에서 "연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 국내외 연구 기관 또는 단체"란 해당 분야 학사 이상의 학위를 소지한 사람으로서 3년 이상의 연구경력을 가진 연구전담요원 5명 이상을 늘 확보하고 연구시설을 갖춘 연구 기관 또는 단체로서 미래창조과학부장관이 인정하는 기관을 말한다.</li>
+						<li>법 제14조제1항제7호에서 "연구 인력·시설 등 대통령령으로 정하는 기준에 해당하는 영리를 목적으로 하는 법인"이란 「국가과학기술 경쟁력강화를 위한 이공계지원특별법」 제18조제2항에 따라 신고한 연구개발서비스업자로서 미래창조과학부장관의 인정을 받은 연구개발서비스업을 전문으로 하는 법인을 말한다.</li>
+						<li>제1항부터 제6항까지에서 규정한 사항 외에 특정연구개발사업 참여기관 등이 확보하여야 하는 연구전담요원의 자격기준은 미래창조과학부령으로 정한다.</li>
+					</ol>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 제14조(특정연구개발사업의 추진)</h3>
+					<ol class="list">
+						<li>제16조제1항 및 제2항에 따른 기업부설연구소 또는 전담부서(이하 "기업부설연구소등"이라 한다)의 연구전담요원, 연구보조원 및 연구관리직원(이하 "연구전담요원등"이라 한다)은 해당 기업의 연구업무 외에 다른 업무를 겸할 수 없다. 다만, 창업일부터 3년이 경과하지 아니한 「중소기업기본법 시행령」 제8조제1항에 따른 소기업에 종사하는 연구전담요원등이 해당 소기업의 대표자를 겸하는 경우에는 그러하지 아니하다.</li>
+						<li>기업부설연구소등을 설립 또는 설치하는 기업은 연구전담요원등이 연구에만 전념할 수 있도록 연구활동 외에 생산ㆍ판매ㆍ영업 등의 기업활동과 관련된 업무에 종사하는 별도의 상시 종업원을 확보하여야 한다.</li>
+						<li>기업부설연구소등의 직원 및 연구시설은 같은 소재지에 있어야 한다. 다만, 연구의 원활한 수행을 위하여 필요한 경우에는 주소지를 주소재지와 부소재지로 구분하여 2개의 장소에 둘 수 있다. 이 경우 각 주소지에 독립된 연구시설을 갖추고 기업부설연구소등의 직원 1명 이상이 근무하여야 하며, 제16조제1항 및 제2항에 따른 연구전담요원의 수는 각 주소지의 연구전담요원을 합산한 수로 할 수 있다.</li>
+						<li>같은 기업에 2개 이상의 기업부설연구소등을 설립하려면 전문연구 분야[「통계법」 제22조에 따라 통계청장이 고시하는 산업에 관한 표준분류(이하 "한국표준산업분류"라 한다)에 따른 중분류를 말한다] 또는 그 주소지가 서로 달라야 한다.</li>
+						<li>기업부설연구소등은 「건축법」에 따라 허가받지 아니한 건물 또는 가건물, 건축물의 용도가 주거용인 건물에 설치할 수 없다.</li>
+					</ol>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행령 제27조(권한의 위탁)</h3>
+					<ol class="list">
+						<li>법 제20조에 따라 미래창조과학부장관은 다음 각 호의 사항에 관한 권한을 「민법」 제32조 및 「공익법인의 설립ㆍ운영에 관한 법률」에 따라 미래창조과학부장관의 허가를 받아 설립된 한국산업기술진흥협회에 위탁한다.
+							<ul class="list round mt15">
+								<li>제16조제1항에 따른 기업부설연구소 신고의 수리 및 인정에 관한 사무</li>
+								<li>제16조제2항에 따른 전담부서 신고의 수리 및 인정에 관한 사무</li>
+							</ul>
+						</li>
+						<li>법 제20조에 따라 미래창조과학부장관은 특정연구개발사업과 관련된 다음 각 호의 권한을 전문기관에 위탁할 수 있다.
+							<ul class="list round mt15">
+								<li>특정연구개발사업 계획의 수립과 관련된 기술 동향의 조사ㆍ분석 및 기술 수요의 예측</li>
+								<li>연도별 연구과제의 선정과 관련된 연구과제의 검토, 운영ㆍ관리 및 기술적 지원</li>
+								<li>연구과제의 평가 및 활용</li>
+							</ul>
+						</li>
+						<li>미래창조과학부장관은 제2항에 따라 위탁을 한 경우에는 그 사실을 관보에 공고하여야 한다.</li>
+						<li>제1항이나 제2항에 따라 위탁한 업무의 처리 및 보고 등에 필요한 사항은 미래창조과학부령으로 정한다.</li>
+					</ol>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행령 제27조(권한의 위탁)</h3>
+					<h4 class="cTit3">지식기반서비스 분야의 범위(제2조제5호 관련)</h4>
+					<table class="dataTable">
+						<colgroup>
+							<col width="50%"/>
+							<col width="50%"/>
+						</colgroup>
+						<thead>
+						<tr>
+							<th>업종</th>
+							<th>한국표준산업분류</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>위생서비스(산업)</th>
+								<td>3701 ~ 3900</td>
+							</tr>
+							<tr>
+								<th>소매</th>
+								<td>4711, 4731, 4781, 4791</td>
+							</tr>
+							<tr>
+								<th>출판</th>
+								<td>5811 ~ 5819</td>
+							</tr>
+							<tr>
+								<th>소프트웨어개발공급</th>
+								<td>5821 ~ 5822, 6201 ~ 6209</td>
+							</tr>
+							<tr>
+								<th>오디오 기록물 제작</th>
+								<td>5911 ~ 5912, 5920</td>
+								</tr>
+							<tr>
+								<th>부가통신</th>
+								<td>6121 ~ 6129</td>
+							</tr>
+							
+							<tr>
+								<th>정보서비스</th>
+								<td>6311 ~ 6399</td>
+							</tr>
+							<tr>
+								<th>광고</th>
+								<td>7131 ~ 7139</td>
+							</tr>
+							<tr>
+								<th>시장조사 및 경영컨설팅</th>
+								<td>7140 ~ 7153</td>
+							</tr>
+							<tr>
+								<th>건축공학 관련 서비스</th>
+								<td>7211</td>
+							</tr>
+							<tr>
+								<th>기타 공학 관련 서비스</th>
+								<td>7212 ~ 7292</td>
+							</tr>
+							<tr>
+								<th>기타 사업서비스</th>
+								<td>7310 ~ 7410, 7430, 7521 ~ 7599</td>
+							</tr>
+							<tr>
+								<th>교육기관(산업)</th>
+								<td>8550, 8561 ~ 8569, 8570</td>
+							</tr>
+							<tr>
+								<th>의료 및 보건(산업)</th>
+								<td>8610 ~ 8690</td>
+							</tr>
+							<tr>
+								<th>창작 및 예술 관련 서비스</th>
+								<td>9011 ~ 9019</td>
+							</tr>
+							<tr>
+								<th>문화서비스(기타)</th>
+								<td>9021 ~ 9029</td>
+							</tr>
+					</tbody>
+					</table>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행규칙 제1조(목적)</h3>
+					<p>이 규칙은 「기초연구진흥 및 기술개발지원에 관한 법률」 및 같은 법 시행령에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다.</p>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행규칙 제2조(기업부설연구소 등의 연구시설 및 연구전담요원에 대한 기준)</h3>
+					<p>「기초연구진흥 및 기술개발지원에 관한 법률 시행령」(이하 "영"이라 한다) 제16조제1항 각 호 외의 부분 전단 및 같은 조 제2항에서 "미래창조과학부령으로 정하는 세부기준"은 다음 각 호와 같다.</p>
+					<h4 class="cTit3">연구공간</h4>
+					<ul class="list round">
+						<li>고정벽체와 별도의 출입문으로 다른 부서와 구분하여 독립적인 공간을 확보할 것. 다만, 다음의 어느 하나에 해당하는 기업부설연구소 또는 연구개발전담부서(이하 "기업부설연구소등"이라 한다)로서 30제곱미터를 초과하는 면적을 연구공간으로 확보할 수 없는 경우에는 칸막이 등으로 다른 부서와 구분할 수 있다.<br/>
+							<ul class="mt15">
+								<li>1) 「중소기업기본법 시행령」제8조에 따른 소기업자가 설립한 기업부설연구소등</li>
+								<li>2) 영 별표 1에 따른 지식기반서비스 분야의 업종을 주(主)된 업종으로 하는 기업의 해당 업종과 관련한 연구개발활동을 수행하는 다음의 어느 하나에 해당하는 기업부설연구소등</li>
+							</ul>
+							<ul class="listDash mt15">
+								<li>「중소기업기본법 시행령」제8조에 따른 중기업자가 설립한 기업부설연구소</li>
+								<li>영 제16조제1항제3호에 따른 기업부설연구소</li>
+								<li>영 제16조제2항에 따른 연구개발전담부서(정보서비스 또는 소프트웨어개발공급 업종만 해당한다)</li>
+							</ul>
+						</li>
+						<li class="mt15">연구전담요원, 연구보조원 및 연구관리직원(이하 "연구전담요원등"이라 한다)이 상시적으로 근무하는 데에 필요한 최소한의 면적(연구기자재를 설치한 후의 면적을 말한다) 이상을 확보할 것</li>
+					</ul>
+					<h4 class="cTit3">연구기자재</h4>
+					<p>연구전담요원 또는 연구보조원이 연구개발활동에 직접 사용하는 기계, 기구, 장치 및 재료 로서 제1호의 기준에 맞는 연구공간에 위치할 것</p>
+					<h4 class="cTit3">부대시설</h4>
+					<ul class="list round">
+						<li>기업부설연구소등의 연구개발활동을 위하여 제작한 구축물과 연구전담요원등이 전용으로 사용하는 회의실, 기숙사 등 연구개발활동에 필요한 편의시설로서 기업부설연구소등의 주소지에 있을 것(부대시설을 두는 경우만 해당한다)</li>
+						<li>기업부설연구소등이 제1항의 기준에 맞는 연구시설을 확보할 때 「기초연구진흥 및 기술개발지원에 관한 법률」(이하 "법"이라 한다) 제6조제1항 각 호의 기관 내의 연구시설을 사용하려면 그에 대한 배타적 사용 권한을 보유하여야 한다.</li>
+						<li>기업부설연구소등의 연구전담요원은 다음 각 호의 어느 하나에 해당하는 자격기준을 갖추어야 한다.이 경우 제3호부터 제5호까지의 기준은 중소기업에만 적용하되, 중소기업이 설립한 기업부설연구소등에서 제3호부터 제5호까지의 자격 중 어느 하나에 해당하는 자격을 갖추고 연구전담용원으로 근무하던 자가 영 제16조제1항제4호에 따른 중견기업이 된 후에도 계속하여 그 기업부설연구소등의 연구전담요원으로 근무하는 경우에는 해당 기업이 영 제16조제1항제4호에 따른 중견기업에 해당할 때까지는 연구전담요원의 자격을 갖춘 것으로 본다. 다만 중소기업이 그 규모이 확대 등으로 「산업발전법」제10조2에 따른 중견기업이 된 경우 현재 연구전담요원으로 근무하고 있는 자에 한해서는 계속하여 연구전담용원으로 근무시 연구전담요원의 자격을 갖춘 것으로 본다.
+							<ul class="mt15">
+								<li>1) 「대학설립ㆍ운영 규정」 별표 1에 따른 자연과학계열ㆍ공학계열 및 의학계열(이하 "자연계분야"라 한다)의 학사 이상 학위를 가진 사람으로서 기업의 연구개발활동과 관련된 분야를 전공하였거나 해당 연구 분야에서 1년 이상 근무한 사람</li>
+								<li>2) 기업의 연구개발활동과 관련된 「국가기술자격법」 제9조제1항제1호에 따른 기술ㆍ기능분야의 기사 이상 기술자격을 가진 사람</li>
+								<li>3) 기업의 연구개발활동과 관련된 분야를 전공한 자연계분야 전문학사 또는 이와 같은 수준의 학력이 있다고 인정되는 사람으로서 해당 연구 분야에서 2년 이상(3년제 전문대학을 졸업한 경우에는 1년 이상) 근무한 사람</li>
+								<li>4) 기업의 연구개발활동과 관련된 「국가기술자격법」 제9조제1항제1호에 따른 기술ㆍ기능분야의 산업기사 이상 기술자격을 가진 사람으로서 해당 연구 분야에서 2년 이상 근무한 사람</li>
+								<li>5) 다음 각 목의 어느 하나에 해당하는 고등학교를 졸업(다음 각 목의 어느 하나에 해당하는 고등학교로 지정·고시되기 전에 그 학교를 졸업한 경우를 포함한다)하고 법 제14조제1항제2호의 기관에서 1년 이상 근무한 경력을 포함하여 기업의 연구개발활동과 관련된 분야에서 4년 이상 근무한 사람 </li>
+							</ul>
+							<ul class="listDash mt15">
+								<li>「초·중등교육법 시행령」제90조제1항제10호에 따른 산업수요 맞춤형 고등학교 </li>
+								<li>「초·중등교육법 시행령」제91조제1항에 따른 특정분야의 인재양성을 목적으로 하는 특성화고등학교</li>
+							</ul>
+						</li>
+						<li class="mt15">제3항에도 불구하고 산업디자인 분야의 연구개발활동을 수행하는 기업부설연구소등과 영 별표 1의 지식기반서비스 분야의 업종을 주 업종으로 하는 기업의 해당 업종과 관련한 연구개발활동을 수행하는 기업부설연구소등(연구개발전담부서의 경우에는 정보서비스 또는 소프트웨어개발공급 업종만 해당한다)의 연구전담요원은 다음 각 호의 어느 하나에 해당하는 자격기준을 갖춘 사람으로 할 수 있다. 이 경우 제3호부터 제5호까지의 기준은 중소기업에만 적용하되, 중소기업이 설립한 기업부설연구소등에서 제3호부터 제5호까지의 자격 중 어느 하나에 해당하는 자격을 갖추고 연구전담용원으로 근무하던 자가 영 제16조제1항제4호에 따른 중견기업이 된 후에도 계속하여 그 기업부설연구소등의 연구전담요원으로 근무하는 경우에는 해당 기업이 영 제16조제1항제4호에 따른 중견기업에 해당할 때까지는 연구전담요원의 자격을 갖춘 것으로 본다.
+							<ul class="mt15">
+								<li>1) 학사 이상 학위를 가진 사람으로서 기업의 연구개발활동과 관련된 분야를 전공하였거나 해당 분야에서 1년 이상 근무한 사람</li>
+								<li>2) 기업의 연구개발활동과 관련된 「국가기술자격법」 제9조제1항제2호에 따른 서비스분야 1급 이상의 자격을 가진 사람</li>
+								<li>3) 기업의 연구개발활동과 관련된 분야를 전공한 전문학사 또는 이와 같은 수준의 학력이 있다고 인정되는 사람으로서 해당 분야에서 2년 이상(3년제 전문대학을 졸업한 경우에는 1년 이상) 근무한 사람</li>
+								<li>4) 기업의 연구개발활동과 관련된 「국가기술자격법」 제9조제1항제2호에 따른 서비스분야 2급 또는 단일 등급 소유자로서 해당 분야에서 2년 이상 근무한 사람</li>
+								<li>5) 전문학사 또는 이와 같은 수준의 학력이 있다고 인정되는 사람으로서 3년 이상 해당 분야에서 근무한 사람</li>
+							</ul>
+						</li>
+						<li class="mt15">제3항제3호, 제4항제3호 및 제5호의 전문학사와 같은 수준의 학력이 있다고 인정되는 범위는 다음 각 호와 같다.
+							<ul>
+								<li>1) 건강보험 가입자 명부, 국민연금 사업장가입자 명부, 근로소득 원천징수부 등으로 해당 기업의 직원임을 증명할 수 없는 사람</li>
+								<li>2) 해당 기업의 직원으로서 다음 각 목의 어느 하나에 해당하는 사람</li>
+								<li>학원(주간) 학위과정에서 수학하는 사람(다만, 기업의 연구개발활동과 관련된 박사학위과정으로 연구개발활동에 지장이 없는 경우에는 제외한다)</li>
+								<li> 안에서 계속하여 6개월 이상 연구개발활동을 수행할 수 없는 사람</li>
+								<li>이사, 감사 및 비상임이사 등 직무상 상시 연구개발활동을 전담할 수 없는 사람<br/>
+								. 다만, 창업일부터 3년이 경과하지 아니한 「중소기업기본법 시행령」 제8조에 따른 소기업의 대표이사는 제외한다.</li>
+								<li>3) 「출입국관리법」 제33조에 따른 외국인등록증을 보유한 사람 중 산업연수를 목적으로 국내에 체류하는 산업연수생</li>
+							</ul>
+						</li>
+						<li class="mt15">영 제16조제1항제3호에서 "미래창조과학부령으로 정하는 과학기술 분야 연구기관의 연구원 및 대학의 교원이 창업한 연구개발형 중소기업"이란 법 제6조제1항 각 호의 기관에 소속된 연구원 또는 교원(이하 "연구원ㆍ교원"이라 한다)이 「벤처기업육성에 관한 특별조치법」 제16조 및 제16조의2에 따라 휴직ㆍ겸직을 통하여 창업하거나 퇴직한 후 3년 이내에 창업한 연구개발형 중소기업을 말한다.</li>
+					</ul>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행규칙 제3조(기업부설연구소의 신고 등)</h3>
+					<ol class="list">
+						<li>영 제16조제1항에 따라 기업부설연구소로 인정을 받으려는 자는 별지 제1호서식의 기업부설연구소 신고서에 다음 각 호의 서류를 첨부하여 「민법」 제32조 및 「공익법인의 설립ㆍ운영에 관한 법률」에 따라 미래창조과학부장관의 허가를 받아 설립된 한국산업기술진흥협회(이하 "협회"라 한다)에 제출(정보통신망에 의한 제출을 포함한다)하여야 한다.
+							<ul class="list round mt15">
+								<li>연구개발활동 개요서(별지 제2호서식)</li>
+								<li>연구시설 현황(별지 제3호서식)</li>
+								<li>연구개발인력 현황(별지 제4호서식)</li>
+								<li>사업자등록증 사본</li>
+								<li>회사 및 기업부설연구소 조직도</li>
+								<li>연구소가 위치한 층의 전체 도면 및 기업부설연구소 내부 도면(전용 출입구 현판 및 내부 사진 포함)</li>
+								<li>「연구실 안전환경 조성에 관한 법률」 제13조제2항에 따른 안전 및 유지관리비 명세서(연구전담요원 및 연구보조원 총수가 10명 이상인 기업부설연구소만 해당한다)</li>
+								<li>「연구실 안전환경 조성에 관한 법률」 제14조제1항에 따라 가입한 보험의 가입증명서(연구전담요원 및 연구보조원 총수가 10명 이상인 기업부설연구소만 해당한다)</li>
+								<li>「법인세법 시행규칙」 별지 제51호서식의 중소기업 등 기준검토표 또는 「부가가치세법 시행규칙」 별지 제21호서식의 일반과세자 부가가치세 예정신고서 또는 확정신고서(중소기업자가 설립한 연구소 또는 영 별표 1의 지식기반서비스 분야 기업의 연구소만 해당한다)</li>
+								<li>「벤처기업육성에 관한 특별조치법」 제25조제2항에 따른 벤처기업확인서(벤처기업자가 설립한 연구소만 해당한다)</li>
+								<li>제2조제7항에 따른 연구원ㆍ교원이 창업한 중소기업의 연구소임을 증명하는 서류(해당 기업만 첨부한다)</li>
+								<li>영 제16조제1항제4호에 해당하는 중견기업임을 증명하는 서류(해당하는 기업만 첨부한다)</li>
+							</ul>
+						</li>
+						<li class="mt15">협회는 제1항에 따른 신고를 받고 기업부설연구소로 인정하였으면 별지 제5호서식의 기업부설연구소 인정서를 발급하여야 한다.</li>
+						<li class="mt15">제1항과 제2항에서 규정한 사항 외에 기업부설연구소의 신고에 필요한 사항은 미래창조과학부장관이 따로 정하여 고시한다.</li>
+					</ol>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행규칙 제4조(기업의 연구개발전담부서의 신고 등)</h3>
+					<ol class="list">
+						<li>영 제16조제2항에 따라 기업의 연구개발전담부서로 인정을 받으려는 자는 별지 제6호서식의 연구개발전담부서 신고서에 제3조제1항제1호부터 제4호까지의 서류와 다음 각 호의 서류를 첨부하여 협회에 제출(정보통신망에 의한 제출을 포함한다)하여야 한다.
+							<ul class="list round">
+								<li>회사 조직도</li>
+								<li>연구개발전담부서가 위치한 층의 전체 도면 및 연구개발전담부서의 내부 도면(전용 출입구 현판 및 내부 사진 포함)</li>
+							</ul>
+						</li>
+						<li class="mt15">협회는 제1항에 따른 신고를 받고 기업의 연구개발전담부서로 인정하였으면 별지 제7호서식의 연구개발전담부서 인정서를 발급하여야 한다.</li>
+						<li>제1항과 제2항에서 규정한 사항 외에 연구개발전담부서의 신고에 필요한 사항은 미래창조과학부장관이 따로 정하여 고시한다.</li>
+					</ol>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행규칙 제5조(변경신고)</h3>
+					<p>기업부설연구소등의 신고 내용 중 변경사항이 발생한 경우 해당 기업은 변경된 날부터 14일 이내에 별지 제8호서식의 변경신고서에 변경 내용을 적고 관련 서류를 첨부하여 협회에 제출(정보통신망에 의한 제출을 포함한다)하여야 한다.</p>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행규칙 제6조(인정서 재발급 등)</h3>
+					<ol class="list">
+						<li>협회는 다음 각 호의 어느 하나에 해당하는 경우에 기업부설연구소등의 신고인이 요청하면 관련 사실을 확인한 후 인정서를 재발급할 수 있다.
+							<ul class="list round">
+								<li>주요 변경사항이 있을 때</li>
+								<li>인정서를 분실하였을 때</li>
+								<li>그 밖에 재발급이 필요하다고 인정될 때</li>
+							</ul>
+						</li>
+						<li class="mt15">협회는 기업부설연구소등을 인정받기 위하여 신고한 기업이 요청하는 경우에는 해당 기업부설연구소 또는 연구개발전담부서에 대한 인정절차가 진행 중임을 확인해 줄 수 있다.</li>
+						<li>협회는 인정서를 발급하거나 재발급할 때에는 기업부설연구소등의 변경신고 등 관련 법령에 따른 의무사항을 고지하여야 한다.</li>
+					</ol>
+					<h3 class="cTit2">기초연구진흥 및 기술개발지원에 관한 법률 시행규칙 제7조(업무의 처리 및 보고 등)</h3>
+					<ol class="list">
+						<li>영 제27조제1항 또는 제2항에 따라 미래창조과학부장관의 권한을 위탁받은 기관 또는 단체의 장이 그 업무처리 및 보고 등에 관한 규정을 정할 때에는 미래창조과학부장관의 승인을 받아야 한다. 이를 변경할 때에도 또한 같다.</li>
+						<li class="mt15">제1항에 따른 업무처리 및 보고 등에 관한 규정에는 다음 각 호의 사항이 포함되어야 한다.
+							<ul class="list round">
+								<li>영 제27조제1항 또는 제2항 각 호에 관한 사항</li>
+								<li>업무처리의 장소에 관한 사항</li>
+								<li>업무취급자의 선임ㆍ해임 및 배치에 관한 사항</li>
+								<li>업무에 관한 장부 및 서류의 관리ㆍ보존에 관한 사항</li>
+								<li>업무처리에 관한 절차 및 보고에 관한 사항</li>
+								<li>그 밖에 위탁받은 업무의 처리에 필요한 사항</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+
+
+
+				<!--컨텐츠 끝 -->
+			</div>
+			<div id="aside">
+				<div class="quickContent">
+					<h1>자주묻는 질문과 답변</h1>
+					<ul class="list">
+						<li><strong>신규설립신고는 온라인으로만 접수 가능합니다.</strong></li>
+						<li>
+							<strong>공인인증서는 법인 공인인증서 (은행용, 범용, 산기협용)</strong>로 로그인 가능합니다. 투자용 공인인증서는 사용할 수 없습니다.<br/>
+							<a href="https://www.tradesign.net/koita/" target="_blank" class="btnSmall fluidGray"><span>공인인증센터 바로가기</span></a>
+						</li>
+						<li>신규설립신고 처리는 보완이 없는 경우, 접수 후 7일 이내에 처리됩니다.</li>
+						<li>보완 발생시 담당자의 SMS, 이메일, 팩스로 보완요청 공문이 발송됩니다.</li>
+						<li>보완 발생후 7일 이내에 보완하지 않을 경우에는 "자동반려"됩니다.</li>
+						<li>보완요청 공문은 담당자 이메일, 연구소 통합관리 시스템에서 확인할 수 있습니다.</li>
+						<li>현장실사는 사전 통보없이 진행될 수 있습니다.</li>
+					</ul>
+				</div>
+				<div class="quickMenu">
+					<h1>바로가기 서비스</h1>
+					<ul>
+						<li><a href="../../" onclick="goDocChk()"><span class="spriteSheet noTxt icoQuick1"></span>증명서 온라인 원본확인</a></li>
+						<li><a href="../../login/login_change.jsp"><span class="spriteSheet noTxt icoQuick3"></span>연구소/전담부서 정기상담회</a></li>
+						<li><a href="../../customer/call_service.jsp"><span class="spriteSheet noTxt icoQuick2"></span>처리현황조회</a></li>
+						<li><a href="../../login/login_data.jsp"><span class="spriteSheet noTxt icoQuick4"></span>인정서 출력하기</a></li>
+						<li><a href="../../customer/report_lab_write.jsp"><span class="spriteSheet noTxt icoQuick5"></span>부실연구소 신고센터</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--PAGE end-->
+	</div>
+	<!--containter end-->
+	<!-- footer start-->
+	<div id="footer">
+		<span class="spriteSheet noTxt icoFooterLogo">한국산업기술진흥협회</span>
+		<div class="content">
+			<img src="../images/layout/footer.png" alt="우)137-888 서울특별시 서초구 바우뫼로37길 37(양재동 20-17) 산기협회관   |   대표전화 080-555-9114   |   대표팩스 02-3460-9019"/>
+		</div>
+	</div>
+	<!--footer end-->
+</div>
+</body>
+<script>
+	tabSize('.topTab');
+</script>
+</html>
+
