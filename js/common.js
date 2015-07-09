@@ -17,7 +17,7 @@ function selecter(tar){
 	var $activeTar = $tarUL.find('a');
 	var $activeTxt = $selecter.find('.activeTxt');
 	var tarULWidth = $tarUL.width();
-	var $reset = $tarUL.find('li:first-child a');
+	var $reset = $tarUL.find('li.on a');
 
 	$activeTxt.text($reset.text());
 	$selecter.find('input:hidden').val($reset.attr('data-role'));
