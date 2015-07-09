@@ -2,6 +2,8 @@
 
 /* 공통 */
 .mb10{margin-bottom:10px !important;}
+.h185{height:185px;}
+.verticalTop{vertical-align:top;}
 .floatL{float:left;}
 .floatR{float:right;}
 .group:after{content:"";display:block;clear:both;}
@@ -161,11 +163,6 @@
 .writeTable .cRed,
 .writeTable .cDarkGray{margin-top:10px;}
 .writeTable .message{display:inline-block;margin-top:5px;margin-left:20px;}
-
-/*퀵 UL*/
-.quickContent .quickUl li{font-size:13px;border-bottom:1px solid #e2e2e2;padding-top:10px;padding-bottom:10px;line-height:18px;}
-.quickContent .list li.blitNone:before{content:none;margin-left:8px;}
-.quickContent .list li.blitNone{text-indent:0;}
 
 /* 팝업 */
 #popup .popTitle{padding:15px 37px;background:#3871c6;}
